@@ -1,0 +1,11 @@
+#define BossMusicEntry(charID,songID) "WORD charID songID"
+#define BossMusicEnd "WORD 0xFFFFFFFF 0xFFFFFFFF"
+
+
+BossMusicList:
+BossMusicEnd
+
+PUSH
+ORG 0x72908
+POIN BossMusicList
+POP
