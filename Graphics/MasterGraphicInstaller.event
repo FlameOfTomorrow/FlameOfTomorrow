@@ -1,0 +1,6 @@
+//#include "Tilesets/Tileset Installer.event"
+
+#include "StatScreen/Stat Screen.event"
+#include "Animations/_Master Animation Installer.event"
+#include "Mugs/_Master Mug Installer.event"
+

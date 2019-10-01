@@ -1,0 +1,14 @@
+#undef BattleQuoteTable
+
+//TwoWayBattleQuote(eventID,char1,char2,textID)
+//BattleQuote(eventID,char1,char2,textID)
+
+ALIGN 4
+BattleQuoteTable:
+
+EndQuote
+
+PUSH
+ORG $846AC
+POIN BattleQuoteTable
+POP

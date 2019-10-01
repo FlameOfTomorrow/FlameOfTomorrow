@@ -1,0 +1,16 @@
+#undef DeathQuoteTable
+
+ALIGN 4
+DeathQuoteTable:
+//ChapterSpecificDeathQuotes
+//ChapterDeathQuote(Character,Chapter,Flag,TextID)
+
+//AlwaysDeathQuotes
+//AlwaysDeathQuote(Character,Flag,TextID)
+
+EndQuote
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+POP
