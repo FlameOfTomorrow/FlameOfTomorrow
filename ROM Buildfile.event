@@ -3,6 +3,7 @@
     #include "EAstdlib.event"
     #include "Engine Hacks/SkillSystem/skill_definitions.event"
     #include "Definitions/Custom Definitions.event"
+	#include "Customizations.event"
 
     ORG FreeSpace
 
