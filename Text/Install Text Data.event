@@ -145,6 +145,14 @@ __TEXTPROCESS058:
 #incbin ".TextEntries\text_buildfileUM_CaptureDesc.fetxt.dmp"
 setText($58, __TEXTPROCESS058)
 
+__TEXTPROCESS059:
+#incbin ".TextEntries\text_buildfileUMText_PairUp.fetxt.dmp"
+setText($59, __TEXTPROCESS059)
+
+__TEXTPROCESS05A:
+#incbin ".TextEntries\text_buildfileUMText_PairUpDesc.fetxt.dmp"
+setText($5A, __TEXTPROCESS05A)
+
 __TEXTPROCESS310:
 #incbin ".TextEntries\text_buildfile310.fetxt.dmp"
 setText($310, __TEXTPROCESS310)

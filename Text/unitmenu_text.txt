@@ -71,3 +71,10 @@ ally.[X]
 ## UM_CaptureDesc
 Strike a fatal blow with reduced[N]
 stats to capture an enemy.[X]
+
+## UMText_PairUp
+ Refuge[X]
+
+## UMText_PairUpDesc
+Move into an ally and[N]
+let them carry you.[X]

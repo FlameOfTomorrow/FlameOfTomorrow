@@ -36,6 +36,8 @@
 #define UM_SwapDesc $056
 #define UM_Capture $057
 #define UM_CaptureDesc $058
+#define UMText_PairUp $059
+#define UMText_PairUpDesc $05A
 #define nameCamus $903
 #define nameSirius $904
 #define nameZeke $905
