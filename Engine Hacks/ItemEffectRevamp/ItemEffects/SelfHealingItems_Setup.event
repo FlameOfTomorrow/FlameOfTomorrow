@@ -15,7 +15,8 @@
 	_6C_SLEEP(0xA)
 	_6C_CALL_ROUTINE(0x808129D)	//revert from active to normal map sprite
 	_6C_SLEEP(0x1E)
-	_6C_END*/
+	_6C_END
+*/
 	ALIGN 4
 	//plays whatever animation is set for item 0x6C (vulnerary)
 	SelfHealingItem:
@@ -36,8 +37,5 @@
 	IE_SelfHeal_ByMight:
 	SelfHealing_Effect(HealCalc_ItemMight)
 	
-	SelfHealEffect:
-	rfStaffEffect(Item_UETemplate,IE_SelfHealing)
-	
-	MESSAGE CURRENTOFFSET "Self Healing Items Added"
+	MESSAGE CURRENTOFFSET "place"
 #endif

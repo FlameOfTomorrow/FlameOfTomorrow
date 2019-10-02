@@ -28,7 +28,16 @@ v1.7
 - converted all tables to nmm csvs
 - redid use effect id check to take up less space
 
+v1.8
+- changed spell association to put item & staff effects in a seperate table
+- started changing the hardcoded checks for status staves to check for item effects instead
+- make item effect spell association to be able to have item specific animations
+- dancer ring and status staff support
+	- the status effect given by these items is now controlled through the effect value byte
+	- for example, 0x53 inflicts silence (status effect 0x3) for 5 turns
+- redid promo items
+	- pointer to class list is now part of promotion item table
+
 intended features for future releases
-- dancer ring support
-- fixed out spell association
-- redo promo items
+- i have yet to check for ai related status staff checks so there still may be another update coming
+- optimize stat booster text

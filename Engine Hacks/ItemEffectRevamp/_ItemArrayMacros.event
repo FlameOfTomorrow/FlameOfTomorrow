@@ -36,10 +36,10 @@
 		#define SetPUPointer(Item_ID, pointer)	"setPointerTableEntry(PUArray, Item_ID, pointer)"
 	
 	//Null Pointers for Item Effect Revamp Tables
-		#define IBNull 0x802F9A2	//Items Effects with Box Display (Stat Boosters, Metis Tome)
+		#define IBNull 0x802F90C	//Items Effects with Box Display (Stat Boosters, Metis Tome)
 		#define IENull 0x802ff76	//Item Effect
 		#define IUNull 0x8028c04	//Item Usability
 		#define ITNull 0x802905c	//Item Targeting
 		#define PUNull 0x802a100	//Prepscreen Item Usability
-		#define PromoNull 0x8029400	//Promotion Item Usability
+		//#define PromoNull 0x8029400	//Promotion Item Usability, i rewrote my stuff so this is no longer needed
 #endif

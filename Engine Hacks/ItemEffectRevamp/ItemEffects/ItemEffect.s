@@ -29,17 +29,17 @@ ldr 	r3, =BTargetUnitUpdate|1
 bl jump
 skipDefender:
 
-@update exp and item durability
-mov 	r0, r6
-ldr 	r3, Expthing
-bl		jump 		@give exp to units and handle level ups
-
 @the actual item effect
 mov 	r0, r6
 mov 	r3, r5
 bl		jump
 @mov 	r14, r5
 @.short 0xf800
+
+@update exp and item durability
+mov 	r0, r6
+ldr 	r3, Expthing
+bl		jump 		@give exp to units and handle level ups
 
 pop  	{r4-r6}
 pop  	{r0}
