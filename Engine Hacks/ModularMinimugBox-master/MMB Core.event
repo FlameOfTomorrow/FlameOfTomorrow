@@ -887,4 +887,4 @@ ALIGN 4
 
 #endif // DRAGON_VEINS
 
-MESSAGE MMBDrawDVTextCentered
+//MESSAGE MMBDrawDVTextCentered
