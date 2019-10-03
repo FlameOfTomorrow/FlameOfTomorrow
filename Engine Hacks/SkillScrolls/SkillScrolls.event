@@ -1,0 +1,20 @@
+#define SkillScroll 0xA2
+
+//Skill Scroll Icon
+PUSH
+ORG 0x597C74
+#incext Png2Dmp "SkillScroll.png"
+POP
+
+ALIGN 4
+NiceThighsScrollUsability:
+#incbin "SpecificScrollUsability.dmp"
+POIN SkillTester|1
+WORD NiceThighsID
+
+ALIGN 4
+NiceThighsScrollEffect:
+#incbin "SpecificScrollEffect.dmp"
+POIN SkillTester|1
+POIN prLearnNewSkill|1
+WORD NiceThighsID
