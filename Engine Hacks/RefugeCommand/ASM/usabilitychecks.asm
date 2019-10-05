@@ -10,7 +10,7 @@ mov lr,r0
 .short 0xf800
 @returned true?
 cmp r0,#1
-bne False
+beq False
 @bl CantoCheck
 @cmp r0,#0
 @bne False
