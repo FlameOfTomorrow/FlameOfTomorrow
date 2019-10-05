@@ -1,0 +1,85 @@
+#define WeaponIconOffset(iconID) "NewItemIcons + 0x80*iconID"
+
+// Adept Manual
+PUSH
+ORG WeaponIconOffset(AdeptManualIcon)
+#incext Png2Dmp "Icons/AdeptSkillBook.png"
+POP
+
+// Aegis Manual
+PUSH
+ORG WeaponIconOffset(AegisManualIcon)
+#incext Png2Dmp "Icons/AegisSkillBook.png"
+POP
+
+// Astra Manual
+PUSH
+ORG WeaponIconOffset(AstraManualIcon)
+#incext Png2Dmp "Icons/AstraSkillBook.png"
+POP
+
+// Boon Manual
+PUSH
+ORG WeaponIconOffset(BoonManualIcon)
+#incext Png2Dmp "Icons/BoonSkillBook.png"
+POP
+
+// Canto+ Manual
+PUSH
+ORG WeaponIconOffset(CantoPlusManualIcon)
+#incext Png2Dmp "Icons/Canto+SkillBook.png"
+POP
+
+// Luna Manual
+PUSH
+ORG WeaponIconOffset(LunaManualIcon)
+#incext Png2Dmp "Icons/LunaSkillBook.png"
+POP
+
+// Nihil Manual
+PUSH
+ORG WeaponIconOffset(NihilManualIcon)
+#incext Png2Dmp "Icons/NihilSkillBook.png"
+POP
+
+// Nullify Manual
+PUSH
+ORG WeaponIconOffset(NullifyManualIcon)
+#incext Png2Dmp "Icons/NullifySkillBook.png"
+POP
+
+// Paragon Manual
+PUSH
+ORG WeaponIconOffset(ParagonManualIcon)
+#incext Png2Dmp "Icons/ParagonSkillBook.png"
+POP
+
+// Pass Manual
+PUSH
+ORG WeaponIconOffset(PassManualIcon)
+#incext Png2Dmp "Icons/PassSkillBook.png"
+POP
+
+// Pavise Manual
+PUSH
+ORG WeaponIconOffset(PaviseManualIcon)
+#incext Png2Dmp "Icons/PaviseSkillBook.png"
+POP
+
+// Renewal Manual
+PUSH
+ORG WeaponIconOffset(RenewalManualIcon)
+#incext Png2Dmp "Icons/RenewalSkillBook.png"
+POP
+
+// Sol Manual
+PUSH
+ORG WeaponIconOffset(SolManualIcon)
+#incext Png2Dmp "Icons/SolSkillBook.png"
+POP
+
+// Wrath Manual
+PUSH
+ORG WeaponIconOffset(WrathManualIcon)
+#incext Png2Dmp "Icons/WrathSkillBook.png"
+POP

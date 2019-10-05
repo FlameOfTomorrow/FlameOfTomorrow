@@ -1,6 +1,164 @@
-## NiceThighsManualName
-Nice Thighs[X]
+## PaviseManualName
+Pavise M.[X]
 
-## NiceThighsManualDescription
-Teaches the skill[N]
-Nice Thighs.[X]
+## PaviseManualDescription
+Teaches the[N]
+skill Pavise.[X]
+
+## PaviseManualUseText
+Nullify a physical[N]
+attack. (Skill%[N]
+activation)[X]
+
+## AdeptManualName
+Adept M.[X]
+
+## AdeptManualDescription
+Teaches the[N]
+skill Adept.[X]
+
+## AdeptManualUseText
+Gain a consecutive[N]
+attack. (Speed %[N]
+activation)[X]
+
+## AegisManualName
+Aegis M.[X]
+
+## AegisManualDescription
+Teaches the[N]
+skill Aegis.[X]
+
+## AegisManualUseText
+Nullify a magical[N]
+attack. (Skill%[N]
+activation)[X]
+
+## AstraManualName
+Astra M.[X]
+
+## AstraManualDescription
+Teaches the[N]
+skill Astra.[X]
+
+## AstraManualUseText
+5 attacks at half[N]
+damage. (Skill %[N]
+activation)[X]
+
+## BoonManualName
+Boon M.[X]
+
+## BoonManualDescription
+Teaches the[N]
+skill Boon.[X]
+
+## BoonManualUseText
+Cure bad status[N]
+at the beginning[N]
+of each turn.[X]
+
+## CantoPlusManualName
+Canto+ M.[X]
+
+## CantoPlusManualDescription
+Teaches the[N]
+skill Canto+.[X]
+
+## CantoPlusManualUseText
+Can move again[N]
+after attacking[N]
+and other actions.[X]
+
+## LunaManualName
+Luna M.[X]
+
+## LunaManualDescription
+Teaches the[N]
+skill Luna.[X]
+
+## LunaManualUseText
+Negates enemy[N]
+defenses. (Skill %[N]
+activation)[X]
+
+## NihilManualName
+Nihil M.[X]
+
+## NihilManualDescription
+Teaches the[N]
+skill Nihil.[X]
+
+## NihilManualUseText
+Cancels the[N]
+opponent's[N]
+skills in combat.[X]
+
+## NullifyManualName
+Nullify M.[X]
+
+## NullifyManualDescription
+Teaches the[N]
+skill Nullify.[X]
+
+## NullifyManualUseText
+Unit is protected[N]
+from all[N]
+effective attacks.[X]
+
+## ParagonManualName
+Paragon M.[X]
+
+## ParagonManualDescription
+Teaches the[N]
+skill Paragon.[X]
+
+## ParagonManualUseText
+Experience gain[N]
+is doubled.[X]
+
+## PassManualName
+Pass M.[X]
+
+## PassManualDescription
+Teaches the[N]
+skill Pass.[X]
+
+## PassManualUseText
+Can move through[N]
+enemy units.[X]
+
+## RenewalManualName
+Renewal M.[X]
+
+## RenewalManualDescription
+Teaches the[N]
+skill Renewal.[X]
+
+## RenewalManualUseText
+Restore 30% of[N]
+max HP at the[N]
+start of each turn.[X]
+
+## SolManualName
+Sol M.[X]
+
+## SolManualDescription
+Teaches the[N]
+skill Sol.[X]
+
+## SolManualUseText
+Heal damage dealt[N]
+as HP. (Skill %[N]
+activation)[X]
+
+## WrathManualName
+Wrath M.[X]
+
+## WrathManualDescription
+Teaches the[N]
+skill Wrath.[X]
+
+## WrathManualUseText
+If HP < 50%,[N]
++20 crit rate.[X]

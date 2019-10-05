@@ -1,0 +1,41 @@
+#define AdeptManual 0xA3
+#define AdeptManualIcon 0xAB
+
+#define AegisManual 0xA4
+#define AegisManualIcon 0xAC
+
+#define AstraManual 0xA5
+#define AstraManualIcon 0xAD
+
+#define BoonManual 0xA6
+#define BoonManualIcon 0xC7
+
+#define CantoPlusManual 0xA7
+#define CantoPlusManualIcon 0xAE
+
+#define LunaManual 0xA8
+#define LunaManualIcon 0xC5
+
+#define NihilManual 0xA9
+#define NihilManualIcon 0xC6
+
+#define NullifyManual 0xAB
+#define NullifyManualIcon 0xC1
+
+#define ParagonManual 0xAC
+#define ParagonManualIcon 0xC2
+
+#define PassManual 0xAD
+#define PassManualIcon 0xD1
+
+#define PaviseManual 0xA2
+#define PaviseManualIcon 0xAF
+
+#define RenewalManual 0xAE
+#define RenewalManualIcon 0xD2
+
+#define SolManual 0xAF
+#define SolManualIcon 0xD3
+
+#define WrathManual 0xB0
+#define WrathManualIcon 0xD4
