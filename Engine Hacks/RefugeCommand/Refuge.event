@@ -2,8 +2,9 @@ ALIGN 4
 MESSAGE RefugeUsability at currentOffset
 RefugeUsability:
 #incbin "RefugeUsability.dmp"
+POIN RefugeTargetList|1
 
 ALIGN 4
-MESSAGE RefugeEffect at currentOffset
-RefugeEffect:
-#incbin "RefugeEffect.dmp"
+MESSAGE RefugeTargetList at currentOffset
+RefugeTargetList:
+#incbin "RefugeTargetList.dmp"

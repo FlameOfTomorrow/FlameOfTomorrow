@@ -57,14 +57,14 @@ push {r4-r5,r14}
 mov r4,#0x10
 ldsb r4,[r0,r4]
 mov r5,#0x11
-ldsb r4,[r0,r4]
+ldsb r5,[r0,r5]
 ldr r1,=gUnitSubject
 str r0,[r1]
 ldr r0,=gMapRange
 ldr r0,[r0]
 mov r1,#0
 blh ClearMapWith,r2
-ldr r2,=#0x8025345
+ldr r2,RefugeTargetList
 mov r0,r4
 mov r1,r5
 blh ForEachAdjacentUnit,r3
@@ -75,19 +75,5 @@ bx r0
 .ltorg
 .align
 
-.equ gSelect_Rescue,0x859D478
-.equ StartTargetSelection,0x804FA3C
-
-RefugeEffect:
-push {r14}
-ldr r0,=gActiveUnit
-ldr r0,[r0]
-bl MakeRefugeTargetList
-ldr r0,=gSelect_Rescue
-blh StartTargetSelection,r1
-mov r0,#7
-pop {r1}
-bx r1
-
-.ltorg
-.align
+RefugeTargetList:
+@POIN RefugeTargetList
