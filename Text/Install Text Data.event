@@ -1125,6 +1125,22 @@ __TEXTPROCESS9EE:
 #incbin ".TextEntries\text_buildfileReaverDescription.fetxt.dmp"
 setText($9EE, __TEXTPROCESS9EE)
 
+__TEXTPROCESS9EF:
+#incbin ".TextEntries\text_buildfileNiceThighsManualName.fetxt.dmp"
+setText($9EF, __TEXTPROCESS9EF)
+
+__TEXTPROCESS9F0:
+#incbin ".TextEntries\text_buildfileNiceThighsManualDescription.fetxt.dmp"
+setText($9F0, __TEXTPROCESS9F0)
+
+__TEXTPROCESS9F1:
+#incbin ".TextEntries\text_buildfileHuntsmanName.fetxt.dmp"
+setText($9F1, __TEXTPROCESS9F1)
+
+__TEXTPROCESS9F2:
+#incbin ".TextEntries\text_buildfileHuntsmanDescription.fetxt.dmp"
+setText($9F2, __TEXTPROCESS9F2)
+
 }
 
 #endif // TEXT_INSTALLER_TEXT_BUILDFILE_TXT

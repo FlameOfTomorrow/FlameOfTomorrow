@@ -4,7 +4,7 @@
 
 ALIGN 4
 MovingMapSpriteTable:
-csvmacro022(0x81c33cc,0x81c3d7c)
+csvmacro022(HuntsmanMoving|IsPointer,0x81c3d7c)
 csvmacro022(0x81c3ed4,0x81c46cc)
 csvmacro022(0x81c4824,0x81c52b4)
 csvmacro022(0x81c5414,0x81c5e84)

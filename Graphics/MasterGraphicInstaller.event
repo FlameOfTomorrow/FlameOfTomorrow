@@ -4,3 +4,4 @@
 #include "Animations/_Master Animation Installer.event"
 #include "Mugs/_Master Mug Installer.event"
 #include "Palettes/Palette Setup.event"
+#include "Map Sprites/_Master Map Sprite Installer.event"

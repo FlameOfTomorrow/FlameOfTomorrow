@@ -57,3 +57,6 @@ for items and gold.[X]
 #include "skilldesc_text.txt"
 
 #include "item text.txt"
+
+#include "Custom Text/Item Text.txt"
+#include "Custom Text/Class Text.txt"

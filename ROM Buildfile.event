@@ -21,6 +21,7 @@
 
     //CSV tables
     #include "Tables/Table Installer.event"
+    #include "Tables/External Tables.event"
 
     //Post-table data
     #include "Tables/PostTable/Posttable Installer.event"

@@ -1,4 +1,4 @@
-#define SkillScroll 0xA2
+#define NiceThighsManual 0xA2
 
 ALIGN 4
 NiceThighsScrollUsability:

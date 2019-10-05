@@ -1,5 +1,5 @@
 INLINE MovingMapSpriteTable,Animation pointer,Another pointer
-Ephraim Lord,0x81c33cc,0x81c3d7c
+Huntsman,HuntsmanMoving|IsPointer,0x81c3d7c
 Eirika Lord,0x81c3ed4,0x81c46cc
 Ephraim Master Lord,0x81c4824,0x81c52b4
 Eirika Master Lord,0x81c5414,0x81c5e84

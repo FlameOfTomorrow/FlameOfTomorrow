@@ -302,5 +302,3 @@
 #define ASupport 0xF1
 
 #endif
-
-#include "External Tables.event"

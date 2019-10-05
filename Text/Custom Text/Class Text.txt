@@ -1,0 +1,6 @@
+## HuntsmanName
+Huntsman[X]
+
+## HuntsmanDescription
+Experienced hunters that are[N]
+attuned to nature. Equip: Bows.[X]

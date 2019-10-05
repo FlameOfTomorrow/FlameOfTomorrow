@@ -71,3 +71,15 @@ Wyvern Knight Lance Installer.event
 Wyvern Knight Sword Installer.event
 Wyvern Knight Unarmed Installer.event
 */
+
+
+// Huntsman
+#include "Huntsman Bow Installer.event"
+#include "Huntsman Unarmed Installer.event"
+
+ALIGN 4
+HuntsmanAnimation:
+BowAnim(HuntsmanBowAnim)
+UnarmedAnim(HuntsmanUnarmedAnim)
+EndAnim
+

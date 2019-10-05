@@ -1,0 +1,7 @@
+// Huntsman
+
+HuntsmanStanding:
+#incext Png2Dmp "Files/Huntsman/Standing.png" --lz77
+
+HuntsmanMoving:
+#incext Png2Dmp "Files/Huntsman/Moving.png" --lz77

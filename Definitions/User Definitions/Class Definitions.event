@@ -1,0 +1,4 @@
+// Huntsman
+#define Huntsman EphraimLord
+#define HuntsmanBowAnim EphraimLanceAnim
+#define HuntsmanUnarmedAnim EphraimUnarmedAnim

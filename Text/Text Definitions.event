@@ -274,5 +274,9 @@
 #define SetsLitanyDescription $9EC
 #define DoubleWTDescription $9ED
 #define ReaverDescription $9EE
+#define NiceThighsManualName $9EF
+#define NiceThighsManualDescription $9F0
+#define HuntsmanName $9F1
+#define HuntsmanDescription $9F2
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT
