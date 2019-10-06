@@ -1,8 +1,14 @@
 .thumb
 .align 4
+.macro blh to, reg
+    ldr \reg, =\to
+    mov lr, \reg
+    .short 0xF800
+.endm
 .equ ActiveChar,0x3004E50
 .equ prLearnNewSkill,SkillTester+4
 .equ SkillID,prLearnNewSkill+4
+.equ RemoveUnitBlankItems,0x8017984
 
 @r4 = action struct, r5 = parent proc
 
@@ -21,12 +27,18 @@ add 		r2,r1
 ldrh 		r1,[r2]
 lsr 		r1,r1,#8
 
-@ldr r0,[r0]
-@ldrb r0,[r0,#4]
 
 @delete the item from the inventory
-mov r3,#0
+
+ldrh r3,[r2]
+mov r0,#0
+and r3,r0
+
 strh r3,[r2]
+mov r0,r2
+sub r0,#0x1E
+blh RemoveUnitBlankItems,r3
+
 
 mov r2,r6
 ldr r1,SkillID
@@ -36,6 +48,8 @@ ldr r1,SkillID
 ldr 		r3, prLearnNewSkill
 mov 		lr, r3
 .short 		0xF800
+
+
 
 ldr        r0,GoBackLoc
 bx        r0
