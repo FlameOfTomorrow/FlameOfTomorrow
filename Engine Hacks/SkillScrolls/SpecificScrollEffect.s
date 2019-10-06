@@ -12,34 +12,34 @@
 
 @r4 = action struct, r5 = parent proc
 
+push {r4-r7}
+
 ldr        r0,Get_Char_Data
 mov        r14,r0
 ldrb    r0,[r4,#0xC]        @character using
 .short    0xF800
 ldrb    r1,[r4,#0x12]        @item slot
 
+mov r4,r0
+mov r5,r1
+
 @char struct is in r0, item slot is in r1, use together to get item uses & char ID
 
-mov 		r2,r0
+mov 		r2,r4
 add 		r2,#0x1E
 lsl 		r1,r1,#1
 add 		r2,r1
-ldrh 		r1,[r2]
-lsr 		r1,r1,#8
 
 
 @delete the item from the inventory
 
-ldrh r3,[r2]
 mov r0,#0
-and r3,r0
-
-strh r3,[r2]
-mov r0,r2
-sub r0,#0x1E
+strh r1,[r2]
+mov r0,r4
 blh RemoveUnitBlankItems,r3
 
 
+mov r0,r4
 mov r2,r6
 ldr r1,SkillID
 
@@ -50,7 +50,7 @@ mov 		lr, r3
 .short 		0xF800
 
 
-
+pop {r4-r7}
 ldr        r0,GoBackLoc
 bx        r0
 
