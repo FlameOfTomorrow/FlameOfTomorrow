@@ -10,3 +10,5 @@
 #define StoneShard 0xa7
 #define LunarBrace MoonBracelet
 #define SolarBrace SunBracelet
+#define StoneStaff 0xbc
+#define PoisonStaff 0xbd
