@@ -39,3 +39,5 @@
 
 #define WrathManual 0xB0
 #define WrathManualIcon 0xD4
+
+#define StarIcon 0xCA

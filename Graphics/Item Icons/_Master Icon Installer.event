@@ -83,3 +83,9 @@ PUSH
 ORG WeaponIconOffset(WrathManualIcon)
 #incext Png2Dmp "Icons/WrathSkillBook.png"
 POP
+
+//Leadership Star
+PUSH
+ORG WeaponIconOffset(StarIcon)
+#incext Png2Dmp "Icons/StarIcon.png"
+POP

@@ -1,0 +1,14 @@
+# 0x0028
+Lead[X]
+
+# 0x0551
+Leadership. Grants +5 Hit +3 Avo[N]
+to all ally units per star.[X]
+
+# 0x06ED
+Total number of leadership stars[N]
+for ally units.[X]
+
+# 0x06EE
+Total number of leadership stars[N]
+for enemy units.[X]
