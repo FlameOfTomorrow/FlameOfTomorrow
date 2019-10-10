@@ -8,7 +8,7 @@
 		ORG FreeSpace
 	#endif
 	#ifndef ItemTable
-		//#define ItemTable 0x809B10
+		#define ItemTable 0x809B10
 	#endif
 	//#define CaptureNameTextID 0x687 //Secret
 	//#define CaptureDescTextID 0x6D1 //Secret's desc

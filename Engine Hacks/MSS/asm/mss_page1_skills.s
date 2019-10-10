@@ -13,7 +13,7 @@
 .set Display_Growths_options, SS_TalkText+4
 .set Growth_Getters_Table, Display_Growths_options+4
 .set Get_Palette_Index, Growth_Getters_Table+4
-.set GetLeadershipStarCount, Get_Palette_Index+4
+.equ GetCharge, Get_Palette_Index+4
 
 page_start
 
@@ -130,19 +130,9 @@ draw_aid_icon_at 26, 3
 
 draw_trv_text_at 21, 5
 
-draw_textID_at 21, 7, textID=0x0028
-mov		r0, r8
-ldr		r3, GetLeadershipStarCount
-sub		r3, #1 @get rid of unnecessary thumb bit
-mov		lr, r3
-.short 0xF800
-push	{r0}
-draw_number_at 25, 7
-pop 	{r0}
-cmp		r0,#0xFF
-beq		DontDrawIcon
-draw_icon_at 26, 7, 0xCA @change this to the ID you put the icon in
-DontDrawIcon:
+draw_textID_at 21, 7, textID=0x4f1 @affin
+
+draw_affinity_icon_at 24, 7
 
 draw_status_text_at 21, 9
 

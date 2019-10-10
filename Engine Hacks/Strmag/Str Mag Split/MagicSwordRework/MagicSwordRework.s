@@ -50,9 +50,9 @@ b TargetBehavior
 
 
 AtRange:
-mov r2,#0x3A
-ldrb r0,[r5,r2]
-strb r0,[r5,#0x14]
+@mov r2,#0x3A
+@ldrb r0,[r5,r2]
+@strb r0,[r5,#0x14]
 
 lsl r4,r4,#28
 lsr r4,r4,#28
@@ -65,22 +65,12 @@ lsr r0,r0,#4
 strb r0,[r6] @r6 contains attacker struct pointer + 0x50
 b TargetBehavior
 
-
-
-
 TargetBehavior: @0=hit def, 1=hit res, 2=hit lower stat, 3=hit higher stat
 cmp r4,#0
 beq HitDef
 
 mov r0,r6
-ldr r1,=#0x203A438
-cmp r1,r0
-beq Attacker
-sub r0,#0xC7
-b Poster
-Attacker:
-add r0,#0x30
-Poster:
+add r0,#0x30 @get defender struct
 ldrb r1,[r0,#0x18] @enemy res
 ldrb r0,[r0,#0x17] @enemy def
 cmp r4,#2
@@ -91,12 +81,12 @@ b GoBack
 
 HitLower:
 cmp r0,r1
-ble HitDef
+blt HitDef
 b GoBack
 
 HitHigher:
 cmp r0,r1
-bge HitDef
+bgt HitDef
 b GoBack
 
 HitDef:

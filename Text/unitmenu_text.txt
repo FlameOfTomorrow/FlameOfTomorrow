@@ -78,3 +78,17 @@ stats to capture an enemy.[X]
 ## UMText_PairUpDesc
 Move into an ally and[N]
 let them carry you.[X]
+
+##ArriveName
+ Arrive[X]
+ 
+##ArriveDesc
+Complete this chapter[NL]
+by having this unit arrive.[X]
+
+##EscapeName
+ Escape[X]
+ 
+##EscapeDesc
+Have this unit[NL]
+leave this chapter.[X]

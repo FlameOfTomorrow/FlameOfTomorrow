@@ -8,6 +8,8 @@
 
 #include "FE8 Nightmare modules\Chapter data editor\World Map Event table editor.event"
 
+#include "FE8 Nightmare modules\Class & Character editors\Class Level Cap Table.event"
+
 #include "FE8 Nightmare modules\Class & Character editors\FE8 Character Editor.event"
 
 #include "FE8 Nightmare modules\Class & Character editors\FE8 Class Editor.event"
@@ -15,6 +17,8 @@
 #include "FE8 Nightmare modules\Class & Character editors\Promotion Branch Editor.event"
 
 #include "FE8 Nightmare modules\Class & Character editors\Walking Sounds Editor.event"
+
+#include "FE8 Nightmare modules\Escape\Escape Quote Editor.event"
 
 #include "FE8 Nightmare modules\IERevamp Modules\FE8 Effect Anim Association Editor.event"
 

@@ -66,7 +66,7 @@ add	r7, #0x04	@prepare next pointer
 b	Loop
 
 End:
-ldr	r0,=#0x203A4D4
+ldr	r0,=#0x203A4D5
 mov	r1,#0
 strb	r1,[r0]
 pop	{r0-r7}
@@ -74,10 +74,10 @@ push	{r4}
 cmp	r0, #0x00
 bne	Skipmov
 mov	r0, #0x01
-ldr	r4,=#0x801d316
+ldr	r4,=#0x801d317
 b	Skipmore
 Skipmov:
-ldr	r4,=#0x801d310
+ldr	r4,=#0x801d311
 Skipmore:
 mov	lr, r4
 pop	{r4}

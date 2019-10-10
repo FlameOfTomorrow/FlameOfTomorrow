@@ -1,5 +1,7 @@
 // Comment out options to turn them off.
 
+#define USE_STRMAG_SPLIT
+
 // Define to remove all pre-defined level up and personal skills.
 // #define NoSkills
 

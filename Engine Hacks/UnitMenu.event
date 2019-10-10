@@ -64,7 +64,13 @@ UnitMenuTable:
   //Use the macro MenuCommand(name,description,colour,usability,effect)
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
   //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
-
+  
+  #ifdef ESCAPE_ARRIVE
+    MenuCommand(0x67A, 0x6CC, BlueText, $08022FDD, $8023021)
+    MenuCommand(ArriveName, ArriveDesc, BlueText, ArriveCheck|IsPointer, $8023021)
+    MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeLordUsability|IsPointer, $8023021)
+    MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeGeneralUsability|IsPointer, EscapeGeneralEffect|IsPointer)
+  #endif // ESCAPE_ARIVE
   UM_Seize
   MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
   // UM_Attack
@@ -106,6 +112,15 @@ UnitMenuTable:
   // UM_Support
   MenuCommand(0x681, 0x6ca, GreenText, 0x23d15, 0x23d65)
   UM_Visit
+  
+  #ifdef RAID
+    MenuCommand(RaidNameText,RaidDescText,NormalText,RaidUsability,RaidEffect)
+  #endif // RAID
+  
+  #ifdef STAIRS_ASM
+	MenuCommand(StairsNameText,StairsDescText,GreenText,StairsUsability,StairsEffect)
+  #endif // STAIRS_ASM
+  
   UM_Chest
   UM_Door
   UM_Armory
@@ -120,9 +135,7 @@ UnitMenuTable:
   MenuCommand(UM_Reposition, UM_RepositionDesc, NormalText, prRepositionCommand_Usability, prRepositionCommand_Effect)
   MenuCommand(UM_Swap,       UM_SwapDesc,       NormalText, prSwapCommand_Usability,       prSwapCommand_Effect)
   
-  //UM_Rescue
-  MenuCommand(0x689, 0x6C5, 0, 0x228A4, RescueEffect) //rescue
-  //MenuCommand(UMText_PairUp,UMText_PairUpDesc,0,RefugeUsability,PairUpEffect)  //pair up
+  UM_Rescue
   UM_Give
   UM_Take
   // MenuCommand(0x689, 0x6c5, 0, 0x228a4, RescueEffect) //rescue
