@@ -25,6 +25,10 @@ __TEXTPROCESS03A:
 #incbin ".TextEntries\text_buildfileLearnedSkillText.fetxt.dmp"
 setText($3A, __TEXTPROCESS03A)
 
+__TEXTPROCESS144:
+#incbin ".TextEntries\text_buildfileTalkFixText.fetxt.dmp"
+setText($144, __TEXTPROCESS144)
+
 __TEXTPROCESS03C:
 #incbin ".TextEntries\text_buildfileSS_TalkText.fetxt.dmp"
 setText($3C, __TEXTPROCESS03C)
@@ -1202,187 +1206,187 @@ __TEXTPROCESS7D9:
 setText($7D9, __TEXTPROCESS7D9)
 
 __TEXTPROCESS7DA:
-#incbin ".TextEntries\text_buildfileStoneStaffName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePaviseManualName.fetxt.dmp"
 setText($7DA, __TEXTPROCESS7DA)
 
 __TEXTPROCESS7DB:
-#incbin ".TextEntries\text_buildfileStoneStaffDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePaviseManualDescription.fetxt.dmp"
 setText($7DB, __TEXTPROCESS7DB)
 
 __TEXTPROCESS7DC:
-#incbin ".TextEntries\text_buildfilePoisonStaffName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePaviseManualUseText.fetxt.dmp"
 setText($7DC, __TEXTPROCESS7DC)
 
 __TEXTPROCESS7DD:
-#incbin ".TextEntries\text_buildfilePoisonStaffDesc.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAdeptManualName.fetxt.dmp"
 setText($7DD, __TEXTPROCESS7DD)
 
 __TEXTPROCESS7DE:
-#incbin ".TextEntries\text_buildfilePaviseManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAdeptManualDescription.fetxt.dmp"
 setText($7DE, __TEXTPROCESS7DE)
 
 __TEXTPROCESS7DF:
-#incbin ".TextEntries\text_buildfilePaviseManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAdeptManualUseText.fetxt.dmp"
 setText($7DF, __TEXTPROCESS7DF)
 
 __TEXTPROCESS7E0:
-#incbin ".TextEntries\text_buildfilePaviseManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAegisManualName.fetxt.dmp"
 setText($7E0, __TEXTPROCESS7E0)
 
 __TEXTPROCESS7E1:
-#incbin ".TextEntries\text_buildfileAdeptManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAegisManualDescription.fetxt.dmp"
 setText($7E1, __TEXTPROCESS7E1)
 
 __TEXTPROCESS7E2:
-#incbin ".TextEntries\text_buildfileAdeptManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAegisManualUseText.fetxt.dmp"
 setText($7E2, __TEXTPROCESS7E2)
 
 __TEXTPROCESS7E3:
-#incbin ".TextEntries\text_buildfileAdeptManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAstraManualName.fetxt.dmp"
 setText($7E3, __TEXTPROCESS7E3)
 
 __TEXTPROCESS7E4:
-#incbin ".TextEntries\text_buildfileAegisManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAstraManualDescription.fetxt.dmp"
 setText($7E4, __TEXTPROCESS7E4)
 
 __TEXTPROCESS7E5:
-#incbin ".TextEntries\text_buildfileAegisManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAstraManualUseText.fetxt.dmp"
 setText($7E5, __TEXTPROCESS7E5)
 
 __TEXTPROCESS7E6:
-#incbin ".TextEntries\text_buildfileAegisManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileBoonManualName.fetxt.dmp"
 setText($7E6, __TEXTPROCESS7E6)
 
 __TEXTPROCESS7E7:
-#incbin ".TextEntries\text_buildfileAstraManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileBoonManualDescription.fetxt.dmp"
 setText($7E7, __TEXTPROCESS7E7)
 
 __TEXTPROCESS7E8:
-#incbin ".TextEntries\text_buildfileAstraManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileBoonManualUseText.fetxt.dmp"
 setText($7E8, __TEXTPROCESS7E8)
 
 __TEXTPROCESS7E9:
-#incbin ".TextEntries\text_buildfileAstraManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileCantoPlusManualName.fetxt.dmp"
 setText($7E9, __TEXTPROCESS7E9)
 
 __TEXTPROCESS7EA:
-#incbin ".TextEntries\text_buildfileBoonManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileCantoPlusManualDescription.fetxt.dmp"
 setText($7EA, __TEXTPROCESS7EA)
 
 __TEXTPROCESS7EB:
-#incbin ".TextEntries\text_buildfileBoonManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileCantoPlusManualUseText.fetxt.dmp"
 setText($7EB, __TEXTPROCESS7EB)
 
 __TEXTPROCESS7EC:
-#incbin ".TextEntries\text_buildfileBoonManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileLunaManualName.fetxt.dmp"
 setText($7EC, __TEXTPROCESS7EC)
 
 __TEXTPROCESS7ED:
-#incbin ".TextEntries\text_buildfileCantoPlusManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileLunaManualDescription.fetxt.dmp"
 setText($7ED, __TEXTPROCESS7ED)
 
 __TEXTPROCESS7EE:
-#incbin ".TextEntries\text_buildfileCantoPlusManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileLunaManualUseText.fetxt.dmp"
 setText($7EE, __TEXTPROCESS7EE)
 
 __TEXTPROCESS7EF:
-#incbin ".TextEntries\text_buildfileCantoPlusManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileNihilManualName.fetxt.dmp"
 setText($7EF, __TEXTPROCESS7EF)
 
 __TEXTPROCESS7F0:
-#incbin ".TextEntries\text_buildfileLunaManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileNihilManualDescription.fetxt.dmp"
 setText($7F0, __TEXTPROCESS7F0)
 
 __TEXTPROCESS7F1:
-#incbin ".TextEntries\text_buildfileLunaManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileNihilManualUseText.fetxt.dmp"
 setText($7F1, __TEXTPROCESS7F1)
 
 __TEXTPROCESS7F2:
-#incbin ".TextEntries\text_buildfileLunaManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileNullifyManualName.fetxt.dmp"
 setText($7F2, __TEXTPROCESS7F2)
 
 __TEXTPROCESS7F3:
-#incbin ".TextEntries\text_buildfileNihilManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileNullifyManualDescription.fetxt.dmp"
 setText($7F3, __TEXTPROCESS7F3)
 
 __TEXTPROCESS7F4:
-#incbin ".TextEntries\text_buildfileNihilManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileNullifyManualUseText.fetxt.dmp"
 setText($7F4, __TEXTPROCESS7F4)
 
 __TEXTPROCESS7F5:
-#incbin ".TextEntries\text_buildfileNihilManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileParagonManualName.fetxt.dmp"
 setText($7F5, __TEXTPROCESS7F5)
 
 __TEXTPROCESS7F6:
-#incbin ".TextEntries\text_buildfileNullifyManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileParagonManualDescription.fetxt.dmp"
 setText($7F6, __TEXTPROCESS7F6)
 
 __TEXTPROCESS7F7:
-#incbin ".TextEntries\text_buildfileNullifyManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileParagonManualUseText.fetxt.dmp"
 setText($7F7, __TEXTPROCESS7F7)
 
 __TEXTPROCESS7F8:
-#incbin ".TextEntries\text_buildfileNullifyManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePassManualName.fetxt.dmp"
 setText($7F8, __TEXTPROCESS7F8)
 
 __TEXTPROCESS7F9:
-#incbin ".TextEntries\text_buildfileParagonManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePassManualDescription.fetxt.dmp"
 setText($7F9, __TEXTPROCESS7F9)
 
 __TEXTPROCESS7FA:
-#incbin ".TextEntries\text_buildfileParagonManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePassManualUseText.fetxt.dmp"
 setText($7FA, __TEXTPROCESS7FA)
 
 __TEXTPROCESS7FB:
-#incbin ".TextEntries\text_buildfileParagonManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRenewalManualName.fetxt.dmp"
 setText($7FB, __TEXTPROCESS7FB)
 
 __TEXTPROCESS7FC:
-#incbin ".TextEntries\text_buildfilePassManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRenewalManualDescription.fetxt.dmp"
 setText($7FC, __TEXTPROCESS7FC)
 
 __TEXTPROCESS7FD:
-#incbin ".TextEntries\text_buildfilePassManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRenewalManualUseText.fetxt.dmp"
 setText($7FD, __TEXTPROCESS7FD)
 
 __TEXTPROCESS7FE:
-#incbin ".TextEntries\text_buildfilePassManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSolManualName.fetxt.dmp"
 setText($7FE, __TEXTPROCESS7FE)
 
 __TEXTPROCESS7FF:
-#incbin ".TextEntries\text_buildfileRenewalManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSolManualDescription.fetxt.dmp"
 setText($7FF, __TEXTPROCESS7FF)
 
 __TEXTPROCESS800:
-#incbin ".TextEntries\text_buildfileRenewalManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSolManualUseText.fetxt.dmp"
 setText($800, __TEXTPROCESS800)
 
 __TEXTPROCESS801:
-#incbin ".TextEntries\text_buildfileRenewalManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileWrathManualName.fetxt.dmp"
 setText($801, __TEXTPROCESS801)
 
 __TEXTPROCESS802:
-#incbin ".TextEntries\text_buildfileSolManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileWrathManualDescription.fetxt.dmp"
 setText($802, __TEXTPROCESS802)
 
 __TEXTPROCESS803:
-#incbin ".TextEntries\text_buildfileSolManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileWrathManualUseText.fetxt.dmp"
 setText($803, __TEXTPROCESS803)
 
 __TEXTPROCESS804:
-#incbin ".TextEntries\text_buildfileSolManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileStoneStaffName.fetxt.dmp"
 setText($804, __TEXTPROCESS804)
 
 __TEXTPROCESS805:
-#incbin ".TextEntries\text_buildfileWrathManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileStoneStaffDesc.fetxt.dmp"
 setText($805, __TEXTPROCESS805)
 
 __TEXTPROCESS806:
-#incbin ".TextEntries\text_buildfileWrathManualDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePoisonStaffName.fetxt.dmp"
 setText($806, __TEXTPROCESS806)
 
 __TEXTPROCESS807:
-#incbin ".TextEntries\text_buildfileWrathManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePoisonStaffDesc.fetxt.dmp"
 setText($807, __TEXTPROCESS807)
 
 __TEXTPROCESS808:

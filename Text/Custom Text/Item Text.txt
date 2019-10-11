@@ -162,3 +162,17 @@ skill Wrath.[X]
 ## WrathManualUseText
 If HP < 50%,[N]
 +20 crit rate.[X]
+
+## StoneStaffName
+Stone[X]
+
+##StoneStaffDesc
+Incases enemies in[N]
+stone for a while.[X]
+
+##PoisonStaffName
+Poison[X]
+
+##PoisonStaffDesc
+Inflicts poison on[N]
+enemies for a while.[X]

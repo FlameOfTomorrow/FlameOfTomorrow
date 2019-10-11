@@ -41,3 +41,9 @@
 #define WrathManualIcon 0xD4
 
 #define StarIcon 0xCA
+
+#define StoneStaff 0xBC
+#define StoneStaffIcon 0xCB
+
+#define PoisonStaff 0xBD
+#define PoisonStaffIcon 0xCC
