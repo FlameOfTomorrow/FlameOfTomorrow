@@ -48,6 +48,19 @@ b EndRanks
 EndRanks:
 pop {r5-r7}
 
+.set ss_talkloc, (SS_TalkText - . - 6)
+  ldr r0, =ss_talkloc
+  add r0, pc
+  ldr r0, [r0]
+draw_talk_text_at 14, 8
+
+draw_trv_text_at 22, 8
+
 blh      DrawSupports
 
 page_end
+
+.include "Get Talkee.asm"
+
+SS_TalkText:
+
