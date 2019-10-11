@@ -1,7 +1,7 @@
-#0x3C SS_TalkText
+#0x144 SS_TalkText
 Talk[X]
 
-## SS_SkillsText
+#0x3B SS_SkillsText
 Skills[X]
 
 ## SS_TalkRText

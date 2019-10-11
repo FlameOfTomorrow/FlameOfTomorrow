@@ -56,3 +56,7 @@
 
 #define EmeraldAxe 0xB3
 #define EmeraldAxeIcon 0xBE
+
+#define WeaponSkillIcon 0xCD
+#define ItemSkillIcon 0xCE
+

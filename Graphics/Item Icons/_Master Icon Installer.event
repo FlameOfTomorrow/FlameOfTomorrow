@@ -119,3 +119,16 @@ PUSH
 ORG WeaponIconOffset(EmeraldAxeIcon)
 #incext Png2Dmp "Icons/EmeraldAxe.png"
 POP
+
+// Weapon Skill Icon
+PUSH
+ORG WeaponIconOffset(WeaponSkillIcon)
+#incext Png2Dmp "Icons/WeaponSkillIcon.png"
+POP
+
+// Equipment Skill Icon
+PUSH
+ORG WeaponIconOffset(ItemSkillIcon)
+#incext Png2Dmp "Icons/ItemSkillIcon.png"
+POP
+

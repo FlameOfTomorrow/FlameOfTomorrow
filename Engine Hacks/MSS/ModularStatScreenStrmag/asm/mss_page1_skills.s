@@ -41,12 +41,12 @@ IsPlayerUnit:
 str		r0,[sp,#0x14]
 
 draw_textID_at 13, 3, textID=0x4fe, growth_func=2 @str
-draw_textID_at 13, 5, textID=0x4ff, growth_func=3 @mag
-draw_textID_at 13, 7, textID=0x4EC, growth_func=4 @skl
-draw_textID_at 13, 9, textID=0x4ED, growth_func=5 @spd
-draw_textID_at 22, 3, textID=0x4ee, growth_func=6 @luck
-draw_textID_at 22, 5, textID=0x4ef, growth_func=7 @def
+draw_textID_at 22, 3, textID=0x4ff, growth_func=3 @mag
+draw_textID_at 13, 5, textID=0x4EC, growth_func=4 @skl
+draw_textID_at 22, 5, textID=0x4ED, growth_func=5 @spd
+draw_textID_at 13, 7, textID=0x4ef, growth_func=7 @def
 draw_textID_at 22, 7, textID=0x4f0, growth_func=8 @res
+draw_textID_at 13, 9, textID=0x4ee, growth_func=6 @luck
 
 b 	NoRescue
 .ltorg 
@@ -80,19 +80,19 @@ ldr		r0,[r0,#4]		@str growth getter
 draw_growth_at 18, 3
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#8]		@mag growth getter
-draw_growth_at 18, 5
-ldr		r0,[sp,#0xC]
-ldr		r0,[r0,#12]		@skl growth getter
-draw_growth_at 18, 7
-ldr		r0,[sp,#0xC]
-ldr		r0,[r0,#16]		@spd growth getter
-draw_growth_at 18, 9
-ldr		r0,[sp,#0xC]
-ldr		r0,[r0,#20]		@luk growth getter
 draw_growth_at 27, 3
 ldr		r0,[sp,#0xC]
-ldr		r0,[r0,#24]		@def growth getter
+ldr		r0,[r0,#12]		@skl growth getter
+draw_growth_at 18, 5
+ldr		r0,[sp,#0xC]
+ldr		r0,[r0,#16]		@spd growth getter
 draw_growth_at 27, 5
+ldr		r0,[sp,#0xC]
+ldr		r0,[r0,#20]		@luk growth getter
+draw_growth_at 18, 9
+ldr		r0,[sp,#0xC]
+ldr		r0,[r0,#24]		@def growth getter
+draw_growth_at 18, 7
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#28]		@res growth getter
 draw_growth_at 27, 7
@@ -108,40 +108,30 @@ b		ShowStats3
 
 NextColumn:
 
-draw_textID_at 13, 14, textID=0x4f7 @con
-draw_con_bar_with_getter_at 16, 14
+draw_textID_at 13, 11, textID=0x4f7 @con
+draw_con_bar_with_getter_at 16, 11
 
 
-draw_textID_at 13, 16, textID=0x4f8 @aid
-draw_number_at 17, 16, 0x80189B8, 2 @aid getter
-draw_aid_icon_at 19, 16
+draw_textID_at 22, 11, textID=0x4f8 @aid
+draw_number_at 26, 11, 0x80189B8, 2 @aid getter
+draw_aid_icon_at 27, 11
 
-draw_status_text_at 13, 18
+draw_status_text_at 13, 13
 
 @draw_textID_at 21, 9, textID=0x4f1 @affin
 
 draw_affinity_icon_at 1, 10
 
-@draw_textID_at 22, 9, textID=0x0028
-@mov		r0, r8
-@ldr		r3, GetLeadershipStarCount
-@sub		r3, #1 @get rid of unnecessary thumb bit
-@mov		lr, r3
-@.short 0xF800
-@push	{r0}
-@draw_number_at 26, 9
-@pop 	{r0}
-@cmp		r0,#0xFF
-@beq		DontDrawIcon
-@draw_icon_at 27, 9, 0xCA @change this to the ID you put the icon in
-@DontDrawIcon:
+
+draw_icon_at 23, 15, 0xCD
+draw_icon_at 23, 17, 0xCE
 
 
 .set ss_skillloc, (SS_SkillsText - . - 6)
   ldr r0, =ss_skillloc
   add r0, pc
   ldr r0, [r0]
-draw_textID_at 24, 13, colour=White @skills
+draw_textID_at 13, 16, colour=White @skills
 mov r0, r8
 mov 	r1,#0x47
 ldrb	r0,[r0,r1]
@@ -158,14 +148,14 @@ b skipliterals
 
 ShowStats3:
 draw_str_bar_at 16, 3
-draw_mag_bar_at 16, 5
-draw_skl_bar_at 16, 7
-draw_spd_bar_at 16, 9
-draw_luck_bar_at 25, 3
-draw_def_bar_at 25, 5
+draw_mag_bar_at 25, 3
+draw_skl_bar_at 16, 5
+draw_spd_bar_at 25, 5
+draw_luck_bar_at 16, 9
+draw_def_bar_at 16, 7
 draw_res_bar_at 25, 7
-draw_textID_at 13, 12, 0x4f6 @move
-draw_move_bar_with_getter_at 16, 12
+draw_textID_at 22, 9, 0x4f6 @move
+draw_move_bar_with_getter_at 25, 9
 
 b		NextColumn
 .ltorg
@@ -181,37 +171,53 @@ mov r6, r0
 ldrb r0, [r6] 
 cmp r0, #0
 beq SkillEnd
-draw_skill_icon_at 22, 15
+draw_skill_icon_at 16, 15
 
 ldrb r0, [r6,#1]
 cmp r0, #0
 beq SkillEnd
-draw_skill_icon_at 24, 15
+draw_skill_icon_at 18, 15
 
 ldrb r0, [r6, #2]
 cmp r0, #0
 beq SkillEnd
-draw_skill_icon_at 26, 15
+draw_skill_icon_at 20, 15
 
 ldrb r0, [r6, #3]
 cmp r0, #0
 beq SkillEnd
-draw_skill_icon_at 22, 17
+draw_skill_icon_at 16, 17
 
 ldrb r0, [r6, #4]
 cmp r0, #0
 beq SkillEnd
-draw_skill_icon_at 24, 17
+draw_skill_icon_at 18, 17
 
 ldrb r0, [r6, #5]
 cmp r0, #0
 beq SkillEnd
-draw_skill_icon_at 26, 17
+draw_skill_icon_at 20, 17
 
 SkillEnd:
 
 @ draw_textID_at 13, 15, textID=0x4f6 @move
 @ draw_move_bar_at 16, 15
+
+draw_textID_at 22, 13, textID=0x0028
+mov		r0, r8
+ldr		r3, GetLeadershipStarCount
+sub		r3, #1 @get rid of unnecessary thumb bit
+mov		lr, r3
+.short 0xF800
+push	{r0}
+draw_number_at 26, 13
+pop 	{r0}
+cmp		r0,#0xFF
+beq		DontDrawIcon
+draw_icon_at 27, 13, 0xCA @change this to the ID you put the icon in
+DontDrawIcon:
+
+
 
 @blh DrawBWLNumbers
 
