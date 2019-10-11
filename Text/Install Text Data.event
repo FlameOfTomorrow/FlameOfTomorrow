@@ -26,10 +26,6 @@ __TEXTPROCESS03A:
 setText($3A, __TEXTPROCESS03A)
 
 __TEXTPROCESS144:
-#incbin ".TextEntries\text_buildfileTalkFixText.fetxt.dmp"
-setText($144, __TEXTPROCESS144)
-
-__TEXTPROCESS03C:
 #incbin ".TextEntries\text_buildfileSS_TalkText.fetxt.dmp"
 setText($144, __TEXTPROCESS144)
 
