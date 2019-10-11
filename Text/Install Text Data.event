@@ -1390,12 +1390,28 @@ __TEXTPROCESS807:
 setText($807, __TEXTPROCESS807)
 
 __TEXTPROCESS808:
-#incbin ".TextEntries\text_buildfileHuntsmanName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileRubySwordName.fetxt.dmp"
 setText($808, __TEXTPROCESS808)
 
 __TEXTPROCESS809:
-#incbin ".TextEntries\text_buildfileHuntsmanDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSapphireLanceName.fetxt.dmp"
 setText($809, __TEXTPROCESS809)
+
+__TEXTPROCESS80A:
+#incbin ".TextEntries\text_buildfileEmeraldAxeName.fetxt.dmp"
+setText($80A, __TEXTPROCESS80A)
+
+__TEXTPROCESS80B:
+#incbin ".TextEntries\text_buildfileGemstoneDescription.fetxt.dmp"
+setText($80B, __TEXTPROCESS80B)
+
+__TEXTPROCESS80C:
+#incbin ".TextEntries\text_buildfileHuntsmanName.fetxt.dmp"
+setText($80C, __TEXTPROCESS80C)
+
+__TEXTPROCESS80D:
+#incbin ".TextEntries\text_buildfileHuntsmanDescription.fetxt.dmp"
+setText($80D, __TEXTPROCESS80D)
 
 }
 

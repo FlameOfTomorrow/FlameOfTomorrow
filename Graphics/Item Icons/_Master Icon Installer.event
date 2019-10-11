@@ -101,3 +101,21 @@ PUSH
 ORG WeaponIconOffset(PoisonStaffIcon)
 #incext Png2Dmp "Icons/PoisonStaff.png"
 POP
+
+// Ruby Sword
+PUSH
+ORG WeaponIconOffset(RubySwordIcon)
+#incext Png2Dmp "Icons/RubySword.png"
+POP
+
+// Sapphire Lance
+PUSH
+ORG WeaponIconOffset(SapphireLanceIcon)
+#incext Png2Dmp "Icons/SapphireLance.png"
+POP
+
+// Emerald Axe
+PUSH
+ORG WeaponIconOffset(EmeraldAxeIcon)
+#incext Png2Dmp "Icons/EmeraldAxe.png"
+POP

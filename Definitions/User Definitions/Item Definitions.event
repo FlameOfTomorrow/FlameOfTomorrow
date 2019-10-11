@@ -47,3 +47,12 @@
 
 #define PoisonStaff 0xBD
 #define PoisonStaffIcon 0xCC
+
+#define RubySword 0xB1
+#define RubySwordIcon 0xD5
+
+#define SapphireLance 0xB2
+#define SapphireLanceIcon 0xD6
+
+#define EmeraldAxe 0xB3
+#define EmeraldAxeIcon 0xBE

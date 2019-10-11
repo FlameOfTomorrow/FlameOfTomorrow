@@ -336,7 +336,11 @@
 #define StoneStaffDesc $805
 #define PoisonStaffName $806
 #define PoisonStaffDesc $807
-#define HuntsmanName $808
-#define HuntsmanDescription $809
+#define RubySwordName $808
+#define SapphireLanceName $809
+#define EmeraldAxeName $80A
+#define GemstoneDescription $80B
+#define HuntsmanName $80C
+#define HuntsmanDescription $80D
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT
