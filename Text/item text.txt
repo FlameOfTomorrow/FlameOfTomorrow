@@ -51,15 +51,3 @@ Doubles the weapon traingle's effects.[X]
 
 ## ReaverDescription
 Inverts and triples the weapon triangle.[X]
-
-## StoneStaffName
-Stone[X]
-
-##StoneStaffDesc
-[X]
-
-##PoisonStaffName
-Poison[X]
-
-##PoisonStaffDesc
-[X]

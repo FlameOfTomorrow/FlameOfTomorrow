@@ -84,8 +84,20 @@ ORG WeaponIconOffset(WrathManualIcon)
 #incext Png2Dmp "Icons/WrathSkillBook.png"
 POP
 
-//Leadership Star
+// Leadership Star
 PUSH
 ORG WeaponIconOffset(StarIcon)
 #incext Png2Dmp "Icons/StarIcon.png"
+POP
+
+// Stone Staff
+PUSH
+ORG WeaponIconOffset(StoneStaffIcon)
+#incext Png2Dmp "Icons/StoneStaff.png"
+POP
+
+// Poison Staff
+PUSH
+ORG WeaponIconOffset(PoisonStaffIcon)
+#incext Png2Dmp "Icons/PoisonStaff.png"
 POP

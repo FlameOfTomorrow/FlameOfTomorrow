@@ -11,6 +11,9 @@ Set health bar display[X]
 #first text ID in the free block
 Learned  [X]
 
+#0x144 TalkFixText
+Talk[X]
+
 #include "statscreen_text.txt"
 
 #include "unitmenu_text.txt"
