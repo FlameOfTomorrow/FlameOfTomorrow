@@ -122,19 +122,6 @@ draw_status_text_at 13, 13
 
 draw_affinity_icon_at 1, 10
 
-@draw_textID_at 22, 13, textID=0x0028
-@mov		r0, r8
-@ldr		r3, GetLeadershipStarCount
-@sub		r3, #1 @get rid of unnecessary thumb bit
-@mov		lr, r3
-@.short 0xF800
-@push	{r0}
-@draw_number_at 26, 13
-@pop 	{r0}
-@cmp		r0,#0xFF
-@beq		DontDrawIcon
-@draw_icon_at 27, 13, 0xCA @change this to the ID you put the icon in
-@DontDrawIcon:
 
 draw_icon_at 23, 15, 0xCD
 draw_icon_at 23, 17, 0xCE
@@ -215,6 +202,20 @@ SkillEnd:
 
 @ draw_textID_at 13, 15, textID=0x4f6 @move
 @ draw_move_bar_at 16, 15
+
+draw_textID_at 22, 13, textID=0x0028
+mov		r0, r8
+ldr		r3, GetLeadershipStarCount
+sub		r3, #1 @get rid of unnecessary thumb bit
+mov		lr, r3
+.short 0xF800
+push	{r0}
+draw_number_at 26, 13
+pop 	{r0}
+cmp		r0,#0xFF
+beq		DontDrawIcon
+draw_icon_at 27, 13, 0xCA @change this to the ID you put the icon in
+DontDrawIcon:
 
 
 
