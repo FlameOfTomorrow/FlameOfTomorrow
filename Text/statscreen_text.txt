@@ -1,4 +1,4 @@
-#0x3B SS_TalkText
+#0x3C SS_TalkText
 Talk[X]
 
 ## SS_SkillsText
@@ -25,3 +25,6 @@ stats and skills.[X]
 
 ## DonateURL
 donorbox.org/donate-to-circles[X]
+
+## WeaponRankDesc
+WeaponRankDesc[X]

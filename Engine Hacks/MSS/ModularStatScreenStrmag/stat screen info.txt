@@ -1,0 +1,49 @@
+Every Page
+Affinity: 1,10 @draw_affinity_icon_at 1, 10 ; 
+
+Page 1
+name: ; left affinity, right spd, up none, down class
+class: ; left none, right move, up name, down level
+level: ; left none, right hp, up class, down hp
+exp: ; left level, right aid, up class, down hp
+hp: ; left none, right cond, up level, down none
+
+affinity: 1,10 ; left none, right name, up none, down class
+
+Str: 13,3 ; left name, right luck, up none, down mag
+Mag: 13,5 ; left name, right def, up str, down skl
+Skl: 13,7 ; left name, right res, up mag, down spd
+Spd: 13,9 ; left name, right lead, up skl, down move
+
+Lck: 22,3 ; left str, right none, up none, down def
+Def: 22,5 ; left mag, right none, up luck, down res
+Res: 22,7 ; left skl, right none, up def, down lead
+Lead: 22,9 ; left spd, right none, up res, down skills
+
+Move: 13,12 ; left class, right skills, up spd, down con
+Con: 13,14 ; left class, right skill1, up move, down aid
+Aid: 13,16 ; left lvl, right skill1, up con, down cond
+Cond: 13,18 ; left hp, right skill1, up aid, down none
+
+Skills: 24,13 ; left move, right, none, up lead, down skill1
+Skill1: 22,15 ; left con, right skill2, up skills, down skill4
+Skill2: 24,15 ; left skill1, right skill3, up skills, down skill5
+Skill3: 26,15 ; left skill2, right weaponskill, up skills, down skill6
+Skill4: 22,17 ; left aid, right skill5, up skill1, down none
+Skill5: 24,17 ; left skill4, right skill6, up skill2, down none
+Skill6: 26,17 ; left skill5, right itemskill, up skill3, down done
+WeaponSkill: 28,15 ; left skill3, right none, up skills, down itemskill
+ItemSkill: 28,17 ; left skill6, right none, up weaponskill, down none
+
+Page 3
+Weapon1: 14,4 ; 
+Weapon2: 22,4 ; 
+Weapon3: 14,6 ; 
+Weapon4: 22,6 ; 
+Talk: 14,8 ; 
+Trv: 22,8
+Support1: 16,10
+Support2: 16,12
+Support3: 16,14
+Support4: 16,16
+Support5: 16,18
