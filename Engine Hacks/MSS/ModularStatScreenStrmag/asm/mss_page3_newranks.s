@@ -63,4 +63,4 @@ page_end
 .include "Get Talkee.asm"
 
 SS_TalkText:
-
+@WORD SS_TalkText
