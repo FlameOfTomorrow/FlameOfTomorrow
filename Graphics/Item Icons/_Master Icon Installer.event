@@ -101,3 +101,15 @@ PUSH
 ORG WeaponIconOffset(PoisonStaffIcon)
 #incext Png2Dmp "Icons/PoisonStaff.png"
 POP
+
+//Skill Icon ones
+PUSH
+ORG WeaponIconOffset(WeaponSkillIcon)
+#incext Png2Dmp "Icons/WeaponSkillIcon.png"
+POP
+
+PUSH
+ORG WeaponIconOffset(ItemSkillIcon)
+#incext Png2Dmp "Icons/ItemSkillIcon.png"
+POP
+

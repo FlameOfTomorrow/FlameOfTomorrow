@@ -47,3 +47,7 @@
 
 #define PoisonStaff 0xBD
 #define PoisonStaffIcon 0xCC
+
+#define WeaponSkillIcon 0xCD
+#define ItemSkillIcon 0xCE
+
