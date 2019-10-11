@@ -102,12 +102,31 @@ ORG WeaponIconOffset(PoisonStaffIcon)
 #incext Png2Dmp "Icons/PoisonStaff.png"
 POP
 
-//Skill Icon ones
+// Ruby Sword
+PUSH
+ORG WeaponIconOffset(RubySwordIcon)
+#incext Png2Dmp "Icons/RubySword.png"
+POP
+
+// Sapphire Lance
+PUSH
+ORG WeaponIconOffset(SapphireLanceIcon)
+#incext Png2Dmp "Icons/SapphireLance.png"
+POP
+
+// Emerald Axe
+PUSH
+ORG WeaponIconOffset(EmeraldAxeIcon)
+#incext Png2Dmp "Icons/EmeraldAxe.png"
+POP
+
+// Weapon Skill Icon
 PUSH
 ORG WeaponIconOffset(WeaponSkillIcon)
 #incext Png2Dmp "Icons/WeaponSkillIcon.png"
 POP
 
+// Equipment Skill Icon
 PUSH
 ORG WeaponIconOffset(ItemSkillIcon)
 #incext Png2Dmp "Icons/ItemSkillIcon.png"

@@ -176,3 +176,15 @@ Poison[X]
 ##PoisonStaffDesc
 Inflicts poison on[N]
 enemies for a while.[X]
+
+##RubySwordName
+Ruby Sword[X]
+
+##SapphireLanceName
+Sphr. Lance[X]
+
+##EmeraldAxeName
+Emerald Axe[X]
+
+##GemstoneDescription
+Doubles triangle effects.[X]
