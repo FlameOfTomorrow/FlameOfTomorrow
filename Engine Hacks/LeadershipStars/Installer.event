@@ -35,6 +35,8 @@ LeadershipTable:
 BYTE Eirika 2
 BYTE Ephraim 2
 BYTE Seth 1
+BYTE Franz 0
+BYTE Gilliam 0
 // ENEMIES
 BYTE ONeill 1
 BYTE Breguet 1
