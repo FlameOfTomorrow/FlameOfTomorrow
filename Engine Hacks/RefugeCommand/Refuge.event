@@ -1,10 +1,8 @@
 ALIGN 4
-MESSAGE RefugeUsability at currentOffset
 RefugeUsability:
 #incbin "RefugeUsability.dmp"
 POIN RefugeTargetList|1
 
 ALIGN 4
-MESSAGE RefugeTargetList at currentOffset
 RefugeTargetList:
 #incbin "RefugeTargetList.dmp"

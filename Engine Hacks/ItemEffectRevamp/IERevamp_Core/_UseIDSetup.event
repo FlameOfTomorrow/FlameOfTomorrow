@@ -19,7 +19,7 @@
 
 #ifdef _FE8_
 	ALIGN 4
-	MESSAGE Applying Item Effect Revamp
+	//MESSAGE Applying Item Effect Revamp
 	
 	/*
 	EffectJumpTable:

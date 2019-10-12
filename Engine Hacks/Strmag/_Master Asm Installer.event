@@ -30,7 +30,6 @@
 	#include "Chapter.event"
 	
 	// #include "Suspend.event"
-	MESSAGE why
 	ALIGN 4 //get item mag bonus
     GetItemMagBonus:
     #incbin "../StatGetters/_asm/GetItemMagBonus.dmp"
