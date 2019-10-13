@@ -30,6 +30,7 @@
 #define EphraimLock 0x8
 #define WeaponLock3 0x10
 #define WeaponLock4 0x20
+#define IsAccessory 0x40
 #define DoubleWT 0x40
 #define NegateWT 0x80
 
