@@ -645,3 +645,7 @@ ORG SkillIcon(BlossomID)
 
 ORG SkillIcon(AptitudeID)
 #incext Png2Dmp "Skill Icons/Aptitude.png"
+
+ORG SkillIcon(TomeRangeUpID)
+#incext Png2Dmp "Skill Icons/TomeRangePlus.png"
+
