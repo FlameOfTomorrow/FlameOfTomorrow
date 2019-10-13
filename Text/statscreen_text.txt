@@ -28,3 +28,10 @@ donorbox.org/donate-to-circles[X]
 
 ## WeaponRankDesc
 WeaponRankDesc[X]
+
+## WeaponSkillDesc
+WeaponSkillDesc[X]
+
+## ItemSkillDesc
+ItemSkillDesc[X]
+

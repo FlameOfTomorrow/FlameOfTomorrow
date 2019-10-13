@@ -138,7 +138,6 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD PassID
 
-MESSAGE Pavise book at currentOffset
 // Pavise
 ALIGN 4
 PaviseScrollUsability:
