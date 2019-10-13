@@ -5,6 +5,7 @@
 #include "../MSG/InstallHelpers.event"
 #include "../MSG/Extensions/SkillSystem.event"
 #include "../MSG/Extensions/PassiveItemStatBonuses.event"
+#include "../MSG/Extensions/Accessory.event"
 
 #include "_Common.event"
 
