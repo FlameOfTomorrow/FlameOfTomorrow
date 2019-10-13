@@ -1,4 +1,5 @@
 #include "Defs.event"
+#include "AccessoryEffectDefinitions.event"
 
 //PUSH
 // No ideas where else to put this so I put it here
@@ -88,10 +89,10 @@ WORD 0xA000D4B; POIN ASMC_GiveUnitExp|1
 NoFade
 ENDA
 
-MESSAGE Give Unit Exp ASMC_GiveUnitExp
+//MESSAGE Give Unit Exp ASMC_GiveUnitExp
 
 ALIGN 4
 AE_ExpShareID:
-//BYTE AE_ExpShare
+BYTE AE_ExpShare
 
 ALIGN 4
