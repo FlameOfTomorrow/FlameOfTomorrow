@@ -239,6 +239,14 @@ mov lr, r3
 .short 0xF800
 cmp r0, #0
 beq Move
+mov r1, #36 @size of the item table
+mul r0, r1
+ldr r1, ItemTable
+add r0, r1 
+mov r1, #35 @last byte in the item tables
+ldrb r0, [r0, r1]
+cmp r0,#0
+beq Move
 draw_skill_icon_at 25, 17
 
 Move:

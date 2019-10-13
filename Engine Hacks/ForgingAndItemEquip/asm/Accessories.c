@@ -99,11 +99,7 @@ int AccessoryEffectTester(struct Unit *unit, int AccessoryEffectID) {
 
 int AccessorySkillGetter(struct Unit *unit) {
 	int item = EquippedAccessoryGetter(unit);
-	if(!item) return 0;
-	if (AccessoryEffectTester(unit, 1)) { // Test if Accessory has the Skill effect
-		return GetItemData(ITEM_INDEX(EquippedAccessoryGetter(unit)))->hit;
-	}
-	return 0;
+	return item;
 }
 
 void ExpShareAccessoryEffect(struct BattleUnit *Attacker, struct BattleUnit *Defender) {
