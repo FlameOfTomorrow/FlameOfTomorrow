@@ -73,7 +73,7 @@ csvmacro015(PassScrollUsability | IsPointer,PassScrollUsability | IsPointer,0x80
 csvmacro015(RenewalScrollUsability | IsPointer,RenewalScrollUsability | IsPointer,0x802905c,RenewalScrollEffect | IsPointer)
 csvmacro015(SolScrollUsability | IsPointer,SolScrollUsability | IsPointer,0x802905c,SolScrollEffect | IsPointer)
 csvmacro015(WrathScrollUsability | IsPointer,WrathScrollUsability | IsPointer,0x802905c,WrathScrollEffect | IsPointer)
-csvmacro015(0x8028c04,0x802a100,0x802905c,0x802ff76)
+csvmacro015(0x28B4C|IsPointer,0x2A0D0|IsPointer,0x802905c,0x2FF40|IsPointer)
 csvmacro015(0x8028c04,0x802a100,0x802905c,0x802ff76)
 csvmacro015(0x8028c04,0x802a100,0x802905c,0x802ff76)
 csvmacro015(0x8028c04,0x802a100,0x802905c,0x802ff76)
