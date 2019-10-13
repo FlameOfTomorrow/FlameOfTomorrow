@@ -897,3 +897,7 @@ but 1/2 exp gain.[X]
 ##SD_Aptitude
 Aptitude: +20% to[N]
 all growth rates.[X]
+
+## SD_TomeRangeUp
+Tome Range +1: Maximum range[N]
+of equipped tome is increased.[X]
