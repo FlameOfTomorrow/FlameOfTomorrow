@@ -195,3 +195,10 @@ Caduceus[X]
 ##CaduceusDescription
 Increases the range[N]
 of staves by one.[X]
+
+##SpiritDustName
+Spirit Dust[X]
+
+##SpiritDustDesc
+SpiritDustDesc[X]
+

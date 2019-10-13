@@ -346,7 +346,9 @@
 #define GemstoneDescription $A2D
 #define CaduceusName $A2E
 #define CaduceusDescription $A2F
-#define HuntsmanName $A30
-#define HuntsmanDescription $A31
+#define SpiritDustName $A30
+#define SpiritDustDesc $A31
+#define HuntsmanName $A32
+#define HuntsmanDescription $A33
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

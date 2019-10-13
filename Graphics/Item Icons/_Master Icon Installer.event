@@ -137,3 +137,9 @@ PUSH
 ORG WeaponIconOffset(CaduceusIcon)
 #incext Png2Dmp "Icons/Caduceus.png"
 POP
+
+// Spirit Dust
+PUSH
+ORG WeaponIconOffset(SpiritDustIcon)
+#incext Png2Dmp "Icons/SpiritDust.png"
+POP

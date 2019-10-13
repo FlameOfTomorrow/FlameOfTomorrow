@@ -68,7 +68,7 @@ Pass Manual,PassScrollUsability | IsPointer,PassScrollUsability | IsPointer,0x80
 Renewal Manual,RenewalScrollUsability | IsPointer,RenewalScrollUsability | IsPointer,0x802905c,RenewalScrollEffect | IsPointer
 Sol Manual,SolScrollUsability | IsPointer,SolScrollUsability | IsPointer,0x802905c,SolScrollEffect | IsPointer
 Wrath Manual,WrathScrollUsability | IsPointer,WrathScrollUsability | IsPointer,0x802905c,WrathScrollEffect | IsPointer
-0x45,0x8028c04,0x802a100,0x802905c,0x802ff76
+Spirit Dust,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x46,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x47,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x48,0x8028c04,0x802a100,0x802905c,0x802ff76

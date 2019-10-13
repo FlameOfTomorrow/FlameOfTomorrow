@@ -1430,12 +1430,20 @@ __TEXTPROCESSA2F:
 setText($A2F, __TEXTPROCESSA2F)
 
 __TEXTPROCESSA30:
-#incbin ".TextEntries\text_buildfileHuntsmanName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSpiritDustName.fetxt.dmp"
 setText($A30, __TEXTPROCESSA30)
 
 __TEXTPROCESSA31:
-#incbin ".TextEntries\text_buildfileHuntsmanDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSpiritDustDesc.fetxt.dmp"
 setText($A31, __TEXTPROCESSA31)
+
+__TEXTPROCESSA32:
+#incbin ".TextEntries\text_buildfileHuntsmanName.fetxt.dmp"
+setText($A32, __TEXTPROCESSA32)
+
+__TEXTPROCESSA33:
+#incbin ".TextEntries\text_buildfileHuntsmanDescription.fetxt.dmp"
+setText($A33, __TEXTPROCESSA33)
 
 }
 

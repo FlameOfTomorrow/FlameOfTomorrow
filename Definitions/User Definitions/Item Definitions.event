@@ -62,3 +62,6 @@
 
 #define Caduceus 0xB4
 #define CaduceusIcon 0xBF
+
+#define SpiritDust 0xBE
+#define SpiritDustIcon 0xCF
