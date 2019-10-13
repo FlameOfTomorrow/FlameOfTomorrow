@@ -69,6 +69,7 @@ SkillTesterOriginal: //does unit have X skill?
 #incbin skillTester.dmp
 POIN Skill_Getter
 POIN ItemTable
+POIN AccessorySkillGetter
 
 SkillTester: //does enemy have Nihil? if so, does Nihil negate X skill?
 #incbin nihilTester.dmp
