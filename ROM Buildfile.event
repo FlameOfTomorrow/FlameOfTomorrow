@@ -34,6 +34,10 @@
 	//Maps
 	#include "Maps/Master Map Installer.event"
 	MESSAGE Map data ends at currentOffset
+	
+	//Music
+	#include "Music/Music Installer.event"
+	MESSAGE Music ends at currentOffset
 
     //Events
 	#include "Definitions/REDAs.event"

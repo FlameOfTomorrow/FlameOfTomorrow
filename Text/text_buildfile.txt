@@ -69,7 +69,12 @@ from the other side.[X]
 Destroy this village[NL]
 for items and gold.[X]
 
+## CannotEquipAccessoryTextID
+You can't equip[NL]
+this accessory.[X]
 
+## IM_UnequipAccessory
+Unequip[X]
 
 #include "skilldesc_text.txt"
 

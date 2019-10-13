@@ -1,0 +1,57 @@
+ALIGN 4
+Sample0:
+#incbin "Sample0.bin"
+
+ALIGN 4
+Sample1:
+#incbin "Sample1.bin"
+
+ALIGN 4
+Sample2:
+#incbin "Sample2.bin"
+
+ALIGN 4
+SampleDrum0:
+#incbin "SampleDrum0.bin"
+
+ALIGN 4
+SampleDrum1:
+#incbin "SampleDrum1.bin"
+
+ALIGN 4
+SampleDrum2:
+#incbin "SampleDrum2.bin"
+
+ALIGN 4
+SampleDrum3:
+#incbin "SampleDrum3.bin"
+
+ALIGN 4
+SampleDrum4:
+#incbin "SampleDrum4.bin"
+
+ALIGN 4
+SampleDrum5:
+#incbin "SampleDrum5.bin"
+
+ALIGN 4
+SampleDrum6:
+#incbin "SampleDrum6.bin"
+
+ALIGN 4
+SampleDrum7:
+#incbin "SampleDrum7.bin"
+
+ALIGN 4
+SampleDrum8:
+#incbin "SampleDrum8.bin"
+
+ALIGN 4
+SampleDrum9:
+#incbin "SampleDrum9.bin"
+
+ALIGN 4
+SampleDrum10:
+#incbin "SampleDrum10.bin"
+
+

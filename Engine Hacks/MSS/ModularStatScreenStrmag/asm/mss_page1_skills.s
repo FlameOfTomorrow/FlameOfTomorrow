@@ -16,6 +16,8 @@
 .set GetCharge, Get_Palette_Index+4
 .set MagClassTable, GetCharge+4
 .set GetLeadershipStarCount, MagClassTable+4
+.set AccessorySkillGetter, GetLeadershipStarCount+4
+.set ItemTable, AccessorySkillGetter+4
 
 page_start
 
@@ -148,7 +150,7 @@ b skipliterals
 
 ShowStats3:
 draw_str_bar_at 16, 3
-draw_mag_bar_at 25, 3
+
 draw_skl_bar_at 16, 5
 draw_spd_bar_at 25, 5
 draw_luck_bar_at 16, 9
@@ -200,6 +202,47 @@ draw_skill_icon_at 20, 17
 
 SkillEnd:
 
+@now check equipped weapon skill
+mov r0, r8
+ldrh r0, [r0, #0x1E]
+cmp r0, #0
+bne CheckForging
+b AccessorySkill
+
+CheckForging:
+mov r2, #0
+mov r1, #0x80
+lsl r1, #7
+and r1, r0
+cmp r1, #0
+beq ContinueItemSkill
+mov r2, #1
+
+ContinueItemSkill:
+mov r1, #0xFF @get the item id
+and r0, r1
+mov r1, #36 @size of the item table
+mul r0, r1
+ldr r1, ItemTable
+add r0, r1 
+mov r1, #35 @last byte in the item table
+sub r1, r2 @ Get Either the forged skill or the normal skill
+ldrb r0, [r0, r1]
+cmp r0, #0
+beq AccessorySkill
+draw_skill_icon_at 25, 15
+
+AccessorySkill:
+mov r0, r8
+ldr r3, AccessorySkillGetter
+mov lr, r3
+.short 0xF800
+cmp r0, #0
+beq Move
+draw_skill_icon_at 25, 17
+
+Move:
+
 @ draw_textID_at 13, 15, textID=0x4f6 @move
 @ draw_move_bar_at 16, 15
 
@@ -219,7 +262,7 @@ beq		DontDrawIcon
 draw_icon_at 27, 13, 0xCA @change this to the ID you put the icon in
 DontDrawIcon:
 
-
+draw_mag_bar_at 25, 3
 
 @blh DrawBWLNumbers
 

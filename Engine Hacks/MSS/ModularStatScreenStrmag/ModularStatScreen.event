@@ -136,6 +136,8 @@
 	WORD 0
 	POIN MagClassTable
 	POIN GetLeadershipStarCount
+	POIN AccessorySkillGetter
+	POIN ItemTable
   
   ALIGN 4
   MSS_page2:

@@ -1,0 +1,41 @@
+
+//ReferenceNote definitions
+#include "MPlayDef.event"
+#define midC Cn3
+
+//Sweepshift definitions
+#define NoShift 0x00
+#define add2bit 0x10
+#define add3bit 0x20
+#define add4bit 0x30
+#define add5bit 0x40
+#define add6bit 0x50
+#define add7bit 0x60
+#define add8bit 0x70
+#define sub2bit 0x80
+#define sub3bit 0xA0
+#define sub4bit 0xB0
+#define sub5bit 0xC0
+#define sub6bit 0xD0
+#define sub7bit 0xE0
+#define sub8bit 0xF0
+
+//Sweeptime definitions
+#define NoTime 0x00
+#define Time1 0x01
+#define Time2 0x02
+#define Time3 0x03
+#define Time4 0x04
+#define Time5 0x05
+#define Time6 0x06
+#define Time7 0x07
+
+//Square pattern definitions
+#define OneEighth 0x00
+#define OneFourth 0x01
+#define OneHalf 0x02
+#define ThreeFourths 0x03
+
+//Noise pattern definitions
+#define ManySamples 0x00
+#define LessSamples 0x01
