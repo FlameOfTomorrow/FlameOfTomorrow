@@ -188,3 +188,10 @@ Emerald Axe[X]
 
 ##GemstoneDescription
 Doubles triangle effects.[X]
+
+##CaduceusName
+Caduceus[X]
+
+##CaduceusDescription
+Increases the range[N]
+of staves by one.[X]

@@ -343,7 +343,9 @@
 #define SapphireLanceName $A2A
 #define EmeraldAxeName $A2B
 #define GemstoneDescription $A2C
-#define HuntsmanName $A2D
-#define HuntsmanDescription $A2E
+#define CaduceusName $A2D
+#define CaduceusDescription $A2E
+#define HuntsmanName $A2F
+#define HuntsmanDescription $A30
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

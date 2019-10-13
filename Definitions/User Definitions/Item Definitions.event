@@ -60,3 +60,5 @@
 #define WeaponSkillIcon 0xCD
 #define ItemSkillIcon 0xCE
 
+#define Caduceus 0xB4
+#define CaduceusIcon 0xBF

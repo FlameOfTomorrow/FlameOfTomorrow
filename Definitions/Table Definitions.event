@@ -29,6 +29,8 @@
 #define EphraimLock 0x8
 #define WeaponLock3 0x10
 #define WeaponLock4 0x20
+#define IsAccessory 0x40
+#define IsEquip IsAccessory
 #define PassiveBoosts 0x80
 
 //Weapon Ability 4 definitions
@@ -41,6 +43,14 @@
 #define EclipseEffect 0x3
 #define DevilEffect 0x4
 #define StoneEffect 0x5
+
+//Equip Items
+#define AE_Skill 0x1
+#define AE_TomeRangeUp 0x2
+#define AE_NormalShield 0x3
+#define AE_ExpShare 0x4
+#define AE_PrecisionRing 0x5
+#define AE_MovRing 0x6
 
 //Character/Class Ability 1 definitions:
 #define MountedAid 0x1

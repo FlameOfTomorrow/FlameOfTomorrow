@@ -132,3 +132,8 @@ ORG WeaponIconOffset(ItemSkillIcon)
 #incext Png2Dmp "Icons/ItemSkillIcon.png"
 POP
 
+// Caduceus
+PUSH
+ORG WeaponIconOffset(CaduceusIcon)
+#incext Png2Dmp "Icons/Caduceus.png"
+POP

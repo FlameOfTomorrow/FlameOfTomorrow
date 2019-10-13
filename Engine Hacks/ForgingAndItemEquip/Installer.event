@@ -29,9 +29,6 @@ POP
 ALIGN 4
 #define ForgeBonuses(itemId, mtBonus, hitBonus, critBonus) "BYTE itemId mtBonus hitBonus critBonus"
 gForgeBonusLookupTable:
-ForgeBonuses(IronSword, 1, 10, 0)
-ForgeBonuses(SteelSword, 2, 5, 0)
-ForgeBonuses(KillingEdge, 0, 20, 20)
 WORD 0
 
 #define AccessoryLocks(accessoryId, levelLock, typeOfLock, accessoryClassLocks, userCheckFunction) "BYTE accessoryId levelLock typeOfLock 0; POIN accessoryClassLocks userCheckFunction"
@@ -47,9 +44,7 @@ WORD 0
 // Class Types not defined by Class Attributes
 
 ALIGN 4
-#ifndef ArmorClasses
-#define ArmorClasses ""
-#endif
+//#define ArmorClasses ""
 ArmoredClassesList:
 BYTE ArmorClasses 0 // ArmorClasses defined in Master Skill Installer
 
