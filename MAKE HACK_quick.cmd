@@ -4,7 +4,11 @@ copy FE8_clean.gba _Hack.gba
 
 cd "%~dp0Event Assembler"
 
-Core A FE8 "-output:%~dp0_Hack.gba" "-input:%~dp0ROM Buildfile.event"
+Core A FE8 "-output:%~dp0_Hack.gba" "-input:%~dp0ROM Buildfile.event" --nocash-sym
+
+cd "%~dp0Tools"
+
+AppendFile "%~dp0_Hack.sym" "%~dp0FE8_clean.sym"
 
 if exist "%~dp0ups/ups.exe" (
     cd "%~dp0ups"
