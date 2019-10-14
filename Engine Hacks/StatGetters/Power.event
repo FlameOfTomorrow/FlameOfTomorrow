@@ -5,7 +5,7 @@
 
 pPowerModifiers: // Power
 	POIN prAddUnitPower //prHalveIfCapturing 
-	POIN prDebuffStr prAddEquipPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow
+	POIN prDebuffStr prAddEquipPower prAddAccessoryPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif
@@ -40,5 +40,8 @@ prFortressResistancePow:
 
 prItemPassivePow:
 	rPassiveStatBoosts(STAT_POWER)
+
+prAddAccessoryPower:
+	rAdd(rForUnitEquippedAccessory(rCallExternal(prGetItemPowBonus)))
 
 #endif // MODULAR_GETTER_POWER_EVENT

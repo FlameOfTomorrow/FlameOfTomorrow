@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMagicModifiers: // Magic
-	POIN prAddUnitMagic prAddEquipMagic prAccessoryAddMag
+	POIN prAddUnitMagic prAddEquipMagic prAddAccessoryMagic
 WORD 0
 
 prAddUnitMagic:
@@ -13,9 +13,10 @@ prAddUnitMagic:
 prAddEquipMagic:
 	rAdd(rForUnitEquipped(rCallExternal(prGetItemMagBonus)))
 	
-prAccessoryAddMag:
-	rIfUnitHasAccessoryEffect(AE_TomeRangeUp)
-		rAddConst(3)
+prAddAccessoryMagic:
+	rAdd(rForUnitEquippedAccessory(rCallExternal(prGetItemMagBonus)))
+
+
 
 
 #endif // MODULAR_GETTER_MAGIC_EVENT

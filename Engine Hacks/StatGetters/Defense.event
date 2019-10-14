@@ -5,7 +5,7 @@
 
 pDefenseModifiers: // Defense
 	POIN prAddUnitDefense //prHalveIfCapturing
-	POIN prDebuffDef prAddEquipDefense prItemPassiveDefense prRallyDef prLifeAndDeathMinus VigorDanceCheck prSkillFury prFortressDefenseDef prAccessoryNormalShieldDefBuff
+	POIN prDebuffDef prAddEquipDefense prAddAccessoryDefense prItemPassiveDefense prRallyDef prLifeAndDeathMinus VigorDanceCheck prSkillFury prFortressDefenseDef
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif
@@ -31,8 +31,7 @@ prFortressDefenseDef:
 prItemPassiveDefense:
 	rPassiveStatBoosts(STAT_DEFENSE)
 	
-prAccessoryNormalShieldDefBuff:
-	rIfUnitHasAccessoryEffect(AE_NormalShield)
-		rAddConst(2)
+prAddAccessoryDefense:
+	rAdd(rForUnitEquippedAccessory(rCallExternal(prGetItemDefBonus)))
 
 #endif // MODULAR_GETTER_DEFENSE_EVENT

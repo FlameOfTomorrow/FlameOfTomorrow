@@ -1,5 +1,7 @@
 cd %~dp0
 
+@echo off
+
 copy FE8_clean.gba _Hack.gba
 
 cd "%~dp0Text"

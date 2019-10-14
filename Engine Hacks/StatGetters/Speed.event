@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pSpeedModifiers: // Speed
-	POIN prAddUnitSpeed prHalveIfRescuing prHalveIfCapturing prDebuffSpd prAddEquipSpeed prItemPassiveSpeed prRallySpd prLifeAndDeathBonus prSkillFury
+	POIN prAddUnitSpeed prHalveIfRescuing prHalveIfCapturing prDebuffSpd prAddEquipSpeed prAddAccessorySpeed prItemPassiveSpeed prRallySpd prLifeAndDeathBonus prSkillFury
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif
@@ -26,5 +26,8 @@ prRallySpd:
 
 prItemPassiveSpeed:
 	rPassiveStatBoosts(STAT_SPEED)
+	
+prAddAccessorySpeed:
+	rAdd(rForUnitEquippedAccessory(rCallExternal(prGetItemSpdBonus)))
 
 #endif // MODULAR_GETTER_SPEED_EVENT

@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMovModifiers: // Movement
-	POIN prAddUnitBaseMov prAddUnitMovBonus prRallyMov prSkillCelerity prNullifyIfGuardAI ArmorMarchCheck 
+	POIN prAddUnitBaseMov prAddUnitMovBonus prRallyMov prSkillCelerity prNullifyIfGuardAI ArmorMarchCheck prAddAccessoryMovement
 	#ifdef ENABLE_STAIRS
 	POIN StairsMoveDebuff-1
 	#endif
@@ -36,5 +36,12 @@ prNullifyIfFreeze:
 prRallyMov:
 	#incbin "_asm/RallyMov.bin"
 	WORD DebuffTable
+	
+GetItemMovBonus:
+	#incbin "_asm/GetMovBonus.dmp"
+	POIN ItemTable
+	
+prAddAccessoryMovement:
+	rAdd(rForUnitEquippedAccessory(rCallExternal(prGetItemMovBonus)))
 
 #endif // MODULAR_GETTER_MOVEMENT_EVENT
