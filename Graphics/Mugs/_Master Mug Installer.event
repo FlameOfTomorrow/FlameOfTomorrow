@@ -1,0 +1,4 @@
+ALIGN 4
+ArtemerMugData:
+#incext PortraitFormatter "Artemer.png"
+setMugEntry(ArtemerMug, ArtemerMugData, 2, 5, 2, 3)

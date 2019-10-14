@@ -1,4 +1,6 @@
 #define Artemer 1
+#define ArtemerMug 0x2
+
 #define Helena 2
 #define Keith 3
 #define Lexi 4

@@ -3,3 +3,7 @@
 
 #include "Palette Definitions.txt"
 #include "Palette Installer.event"
+
+// ArtemerHuntsman
+	setPalette(0x1,ArtemerHuntsman)
+	setCBSP(0x1,Artemer,0x3,Huntsman)
