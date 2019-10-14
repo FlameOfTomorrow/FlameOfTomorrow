@@ -158,6 +158,7 @@ draw_def_bar_at 16, 7
 draw_res_bar_at 25, 7
 draw_textID_at 22, 9, 0x4f6 @move
 draw_move_bar_with_getter_at 25, 9
+draw_mag_bar_at 25, 3
 
 b		NextColumn
 .ltorg
@@ -270,7 +271,7 @@ beq		DontDrawIcon
 draw_icon_at 27, 13, 0xCA @change this to the ID you put the icon in
 DontDrawIcon:
 
-draw_mag_bar_at 25, 3
+
 
 @blh DrawBWLNumbers
 

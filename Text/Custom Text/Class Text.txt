@@ -4,3 +4,172 @@ Huntsman[X]
 ## HuntsmanDescription
 Experienced hunters that are[N]
 attuned to nature. Equip: Bows.[X]
+
+##DreadFighterName
+Dread Fighter[X]
+
+##DreadFighterDesc
+DreadFighterDesc[X]
+
+##DeserterName
+Deserter[X]
+
+##DeserterDesc
+DeserterDesc[X]
+
+##SpartanName
+Spartan[X]
+
+##SpartanDesc
+SpartanDesc[X]
+
+##DarkFlierName
+Dark Flier[X]
+
+##DarkFlierDesc
+DarkFlierDesc[X]
+
+##ArbalistName
+Arbalist[X]
+
+##ArbalistDesc
+ArbalistDesc[X]
+
+##NomadName
+Nomad[X]
+
+##NomadDesc
+NomadDesc[X]
+
+##OutlawName
+Outlaw[X]
+
+##OutlawDesc
+OutlawDesc[X]
+
+##AdventurerName
+Adventurer[X]
+
+##AdventurerDesc
+AdventurerDesc[X]
+
+##DarkMageName
+Dark Mage[X]
+
+##DarkMageDesc
+DarkMageDesc[X]
+
+##NephilimName
+Nephilim[X]
+
+##NephilimDesc
+NephilimDesc[X]
+
+##HarrierName
+Harrier[X]
+
+##HarrierDesc
+HarrierDesc[X]
+
+##WarMonkName
+War Monk[X]
+
+##WarMonkDesc
+WarMonkDesc[X]
+
+##WarClericName
+War Cleric[X]
+
+##WarClericDesc
+WarClericDesc[X]
+
+##SwordArmorName
+Swd Armor[X]
+
+##SwordArmorDesc
+SwordArmorDesc[X]
+
+##LanceArmorName
+Lnc Armor[X]
+
+##LanceArmorDesc
+LanceArmorDesc[X]
+
+##AxeArmorName
+Axe Armor[X]
+
+##AxeArmorDesc
+AxeArmorDesc[X]
+
+##BowArmorName
+Bow Armor[X]
+
+##BowArmorDesc
+BowArmorDesc[X]
+
+##SwordPaladinName
+Swd Paladin[X]
+
+##SwordPaladinDesc
+SwordPaladinDesc[X]
+
+##LancePaladinName
+Lnc Paladin[X]
+
+##LancePaladinDesc
+LancePaladinDesc[X]
+
+##AxePaladinName
+Axe Paladin[X]
+
+##AxePaladinDesc
+AxePaladinDesc[X]
+
+##MageArmorName
+Mage Armor[X]
+
+##MageArmorDesc
+MageArmorDesc[X]
+
+##BaronName
+Baron[X]
+
+##BaronDesc
+BaronDesc[X]
+
+##SorcerorName
+Sorceror[X]
+
+##SorcerorDesc
+SorcerorDesc[X]
+
+##DarkKnightName
+Dark Knight[X]
+
+##DarkKnightDesc
+DarkKnightDesc[X]
+
+##GriffonKnightName
+Griffon Knight[X]
+
+##GriffonKnightDesc
+GriffonKnightDesc[X]
+
+##DevaName
+Deva[X]
+
+##DevaDesc
+DevaDesc[X]
+
+##HarbringerName
+Harbringer[X]
+
+##HarbringerDesc
+HarbringerDesc[X]
+
+##ThumaturgeName
+Thumaturge[X]
+
+##ThumaturgeDesc
+ThumaturgeDesc[X]
+

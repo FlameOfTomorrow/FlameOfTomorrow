@@ -32,11 +32,15 @@ BYTE 1 // change to 0 if you don't want this behaviour
 ALIGN 4
 LeadershipTable:
 // ALLIES
-BYTE Eirika 2
-BYTE Ephraim 2
-BYTE Seth 1
-BYTE Franz 0
-BYTE Gilliam 0
+BYTE Artemer 1
+BYTE Helena 0
+BYTE Keith 0
+BYTE Lexi 0
+BYTE Verwald 0
+BYTE Spike 0
+BYTE Ryder 0
+BYTE Jurgen 0
+BYTE Merry 0
 // ENEMIES
 BYTE ONeill 1
 BYTE Breguet 1

@@ -5,7 +5,6 @@ RangeSkillsCheck:
 #incbin "RangeSkillLoop.dmp"
 POIN SkillTester RangeSkillList
 ALIGN 4
-MESSAGE RangeSkillsCheck
 
 BowRangeBonus:
 #incbin "BowRange.dmp"

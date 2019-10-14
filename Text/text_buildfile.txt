@@ -82,3 +82,4 @@ Unequip[X]
 
 #include "Custom Text/Item Text.txt"
 #include "Custom Text/Class Text.txt"
+#include "Custom Text/Character Text.txt"
