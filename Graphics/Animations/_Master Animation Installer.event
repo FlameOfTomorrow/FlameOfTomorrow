@@ -83,3 +83,16 @@ BowAnim(HuntsmanBowAnim)
 UnarmedAnim(HuntsmanUnarmedAnim)
 EndAnim
 
+// Mage M
+#include "Mage M Magic Installer.event"
+
+// Bearded Fighter
+#include "Beard Fighter Axe Installer.event"
+#include "Beard Fighter Handaxe Installer.event"
+#include "Beard Fighter Unarmed Installer.event"
+
+ALIGN 4
+BeardFighterAnimation:
+AxeAnim(BeardFighterAxeAnim)
+HandaxeAnim(BeardFighterHandaxeAnim)
+UnarmedAnim(BeardFighterUnarmedAnim)

@@ -1,0 +1,10 @@
+CustomAnimeTable:
+
+BYTE Verwald  //Unit
+BYTE Fighter  //Class
+BYTE 0x00  //dummy
+BYTE 0x00  //dummy
+WORD BeardFighterAnimation|IsPointer  //Animation Pointer
+
+// Terminator
+WORD 0x00 0x00

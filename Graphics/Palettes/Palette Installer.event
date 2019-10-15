@@ -4,3 +4,6 @@
 ArtemerHuntsman:
 	#incbin "./_palettes/ArtemerHuntsman.lzpal" 
 
+VerwaldFighter:
+	#incbin "./_palettes/VerwaldFighter.lzpal" 
+
