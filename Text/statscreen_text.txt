@@ -27,11 +27,13 @@ stats and skills.[X]
 donorbox.org/donate-to-circles[X]
 
 ## WeaponRankDesc
-WeaponRankDesc[X]
+Proficiencies for each weapon type.[X]
 
 ## WeaponSkillDesc
-WeaponSkillDesc[X]
+Skill provided by the[N]
+currently equipped weapon.[X]
 
 ## ItemSkillDesc
-ItemSkillDesc[X]
+Skill provided by the[N]
+currently equipped accessory.[X]
 
