@@ -3,6 +3,11 @@
 #define HuntsmanBowAnim EphraimLanceAnim
 #define HuntsmanUnarmedAnim EphraimUnarmedAnim
 
+// Beard Fighter
+#define BeardFighterAxeAnim EirikaSwordAnim
+#define BeardFighterHandaxeAnim EirikaUnarmedAnim
+#define BeardFighterUnarmedAnim GreatLordLanceAnim
+
 #define DreadFighter 0x80
 #define DreadFigher_F 0x81
 #define Deserter 0x82

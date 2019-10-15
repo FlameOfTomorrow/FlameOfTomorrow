@@ -80,6 +80,9 @@
   //ASMC Check Suite
   #include "ASMCCheckSuite/ASMC Check Installer.event"
 
+  //Character Specific Animations
+  #include "Character Specific Animations/Installer.event"
+
   //Changes weapon ability bits
   // #include "Reaver and Double WTA Split/Installer.event"
 
