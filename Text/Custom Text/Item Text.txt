@@ -200,5 +200,15 @@ of staves by one.[X]
 Spirit Dust[X]
 
 ##SpiritDustDesc
-SpiritDustDesc[X]
+Increases magic by 2 points.[N]
+Vanishes after use.[X]
 
+##EnergyRingDesc
+Increases strength by[N]
+2 points. Vanishes after use.[X]
+
+##SpiritDustUse
+Raises magic.[X]
+
+##EnergyRingUse
+Raises strength.[X]
