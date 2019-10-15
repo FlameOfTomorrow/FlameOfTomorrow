@@ -8,6 +8,24 @@
 #define BeardFighterHandaxeAnim EirikaUnarmedAnim
 #define BeardFighterUnarmedAnim GreatLordLanceAnim
 
+// Armors
+#define SwordArmor 0x8E
+#define SwdArmor SwordArmor
+#define SwordArmour SwordArmor
+#define SwdArmour SwordArmour
+#define LanceArmor 0x8F
+#define LncArmor LanceArmor
+#define LanceArmour LanceArmor
+#define LncArmour LncArmor
+#define AxeArmor 0x90
+#define AxeArmour AxeArmor
+#define KnightSwordAnim EirikaSword2Anim
+#define KnightAxeAnim GreatLordUnarmedAnim
+#define KnightHandaxeAnim GreatLordFSwordAnim
+#define SwordArmorClassCard 0xAD
+#define LanceArmorClassCard KnightClassCard
+#define AxeArmorClassCard 0xAE
+
 #define DreadFighter 0x80
 #define DreadFigher_F 0x81
 #define Deserter 0x82
@@ -23,16 +41,6 @@
 #define WarMonk 0x8C
 #define WarCleric 0x8D
 #define WarMonk_F WarCleric
-#define SwordArmor 0x8E
-#define SwdArmor SwordArmor
-#define SwordArmour SwordArmor
-#define SwdArmour SwordArmour
-#define LanceArmor 0x8F
-#define LncArmor LanceArmor
-#define LanceArmour LanceArmor
-#define LncArmour LncArmor
-#define AxeArmor 0x90
-#define AxeArmour AxeArmor
 #define BowArmor 0x91
 #define BowArmour BowArmor
 #define SwordPaladin 0x92

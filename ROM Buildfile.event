@@ -5,7 +5,7 @@
     #include "Definitions/Custom Definitions.event"
 	#include "Customizations.event"
 
-    ORG FreeSpace
+    ORG EndSpace
 	
     ALIGN 4
     //Pre-table data
@@ -45,7 +45,7 @@
 	#include "Events/World Map Events/World Map Events Installer.event"
     MESSAGE Event data ends at currentOffset
 	
-    ASSERT (0xBFFFFF - currentOffset)
+    //ASSERT (0xBFFFFF - currentOffset)
 
     MESSAGE Used free space ends at currentOffset
 #else

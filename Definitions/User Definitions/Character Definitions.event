@@ -2,10 +2,25 @@
 #define ArtemerMug 0x2
 
 #define Helena 2
+#define HelenaMug 0x4
+
 #define Keith 3
+#define KeithMug 0x5
+
 #define Lexi 4
+#define LexiMug 0x6
+
 #define Verwald 5
+#define VerwaldMug 0x7
+
 #define Spike 6
+#define SpikeMug 0x8
+
 #define Ryder 7
+#define RyderMug 0x9
+
 #define Jurgen 8
+#define JurgenMug 0xA
+
 #define Merry 9
+#define MerryMug 0xC

@@ -1,7 +1,32 @@
-// Huntsman
 
+// Huntsman
 HuntsmanStanding:
 #incext Png2Dmp "Files/Huntsman/Standing.png" --lz77
-
 HuntsmanMoving:
 #incext Png2Dmp "Files/Huntsman/Moving.png" --lz77
+
+// Armored Hero
+HeroStanding:
+#incext Png2Dmp "Files/Hero/Standing.png" --lz77
+HeroMoving:
+#incext Png2Dmp "Files/Hero/Moving.png" --lz77
+
+// SALV Knight
+SwordArmorStanding:
+#incext Png2Dmp "Files/Knight/Sword Standing.png" --lz77
+SwordArmorMoving:
+#incext Png2Dmp "Files/Knight/Sword Moving.png" --lz77
+LanceArmorStanding:
+#incext Png2Dmp "Files/Knight/Lance Standing.png" --lz77
+LanceArmorMoving:
+#incext Png2Dmp "Files/Knight/Lance Moving.png" --lz77
+AxeArmorStanding:
+#incext Png2Dmp "Files/Knight/Axe Standing.png" --lz77
+AxeArmorMoving:
+#incext Png2Dmp "Files/Knight/Axe Moving.png" --lz77
+
+// Hatless Mage
+MageStanding:
+#incext Png2Dmp "Files/Mage/Standing.png" --lz77
+MageMoving:
+#incext Png2Dmp "Files/Mage/Moving.png" --lz77

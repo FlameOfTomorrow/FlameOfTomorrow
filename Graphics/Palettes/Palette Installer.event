@@ -7,3 +7,15 @@ ArtemerHuntsman:
 VerwaldFighter:
 	#incbin "./_palettes/VerwaldFighter.lzpal" 
 
+SpikeHero:
+	#incbin "./_palettes/SpikeHero.lzpal" 
+
+HelenaTroubadour:
+	#incbin "./_palettes/HelenaTroubadour.lzpal" 
+
+KeithMage:
+	#incbin "./_palettes/KeithMage.lzpal" 
+
+LexiKnight:
+	#incbin "./_palettes/LexiKnight.lzpal" 
+

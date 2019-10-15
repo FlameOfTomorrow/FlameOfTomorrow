@@ -74,8 +74,10 @@ Wyvern Knight Unarmed Installer.event
 
 
 // Huntsman
+{
 #include "Huntsman Bow Installer.event"
 #include "Huntsman Unarmed Installer.event"
+}
 
 ALIGN 4
 HuntsmanAnimation:
@@ -84,15 +86,51 @@ UnarmedAnim(HuntsmanUnarmedAnim)
 EndAnim
 
 // Mage M
+{
 #include "Mage M Magic Installer.event"
+}
 
 // Bearded Fighter
+{
 #include "Beard Fighter Axe Installer.event"
 #include "Beard Fighter Handaxe Installer.event"
 #include "Beard Fighter Unarmed Installer.event"
+}
 
 ALIGN 4
 BeardFighterAnimation:
 AxeAnim(BeardFighterAxeAnim)
 HandaxeAnim(BeardFighterHandaxeAnim)
 UnarmedAnim(BeardFighterUnarmedAnim)
+
+// Armored Hero
+{
+#include "Hero Sword Installer.event"
+#include "Hero Axe Installer.event"
+#include "Hero Handaxe Installer.event"
+#include "Hero Unarmed Installer.event"
+}
+
+// Armors
+{
+#include "Knight Sword Installer.event"
+#include "Knight Lance Installer.event"
+#include "Knight Axe Installer.event"
+#include "Knight Handaxe Installer.event"
+#include "Knight Unarmed Installer.event"
+}
+
+ALIGN 4
+KnightAnimation:
+SwordAnim(KnightSwordAnim)
+LanceAnim(KnightLanceAnim)
+AxeAnim(KnightAxeAnim)
+HandaxeAnim(KnightHandaxeAnim)
+UnarmedAnim(KnightUnarmedAnim)
+EndAnim
+
+// Troubadour
+{
+#include "Troubadour Staff Installer.event"
+#include "Troubadour Unarmed Installer.event"
+}
