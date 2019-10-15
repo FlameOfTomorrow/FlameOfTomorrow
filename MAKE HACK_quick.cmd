@@ -12,8 +12,6 @@ Core A FE8 "-output:%~dp0_Hack.gba" "-input:%~dp0ROM Buildfile.event" --nocash-s
 
 cd "%~dp0Tools"
 
-AppendFile "%~dp0_Hack.sym" "%~dp0FE8_clean.sym"
-
 )
 
 if exist "%~dp0_Hack.sym" (
