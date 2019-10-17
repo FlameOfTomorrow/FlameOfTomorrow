@@ -65,3 +65,12 @@
 
 #define SpiritDust 0xBE
 #define SpiritDustIcon 0xCF
+
+#define Thrysus 0xBF
+#define ThrysusIcon 0xDE
+
+#define Shade 0xC0
+#define ShadeIcon 0xDF
+
+#define Lumine 0xC1
+#define LumineIcon 0xE0

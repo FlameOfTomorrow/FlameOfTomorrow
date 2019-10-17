@@ -143,3 +143,21 @@ PUSH
 ORG WeaponIconOffset(SpiritDustIcon)
 #incext Png2Dmp "Icons/SpiritDust.png"
 POP
+
+// Shade
+PUSH
+ORG WeaponIconOffset(ShadeIcon)
+#incext Png2Dmp "Icons/Shade.png"
+POP
+
+// Thrysus
+PUSH
+ORG WeaponIconOffset(ThrysusIcon)
+#incext Png2Dmp "Icons/Thrysus.png"
+POP
+
+// Lumine
+PUSH
+ORG WeaponIconOffset(LumineIcon)
+#incext Png2Dmp "Icons/Lumine.png"
+POP

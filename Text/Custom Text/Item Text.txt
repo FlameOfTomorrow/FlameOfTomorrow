@@ -212,3 +212,24 @@ Raises magic.[X]
 
 ##EnergyRingUse
 Raises strength.[X]
+
+##ThrysusName
+Thrysus[X]
+
+##ThrysusDescription
+Increases the range[N]
+of tomes by one.[X]
+
+##ShadeName
+Shade[X]
+
+##ShadeDescription
+Allows magic users[N]
+to use dark magic.[X]
+
+##LumineName
+Lumine[X]
+
+##LumineDescription
+Allows magic users[N]
+to use light magic.[X]
