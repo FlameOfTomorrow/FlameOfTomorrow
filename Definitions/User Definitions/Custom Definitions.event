@@ -1,3 +1,4 @@
 #include "Class Definitions.event"
 #include "Item Definitions.event"
 #include "Character Definitions.event"
+#include "Song Definitions.event"

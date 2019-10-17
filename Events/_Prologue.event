@@ -1,0 +1,78 @@
+EventPointerTable(PrologueEvent, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Artemer Huntsman 0 Level(1,Ally,0) [8,18] 0 0 0 0 [IronBow,HuntingBow,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT ONeill Fighter 0 Level(1,Enemy,1) [2,1] 0 0 0 0 [IronAxe] NeverMoveAI
+UNIT 0x80 Cavalier 0 Level(1,Enemy,1) [8,19] 2 0 0 0 [Item100G] NeverMoveAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+GotoDebugRoom:
+MNC2 0x37 // debugroom (lagdou 10)
+ENDB
+
+BeginningScene:
+// check for debug room
+#ifdef _DEBUGROOM_
+	CALL GotoDebugRoom
+#endif
+
+LOAD1 0x1 Units1
+ENUN
+LOAD1 0x1 EnemyUnits
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MNC2 0x1
+NoFade
+ENDA

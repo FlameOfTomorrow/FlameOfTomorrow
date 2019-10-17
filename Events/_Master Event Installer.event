@@ -1,4 +1,7 @@
 ALIGN 4
 {
-	#include "Prologue.event"
+	#include "_DebugRoom.event"
+}
+{
+	#include "_Prologue.event"
 }

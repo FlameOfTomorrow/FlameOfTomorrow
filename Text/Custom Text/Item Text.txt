@@ -233,3 +233,6 @@ Lumine[X]
 ##LumineDescription
 Allows magic users[N]
 to use light magic.[X]
+
+##HuntingBowName
+Hunting Bow[X]

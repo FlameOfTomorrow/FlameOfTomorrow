@@ -74,3 +74,6 @@
 
 #define Lumine 0xC1
 #define LumineIcon 0xE0
+
+#define HuntingBow 0xC2
+#define HuntingBowIcon 0xE1

@@ -26,6 +26,8 @@ for ally units.[X]
 Total number of leadership stars[N]
 for enemy units.[X]
 
+#include "music text.txt"
+
 #include "statscreen_text.txt"
 
 #include "unitmenu_text.txt"

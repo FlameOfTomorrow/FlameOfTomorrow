@@ -1,7 +1,7 @@
 #define BossMusicEntry(charID,songID) "WORD charID songID"
 #define BossMusicEnd "WORD 0xFFFFFFFF 0xFFFFFFFF"
 
-
+ALIGN 4
 BossMusicList:
 BossMusicEnd
 

@@ -1,163 +1,117 @@
 #define WeaponIconOffset(iconID) "NewItemIcons + 0x80*iconID"
 
-// Adept Manual
 PUSH
+
+// Adept Manual
 ORG WeaponIconOffset(AdeptManualIcon)
 #incext Png2Dmp "Icons/AdeptSkillBook.png"
-POP
 
 // Aegis Manual
-PUSH
 ORG WeaponIconOffset(AegisManualIcon)
 #incext Png2Dmp "Icons/AegisSkillBook.png"
-POP
 
 // Astra Manual
-PUSH
 ORG WeaponIconOffset(AstraManualIcon)
 #incext Png2Dmp "Icons/AstraSkillBook.png"
-POP
 
 // Boon Manual
-PUSH
 ORG WeaponIconOffset(BoonManualIcon)
 #incext Png2Dmp "Icons/BoonSkillBook.png"
-POP
 
 // Canto+ Manual
-PUSH
 ORG WeaponIconOffset(CantoPlusManualIcon)
 #incext Png2Dmp "Icons/Canto+SkillBook.png"
-POP
 
 // Luna Manual
-PUSH
 ORG WeaponIconOffset(LunaManualIcon)
 #incext Png2Dmp "Icons/LunaSkillBook.png"
-POP
 
 // Nihil Manual
-PUSH
 ORG WeaponIconOffset(NihilManualIcon)
 #incext Png2Dmp "Icons/NihilSkillBook.png"
-POP
 
 // Nullify Manual
-PUSH
 ORG WeaponIconOffset(NullifyManualIcon)
 #incext Png2Dmp "Icons/NullifySkillBook.png"
-POP
 
 // Paragon Manual
-PUSH
 ORG WeaponIconOffset(ParagonManualIcon)
 #incext Png2Dmp "Icons/ParagonSkillBook.png"
-POP
 
 // Pass Manual
-PUSH
 ORG WeaponIconOffset(PassManualIcon)
 #incext Png2Dmp "Icons/PassSkillBook.png"
-POP
 
 // Pavise Manual
-PUSH
 ORG WeaponIconOffset(PaviseManualIcon)
 #incext Png2Dmp "Icons/PaviseSkillBook.png"
-POP
 
 // Renewal Manual
-PUSH
 ORG WeaponIconOffset(RenewalManualIcon)
 #incext Png2Dmp "Icons/RenewalSkillBook.png"
-POP
 
 // Sol Manual
-PUSH
 ORG WeaponIconOffset(SolManualIcon)
 #incext Png2Dmp "Icons/SolSkillBook.png"
-POP
 
 // Wrath Manual
-PUSH
 ORG WeaponIconOffset(WrathManualIcon)
 #incext Png2Dmp "Icons/WrathSkillBook.png"
-POP
 
 // Leadership Star
-PUSH
 ORG WeaponIconOffset(StarIcon)
 #incext Png2Dmp "Icons/StarIcon.png"
-POP
 
 // Stone Staff
-PUSH
 ORG WeaponIconOffset(StoneStaffIcon)
 #incext Png2Dmp "Icons/StoneStaff.png"
-POP
 
 // Poison Staff
-PUSH
 ORG WeaponIconOffset(PoisonStaffIcon)
 #incext Png2Dmp "Icons/PoisonStaff.png"
-POP
 
 // Ruby Sword
-PUSH
 ORG WeaponIconOffset(RubySwordIcon)
 #incext Png2Dmp "Icons/RubySword.png"
-POP
 
 // Sapphire Lance
-PUSH
 ORG WeaponIconOffset(SapphireLanceIcon)
 #incext Png2Dmp "Icons/SapphireLance.png"
-POP
 
 // Emerald Axe
-PUSH
 ORG WeaponIconOffset(EmeraldAxeIcon)
 #incext Png2Dmp "Icons/EmeraldAxe.png"
-POP
 
 // Weapon Skill Icon
-PUSH
 ORG WeaponIconOffset(WeaponSkillIcon)
 #incext Png2Dmp "Icons/WeaponSkillIcon.png"
-POP
 
 // Equipment Skill Icon
-PUSH
 ORG WeaponIconOffset(ItemSkillIcon)
 #incext Png2Dmp "Icons/ItemSkillIcon.png"
-POP
 
 // Caduceus
-PUSH
 ORG WeaponIconOffset(CaduceusIcon)
 #incext Png2Dmp "Icons/Caduceus.png"
-POP
 
 // Spirit Dust
-PUSH
 ORG WeaponIconOffset(SpiritDustIcon)
 #incext Png2Dmp "Icons/SpiritDust.png"
-POP
 
 // Shade
-PUSH
 ORG WeaponIconOffset(ShadeIcon)
 #incext Png2Dmp "Icons/Shade.png"
-POP
 
 // Thrysus
-PUSH
 ORG WeaponIconOffset(ThrysusIcon)
 #incext Png2Dmp "Icons/Thrysus.png"
-POP
 
 // Lumine
-PUSH
 ORG WeaponIconOffset(LumineIcon)
 #incext Png2Dmp "Icons/Lumine.png"
+
+// Hunting Bow
+ORG WeaponIconOffset(HuntingBowIcon)
+#incext Png2Dmp "Icons/HuntingBow.png"
+
 POP

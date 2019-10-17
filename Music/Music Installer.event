@@ -17,6 +17,20 @@
 //SongTable(99,My_song,MapMusicGroup)
 //#include "My_song.event"
 
-SongTable(2,trial,MapMusicGroup)
+SongTable(TrialSong,trial,MapMusicGroup)
 #include "Trial/trial.event"
 
+SongTable(E1M1Song,e1m1,MapMusicGroup)
+#include "s Files/e1m1.event"
+
+SongTable(BlasterMasterS1Song,Blaster_Master_Stage_1,MapMusicGroup)
+#include "s Files/Blaster_Master_Stage_1.event"
+
+SongTable(TaisenSong,taisen4,BattleMusicGroup)
+#include "s Files/taisen4.event"
+
+SongTable(SplashSong,SplashCrop_HDN,BattleMusicGroup)
+#include "s Files/Splash_HDN.event"
+
+SongTable(TheCertainPathSong,TheCertainPathToVictory,MapMusicGroup)
+#include "s Files/TheCertainPathToVictory.event"

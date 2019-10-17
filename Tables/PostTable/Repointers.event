@@ -123,18 +123,17 @@ ORG $17768
 POIN ItemTable
 ORG $17794
 POIN ItemTable
-//ORG $177AC
-//POIN ItemTable
+ORG $177AC
+POIN ItemTable
 ORG $177C0
 POIN ItemTable
-//ORG $177B8
-//POIN ItemTable
 ORG $17718
 POIN ItemTable
 ORG $1C1FB8
 POIN ItemTable
 ORG $1C20E0
 POIN ItemTable
+
 
 ORG $28E88
 POIN ItemTargetTable

@@ -1,0 +1,1233 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	TheCertainPathToVictory_grp  voicegroup000
+	#define	TheCertainPathToVictory_pri  0
+	#define	TheCertainPathToVictory_rev  0
+	#define	TheCertainPathToVictory_mvl  50
+	#define	TheCertainPathToVictory_key  0
+	#define	TheCertainPathToVictory_tbs  1
+	#define	TheCertainPathToVictory_exg  0
+	#define	TheCertainPathToVictory_cmp  1
+
+	// .rodata
+	//	TheCertainPathToVictory
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+TheCertainPathToVictory_1:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   165*TheCertainPathToVictory_tbs/2
+	BYTE		VOICE   10
+	BYTE		VOL     109*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+TheCertainPathToVictory_1_008:
+	BYTE		N12     As4   v127
+	BYTE	W12
+	BYTE		        Ds4 
+	BYTE	W12
+	BYTE		        Fs4 
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		        As4 
+	BYTE	W12
+	BYTE		N06     Ds4 
+	BYTE	W24
+	BYTE		N24     Cs5 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+TheCertainPathToVictory_1_009:
+	BYTE	W12
+	BYTE		N24     Bn4   v127
+	BYTE	W24
+	BYTE		N12     As4 
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        As4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		N24     As4 
+	BYTE	W24
+	BYTE		N12     Ds4 
+	BYTE	W12
+	BYTE		N48     Fn4 
+	BYTE	W60
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_1_008
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_1_009
+// 014   ----------------------------------------
+	BYTE		N12     As4   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N84     Fn5 
+	BYTE	W60
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_1_B1
+TheCertainPathToVictory_1_B2:
+// 016   ----------------------------------------
+	BYTE	W72
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+TheCertainPathToVictory_2:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   33
+	BYTE		VOL     82*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE		N24     Ds1   v127
+	BYTE	W72
+	BYTE		N12     Cs1 
+	BYTE	W12
+	BYTE		N24     Bn0 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W60
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N24     Cs1 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		        Ds1 
+	BYTE	W72
+	BYTE		N12     Cs1 
+	BYTE	W12
+	BYTE		N24     Bn0 
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE	W60
+	BYTE		N12     Gs0 
+	BYTE	W24
+	BYTE		N24     Cs1 
+	BYTE	W12
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N10     Dn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+// 008   ----------------------------------------
+TheCertainPathToVictory_2_008:
+	BYTE		N10     Bn0   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_2_008
+// 010   ----------------------------------------
+TheCertainPathToVictory_2_010:
+	BYTE		N10     As0   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_2_010
+// 012   ----------------------------------------
+	BYTE		N10     Bn0   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+// 013   ----------------------------------------
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE		        As0 
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+// 015   ----------------------------------------
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_2_B1
+TheCertainPathToVictory_2_B2:
+// 016   ----------------------------------------
+	BYTE		N24     Ds1   v127
+	BYTE	W72
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+TheCertainPathToVictory_3:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     38*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE		N11     As4   v127
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+// 001   ----------------------------------------
+TheCertainPathToVictory_3_001:
+	BYTE		N11     As4   v127
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_3_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_3_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_3_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_3_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_3_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_3_001
+// 008   ----------------------------------------
+	BYTE		N96     Bn3   v127
+	BYTE		N96     Fn4 
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE		N96     Ds4 
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE		        As3 
+	BYTE		N96     Ds4 
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE		        As3 
+	BYTE		N96     Dn4 
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE		N96     Fn4 
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE		N96     Ds4 
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE		N96     Fs4 
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE		N96     Fn4 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_3_B1
+TheCertainPathToVictory_3_B2:
+// 016   ----------------------------------------
+	BYTE		N11     As4   v127
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE		        As4 
+	BYTE		N11     Ds5 
+	BYTE	W24
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+TheCertainPathToVictory_4:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   60
+	BYTE		VOL     73*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE		N24     As2   v127
+	BYTE		N24     Ds3 
+	BYTE	W72
+	BYTE		N06     Cs3 
+	BYTE		N06     Fn3 
+	BYTE	W12
+	BYTE		N24     Ds3 
+	BYTE		N24     Fs3 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W60
+	BYTE		N12     Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+	BYTE		N24     Cs3 
+	BYTE		N24     Fn3 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		        As2 
+	BYTE		N24     Ds3 
+	BYTE	W72
+	BYTE		N06     Cs3 
+	BYTE		N06     Fn3 
+	BYTE	W12
+	BYTE		N24     Ds3 
+	BYTE		N24     Fs3 
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE	W60
+	BYTE		N12     Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+	BYTE		N24     Fn3 
+	BYTE		N24     As3 
+	BYTE	W12
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_4_B1
+TheCertainPathToVictory_4_B2:
+// 016   ----------------------------------------
+	BYTE		N24     As2   v127
+	BYTE		N24     Ds3 
+	BYTE	W72
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+TheCertainPathToVictory_5:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     79*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE		N24     As3   v127
+	BYTE		N24     Ds4 
+	BYTE	W72
+	BYTE		N06     Cs4 
+	BYTE		N06     Fn4 
+	BYTE	W12
+	BYTE		N24     Ds4 
+	BYTE		N24     Fs4 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W60
+	BYTE		N12     Fn4 
+	BYTE		N12     Gs4 
+	BYTE	W24
+	BYTE		N24     Cs4 
+	BYTE		N24     Fn4 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		        As3 
+	BYTE		N24     Ds4 
+	BYTE	W72
+	BYTE		N06     Cs4 
+	BYTE		N06     Fn4 
+	BYTE	W12
+	BYTE		N24     Ds4 
+	BYTE		N24     Fs4 
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE	W60
+	BYTE		N12     Fn4 
+	BYTE		N12     Gs4 
+	BYTE	W24
+	BYTE		N24     Fn4 
+	BYTE		N24     As4 
+	BYTE	W12
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE		N96     Bn2 
+	BYTE		N96     Fn3 
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE		N96     Ds3 
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE		        As2 
+	BYTE		N96     Ds3 
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE		        As2 
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE		N96     Fn3 
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE		N96     Ds3 
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE		N96     Fs3 
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE		N96     Fn3 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_5_B1
+TheCertainPathToVictory_5_B2:
+// 016   ----------------------------------------
+	BYTE		N24     As3   v127
+	BYTE		N24     Ds4 
+	BYTE	W72
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+TheCertainPathToVictory_6:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   30
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		VOL     127*TheCertainPathToVictory_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     Gs1   v127
+	BYTE	W01
+	BYTE		BEND    c_v-54
+	BYTE	W01
+	BYTE		        c_v-41
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W02
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W04
+	BYTE		N12     An1 
+	BYTE	W12
+	BYTE		BEND    c_v-41
+	BYTE		N12     As1 
+	BYTE	W01
+	BYTE		BEND    c_v-28
+	BYTE	W02
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W06
+	BYTE		N12     Gs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		N24     Ds1 
+	BYTE	W18
+	BYTE		BEND    c_v-11
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-29
+	BYTE	W01
+	BYTE		        c_v-38
+	BYTE	W01
+	BYTE		        c_v-48
+	BYTE	W01
+	BYTE		        c_v-53
+	BYTE	W01
+// 004   ----------------------------------------
+	BYTE		        c_v+0
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		MOD     0
+	BYTE	W01
+// 006   ----------------------------------------
+	BYTE		BEND    c_v-64
+	BYTE		N06     As1 
+	BYTE	W01
+	BYTE		BEND    c_v-64
+	BYTE	W02
+	BYTE		        c_v-64
+	BYTE	W02
+	BYTE		        c_v-62
+	BYTE	W01
+	BYTE		        c_v-58
+	BYTE		N06     Cn2 
+	BYTE	W01
+	BYTE		BEND    c_v-54
+	BYTE	W03
+	BYTE		        c_v-51
+	BYTE	W02
+	BYTE		        c_v-48
+	BYTE		N06     Dn2 
+	BYTE	W05
+	BYTE		BEND    c_v-44
+	BYTE	W01
+	BYTE		N06     En2 
+	BYTE	W03
+	BYTE		BEND    c_v-41
+	BYTE	W03
+	BYTE		N06     Fn2 
+	BYTE	W01
+	BYTE		BEND    c_v-38
+	BYTE	W05
+	BYTE		        c_v-32
+	BYTE		N06     Gn2 
+	BYTE	W04
+	BYTE		BEND    c_v-31
+	BYTE	W02
+	BYTE		N06     An2 
+	BYTE	W03
+	BYTE		BEND    c_v-23
+	BYTE	W03
+	BYTE		N06     Bn2 
+	BYTE	W01
+	BYTE		BEND    c_v-19
+	BYTE	W05
+	BYTE		N06     Cn3 
+	BYTE	W01
+	BYTE		BEND    c_v-12
+	BYTE	W04
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		N06     Dn3 
+	BYTE	W04
+	BYTE		BEND    c_v-2
+	BYTE	W02
+	BYTE		N06     En3 
+	BYTE	W03
+	BYTE		BEND    c_v+2
+	BYTE	W03
+	BYTE		N06     Fn3 
+	BYTE	W02
+	BYTE		BEND    c_v+6
+	BYTE	W04
+	BYTE		        c_v+11
+	BYTE		N06     Gn3 
+	BYTE	W04
+	BYTE		BEND    c_v+15
+	BYTE	W02
+	BYTE		N06     An3 
+	BYTE	W03
+	BYTE		BEND    c_v+19
+	BYTE	W03
+	BYTE		N06     Bn3 
+	BYTE	W03
+	BYTE		BEND    c_v+27
+	BYTE	W03
+	BYTE		N06     Cn4 
+	BYTE	W03
+	BYTE		BEND    c_v+33
+	BYTE	W02
+	BYTE		MOD     1
+	BYTE	W01
+// 007   ----------------------------------------
+	BYTE		N96     Gs4 
+	BYTE	W05
+	BYTE		BEND    c_v+37
+	BYTE	W05
+	BYTE		        c_v+45
+	BYTE	W07
+	BYTE		        c_v+54
+	BYTE	W01
+	BYTE		MOD     2
+	BYTE	W03
+	BYTE		BEND    c_v+61
+	BYTE	W03
+	BYTE		        c_v+63
+	BYTE	W03
+	BYTE		MOD     2
+	BYTE	W01
+	BYTE		BEND    c_v+63
+	BYTE	W10
+	BYTE		MOD     2
+	BYTE	W10
+	BYTE		        2
+	BYTE	W44
+	BYTE	W01
+	BYTE		BEND    c_v+0
+	BYTE	W03
+// 008   ----------------------------------------
+	BYTE		MOD     0
+	BYTE		N02     Bn0 
+	BYTE	W01
+	BYTE		BEND    c_v+0
+	BYTE	W11
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N09     Bn1 
+	BYTE	W12
+	BYTE		N02     Bn0 
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N22     Bn1 
+	BYTE	W36
+// 009   ----------------------------------------
+TheCertainPathToVictory_6_009:
+	BYTE		N02     Bn0   v127
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N09     Bn1 
+	BYTE	W12
+	BYTE		N02     Bn0 
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N22     Bn1 
+	BYTE	W36
+	BYTE	PEND
+// 010   ----------------------------------------
+TheCertainPathToVictory_6_010:
+	BYTE		N02     As0   v127
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N09     As1 
+	BYTE	W12
+	BYTE		N02     As0 
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N22     As1 
+	BYTE	W36
+	BYTE	PEND
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_6_010
+// 012   ----------------------------------------
+	BYTE		N02     Bn0   v127
+	BYTE	W01
+	BYTE		BEND    c_v+0
+	BYTE	W11
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N09     Bn1 
+	BYTE	W12
+	BYTE		N02     Bn0 
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N22     Bn1 
+	BYTE	W36
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_6_009
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_6_010
+// 015   ----------------------------------------
+	BYTE		N02     As0   v127
+	BYTE	W12
+	BYTE		N02   
+	BYTE	W12
+	BYTE		N09     As1 
+	BYTE	W12
+	BYTE		N02     As0 
+	BYTE	W24
+	BYTE		N12     As1 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_6_B1
+TheCertainPathToVictory_6_B2:
+// 016   ----------------------------------------
+	BYTE		BEND    c_v+0
+	BYTE	W72
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+TheCertainPathToVictory_7:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   11
+	BYTE		VOL     79*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		N36     Fs4   v127
+	BYTE	W36
+	BYTE		        Cs5 
+	BYTE	W36
+	BYTE		N24     Fs4 
+	BYTE	W24
+// 010   ----------------------------------------
+	BYTE		N72     Gs4 
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		N36     Fs4 
+	BYTE	W36
+	BYTE		        Cs5 
+	BYTE	W36
+	BYTE		N24     Gs4 
+	BYTE	W24
+// 014   ----------------------------------------
+	BYTE		N96     As4 
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE		        Gs4 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_7_B1
+TheCertainPathToVictory_7_B2:
+// 016   ----------------------------------------
+	BYTE	W72
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+TheCertainPathToVictory_8:
+	BYTE	KEYSH   TheCertainPathToVictory_key+0
+TheCertainPathToVictory_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     78*TheCertainPathToVictory_mvl/mxv
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		MODT    0
+	BYTE		LFOS    44
+	BYTE		PAN     c_v+0
+	BYTE		N12     Cn1   v127
+	BYTE		N12     En1 
+	BYTE		N12     Fs1 
+	BYTE		N48     Cs2 
+	BYTE	W24
+	BYTE		N12     Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     En1 
+	BYTE		N12     Fs1 
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N12     En1 
+	BYTE		N54     Cs2 
+	BYTE	W12
+// 001   ----------------------------------------
+TheCertainPathToVictory_8_001:
+	BYTE		N12     Cn1   v127
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W12
+	BYTE		        En1 
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W12
+	BYTE		        En1 
+	BYTE		N60     Cs2 
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+TheCertainPathToVictory_8_002:
+	BYTE		N12     Cn1   v127
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_002
+// 004   ----------------------------------------
+	BYTE		N12     Cn1   v127
+	BYTE		N12     En1 
+	BYTE		N12     Fs1 
+	BYTE		N48     Cs2 
+	BYTE	W24
+	BYTE		N12     Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     En1 
+	BYTE		N12     Fs1 
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N12     En1 
+	BYTE		N54     Cs2 
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_002
+// 007   ----------------------------------------
+	BYTE		N12     Cn1   v127
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N10     En1 
+	BYTE		N12     Fs1 
+	BYTE	W12
+	BYTE		N10     En1 
+	BYTE	W12
+// 008   ----------------------------------------
+TheCertainPathToVictory_8_008:
+	BYTE		N12     Cn1   v127
+	BYTE		N06     Fs1 
+	BYTE		N48     Cs2 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+TheCertainPathToVictory_8_009:
+	BYTE		N12     Cn1   v127
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_009
+// 011   ----------------------------------------
+	BYTE		N12     Cn1   v127
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N06     En1 
+	BYTE		N06     Fs1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE	W06
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_008
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_009
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheCertainPathToVictory_8_009
+// 015   ----------------------------------------
+	BYTE		N12     Cn1   v127
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N12     Cn1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N10     En1 
+	BYTE		N06     Fs1 
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N10     En1 
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	TheCertainPathToVictory_8_B1
+TheCertainPathToVictory_8_B2:
+// 016   ----------------------------------------
+	BYTE		N12     Cn1   v127
+	BYTE		N12     En1 
+	BYTE		N12     Fs1 
+	BYTE		N48     Cs2 
+	BYTE	W24
+	BYTE		N12     Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N12     Fs1 
+	BYTE	W24
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+TheCertainPathToVictory:
+	BYTE	8	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	TheCertainPathToVictory_pri	// Priority
+	BYTE	TheCertainPathToVictory_rev	// Reverb.
+
+	POIN2	TheCertainPathToVictory_grp
+
+	POIN2	TheCertainPathToVictory_1
+	POIN2	TheCertainPathToVictory_2
+	POIN2	TheCertainPathToVictory_3
+	POIN2	TheCertainPathToVictory_4
+	POIN2	TheCertainPathToVictory_5
+	POIN2	TheCertainPathToVictory_6
+	POIN2	TheCertainPathToVictory_7
+	POIN2	TheCertainPathToVictory_8
+
+	
