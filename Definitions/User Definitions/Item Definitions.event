@@ -77,3 +77,6 @@
 
 #define HuntingBow 0xC2
 #define HuntingBowIcon 0xE1
+
+#define MasterKey 0x79
+#define MasterKeyIcon 0xE2

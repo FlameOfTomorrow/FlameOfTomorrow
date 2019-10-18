@@ -84,13 +84,13 @@ War Cleric[X]
 WarClericDesc[X]
 
 ##SwordArmorName
-Swd Armor[X]
+Swd. Armor[X]
 
 ##SwordArmorDesc
 SwordArmorDesc[X]
 
 ##LanceArmorName
-Lnc Armor[X]
+Lnc. Armor[X]
 
 ##LanceArmorDesc
 LanceArmorDesc[X]
@@ -108,13 +108,13 @@ Bow Armor[X]
 BowArmorDesc[X]
 
 ##SwordPaladinName
-Swd Paladin[X]
+Swd. Paladin[X]
 
 ##SwordPaladinDesc
 SwordPaladinDesc[X]
 
 ##LancePaladinName
-Lnc Paladin[X]
+Lnc. Paladin[X]
 
 ##LancePaladinDesc
 LancePaladinDesc[X]
@@ -173,3 +173,20 @@ Thumaturge[X]
 ##ThumaturgeDesc
 ThumaturgeDesc[X]
 
+##SwordKnightName
+Swd. Knight[X]
+
+##LanceKnightName
+Lnc. Knight[X]
+
+##AxeKnightName
+Axe Knight[X]
+
+##SwordKnightDesc
+SwordKnightDesc[X]
+
+##LanceKnightDesc
+LanceKnightDesc[X]
+
+##AxeKnightDesc
+AxeKnightDesc[X]

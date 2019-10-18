@@ -24,6 +24,19 @@ CauseGameOverIfLordDies
 END_MAIN
 
 LocationBasedEvents:
+Seize(2,1)
+Door(2,11)
+Door(6,5)
+Door(6,8)
+Door(11,7)
+Door(13,3)
+Door(14,1)
+Door(14,11)
+Door(16,7)
+Chest(IronSword,10,0)
+Chest(IronSword,11,1)
+Chest(IronSword,14,9)
+Chest(IronSword,16,10)
 END_MAIN
 
 Dunno1:
@@ -39,7 +52,8 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Artemer Huntsman 0 Level(1,Ally,0) [8,18] 0 0 0 0 [IronBow,HuntingBow,Vulnerary] NoAI
+UNIT Artemer Huntsman 0 Level(1,Ally,0) [8,18] 0 0 0 0 [IronBow,HuntingBow,Vulnerary,MasterKey] NoAI
+UNIT Helena Troubadour 0 Level(1,Ally,0) [7,18] 0 0 0 0 [Unlock] NoAI
 UNIT
 
 EnemyUnits:

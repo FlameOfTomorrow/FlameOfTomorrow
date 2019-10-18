@@ -4,12 +4,12 @@ Huntsman,0x0
 Eirika Lord,0x0
 Ephraim Master Lord,CantoID
 Eirika Master Lord,CantoID
-Sword Knight,CantoID
-Sword Knight (F),CantoID
-Lance Knight,CantoID
-Lance Knight (F),CantoID
-Axe Knight,CantoID
-Axe Knight (F),CantoID
+Cavalier,CantoID
+Cavalier (F),CantoID
+Paladin,CantoID
+Paladin (F),CantoID
+Armour Knight,CantoID
+Armour Knight (F),CantoID
 General,0x0
 General (F),0x0
 Thief,CunningID
@@ -157,9 +157,9 @@ Griffon Knight,CantoID
 Deva,CantoID
 Harbringer,0x0
 Thumaturge,CantoID
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
+Sword Knight,CantoID
+Lance Knight,CantoID
+Axe Knight,CantoID
 Ephraim Lord,0x0
 Ephraim Lord,0x0
 Ephraim Lord,0x0

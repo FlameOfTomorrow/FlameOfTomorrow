@@ -128,7 +128,7 @@ Journeyman (2),0x81e0f98,0x81e173c
 Pupil (2),0x81e189c,0x81e2088
 Dread Fighter,0x81c33cc,0x81c3d7c
 Dread Fighter (F),0x81c33cc,0x81c3d7c
-Deserter,0x81c33cc,0x81c3d7c
+Deserter,DeserterMoving|IsPointer,0x81edbc4
 Spartan,0x81c33cc,0x81c3d7c
 Dark Flier,0x81c33cc,0x81c3d7c
 Arbalist,0x81c33cc,0x81c3d7c
@@ -156,9 +156,9 @@ Griffon Knight,0x81c33cc,0x81c3d7c
 Deva,0x81c33cc,0x81c3d7c
 Harbringer,0x81c33cc,0x81c3d7c
 Thumaturge,0x81c33cc,0x81c3d7c
-Ephraim Lord,0x81c33cc,0x81c3d7c
-Ephraim Lord,0x81c33cc,0x81c3d7c
-Ephraim Lord,0x81c33cc,0x81c3d7c
+Sword Knight,SwordKnightMoving|IsPointer,0x81c692c
+Lance Knight,LanceKnightMoving|IsPointer,0x81c692c
+Axe Knight,AxeKnightMoving|IsPointer,0x81c692c
 Ephraim Lord,0x81c33cc,0x81c3d7c
 Ephraim Lord,0x81c33cc,0x81c3d7c
 Ephraim Lord,0x81c33cc,0x81c3d7c

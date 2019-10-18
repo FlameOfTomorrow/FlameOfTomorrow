@@ -146,3 +146,33 @@ OutlawAnimation:
 BowAnim(OutlawBowAnim)
 UnarmedAnim(OutlawUnarmedAnim)
 EndAnim
+
+// Deserter
+{
+	#include "Deserter Lance Installer.event"
+	#include "Deserter Unarmed Installer.event"
+}
+
+ALIGN 4
+DeserterAnimation:
+LanceAnim(DeserterLanceAnim)
+UnarmedAnim(DeserterUnarmedAnim)
+EndAnim
+
+// Cavaliers
+{
+	#include "Cavalier M Axe Installer.event"
+	#include "Cavalier M Handaxe Installer.event"
+	#include "Cavalier M Lance Installer.event"
+	#include "Cavalier M Sword Installer.event"
+	#include "Cavalier M Unarmed Installer.event"
+}
+
+ALIGN 4
+CavalierAnimation:
+SwordAnim(CavalierSwordAnim)
+LanceAnim(CavalierLanceAnim)
+AxeAnim(CavalierAxeAnim)
+HandaxeAnim(CavalierHandaxeAnim)
+UnarmedAnim(CavalierUnarmedAnim)
+EndAnim

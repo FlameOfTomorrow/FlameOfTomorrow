@@ -36,3 +36,23 @@ OutlawStanding:
 #incext Png2Dmp "Files/Outlaw/Standing.png" --lz77
 OutlawMoving:
 #incext Png2Dmp "Files/Outlaw/Moving.png" --lz77
+
+// Deserter
+DeserterStanding:
+#incext Png2Dmp "Files/Deserter/Standing.png" --lz77
+DeserterMoving:
+#incext Png2Dmp "Files/Deserter/Moving.png" --lz77
+
+// SALV Cavalier
+SwordKnightStanding:
+#incext Png2Dmp "Files/Cavalier/Sword Standing.png" --lz77
+SwordKnightMoving:
+#incext Png2Dmp "Files/Cavalier/Sword Moving.png" --lz77
+LanceKnightStanding:
+#incext Png2Dmp "Files/Cavalier/Lance Standing.png" --lz77
+LanceKnightMoving:
+#incext Png2Dmp "Files/Cavalier/Lance Moving.png" --lz77
+AxeKnightStanding:
+#incext Png2Dmp "Files/Cavalier/Axe Standing.png" --lz77
+AxeKnightMoving:
+#incext Png2Dmp "Files/Cavalier/Axe Moving.png" --lz77

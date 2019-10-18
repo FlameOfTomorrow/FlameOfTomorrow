@@ -32,9 +32,24 @@
 #define OutlawUnarmedAnim GreatLordFUnarmedAnim
 #define OutlawClassCard 0xAF
 
+// Deserter
+#define Deserter 0x82
+#define DeserterLanceAnim KnightFLanceAnim
+#define DeserterUnarmedAnim KnightFUnarmedAnim
+#define DeserterClassCard 0xB0
+
+// Cavaliers
+#define SwordKnight 0xA0
+#define LanceKnight 0xA1
+#define AxeKnight 0xA2
+#define CavalierAxeAnim GeneralFSwordAnim
+#define CavalierHandaxeAnim GeneralFLanceAnim
+#define SwordKnightClassCard 0xB1
+#define LanceKnightClassCard CavalierClassCard
+#define AxeKnightClassCard 0xB2
+
 #define DreadFighter 0x80
 #define DreadFigher_F 0x81
-#define Deserter 0x82
 #define Spartan 0x83
 #define DarkFlier 0x84
 #define Arbalist 0x85

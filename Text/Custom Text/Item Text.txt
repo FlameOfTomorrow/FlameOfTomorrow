@@ -236,3 +236,10 @@ to use light magic.[X]
 
 ##HuntingBowName
 Hunting Bow[X]
+
+##MasterKeyName
+Master Key[X]
+
+##MasterKeyDescription
+Opens chests[N]
+and doors.[X]

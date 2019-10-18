@@ -56,3 +56,27 @@ OutlawCardFile:
 OutlawCardPalette:
 #incext Png2Dmp "Class Cards/Outlaw.png" --palette-only
 setCardEntry(OutlawClassCard,OutlawCardFile,OutlawCardPalette)
+
+DeserterCardFile:
+#incext Png2Dmp "Class Cards/Deserter.png" --lz77
+DeserterCardPalette:
+#incext Png2Dmp "Class Cards/Deserter.png" --palette-only
+setCardEntry(DeserterClassCard,DeserterCardFile,DeserterCardPalette)
+
+SwordCavalierCardFile:
+#incext Png2Dmp "Class Cards/Sword Cavalier.png" --lz77
+SwordCavalierCardPalette:
+#incext Png2Dmp "Class Cards/Sword Cavalier.png" --palette-only
+setCardEntry(SwordKnightClassCard,SwordCavalierCardFile,SwordCavalierCardPalette)
+
+LanceCavalierCardFile:
+#incext Png2Dmp "Class Cards/Lance Cavalier.png" --lz77
+LanceCavalierCardPalette:
+#incext Png2Dmp "Class Cards/Lance Cavalier.png" --palette-only
+setCardEntry(LanceKnightClassCard,LanceCavalierCardFile,LanceCavalierCardPalette)
+
+AxeCavalierCardFile:
+#incext Png2Dmp "Class Cards/Axe Cavalier.png" --lz77
+AxeCavalierCardPalette:
+#incext Png2Dmp "Class Cards/Axe Cavalier.png" --palette-only
+setCardEntry(AxeKnightClassCard,AxeCavalierCardFile,AxeCavalierCardPalette)

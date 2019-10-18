@@ -114,4 +114,8 @@ ORG WeaponIconOffset(LumineIcon)
 ORG WeaponIconOffset(HuntingBowIcon)
 #incext Png2Dmp "Icons/HuntingBow.png"
 
+// Master Key
+ORG WeaponIconOffset(MasterKeyIcon)
+#incext Png2Dmp "Icons/MasterKey.png"
+
 POP

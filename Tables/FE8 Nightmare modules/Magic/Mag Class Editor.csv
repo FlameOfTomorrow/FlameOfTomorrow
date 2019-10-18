@@ -1,6 +1,6 @@
 INLINE MagClassTable,Base Magic,Magic Growth,Magic Cap,Magic Promotion Bonus
 None,0,0,20,0
-Ephraim Lord,1,10,20,0
+Huntsman,1,10,20,0
 Eirika Lord,1,25,20,0
 Ephraim Master Lord,2,10,24,1
 Eirika Master Lord,2,20,25,2
@@ -118,7 +118,7 @@ Peer,0,0,20,0
 Queen,0,0,20,0
 Prince,0,0,20,0
 Queen,0,0,20,0
-(empty),0,0,20,0
+Light Rune,0,0,20,0
 Fallen Prince,0,0,20,0
 Tent,0,0,20,0
 Pontifex,0,0,20,0
@@ -134,7 +134,7 @@ Spartan,0,0,23,0
 Dark Flier,6,0,21,0
 Arbalist,1,5,24,1
 Nomad,0,0,20,0
-Outlaw,3,25,26,3
+Outlaw,3,30,20,0
 Adventurer,3,25,26,3
 Dark Mage,2,50,20,0
 Nephilim,4,10,20,0
