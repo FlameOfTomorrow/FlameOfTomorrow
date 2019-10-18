@@ -134,3 +134,15 @@ EndAnim
 #include "Troubadour Staff Installer.event"
 #include "Troubadour Unarmed Installer.event"
 }
+
+// Outlaw
+{
+	#include "Outlaw Bow Installer.event"
+	#include "Outlaw Unarmed Installer.event"
+}
+
+ALIGN 4
+OutlawAnimation:
+BowAnim(OutlawBowAnim)
+UnarmedAnim(OutlawUnarmedAnim)
+EndAnim

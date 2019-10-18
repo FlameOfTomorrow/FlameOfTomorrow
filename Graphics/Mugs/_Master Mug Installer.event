@@ -50,3 +50,9 @@ AxeArmorCardFile:
 AxeArmorCardPalette:
 #incext Png2Dmp "Class Cards/Axe Armor.png" --palette-only
 setCardEntry(AxeArmorClassCard,AxeArmorCardFile,AxeArmorCardPalette)
+
+OutlawCardFile:
+#incext Png2Dmp "Class Cards/Outlaw.png" --lz77
+OutlawCardPalette:
+#incext Png2Dmp "Class Cards/Outlaw.png" --palette-only
+setCardEntry(OutlawClassCard,OutlawCardFile,OutlawCardPalette)

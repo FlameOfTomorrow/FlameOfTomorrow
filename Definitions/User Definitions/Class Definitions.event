@@ -26,6 +26,12 @@
 #define LanceArmorClassCard KnightClassCard
 #define AxeArmorClassCard 0xAE
 
+// Outlaw
+#define Outlaw 0x87
+#define OutlawBowAnim EirikaSword3Anim
+#define OutlawUnarmedAnim GreatLordFUnarmedAnim
+#define OutlawClassCard 0xAF
+
 #define DreadFighter 0x80
 #define DreadFigher_F 0x81
 #define Deserter 0x82
@@ -33,7 +39,6 @@
 #define DarkFlier 0x84
 #define Arbalist 0x85
 #define Nomad 0x86
-#define Outlaw 0x87
 #define Adventurer 0x88
 #define DarkMage 0x89
 #define Nephilim 0x8A

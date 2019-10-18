@@ -30,3 +30,9 @@ MageStanding:
 #incext Png2Dmp "Files/Mage/Standing.png" --lz77
 MageMoving:
 #incext Png2Dmp "Files/Mage/Moving.png" --lz77
+
+// Outlaw
+OutlawStanding:
+#incext Png2Dmp "Files/Outlaw/Standing.png" --lz77
+OutlawMoving:
+#incext Png2Dmp "Files/Outlaw/Moving.png" --lz77
