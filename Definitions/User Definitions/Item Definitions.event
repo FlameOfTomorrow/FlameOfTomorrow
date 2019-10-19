@@ -80,3 +80,6 @@
 
 #define MasterKey 0x79
 #define MasterKeyIcon 0xE2
+
+#define Entrap 0xC3
+#define EntrapIcon 0xE3

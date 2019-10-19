@@ -69,7 +69,7 @@ Renewal Manual,RenewalScrollUsability | IsPointer,RenewalScrollUsability | IsPoi
 Sol Manual,SolScrollUsability | IsPointer,SolScrollUsability | IsPointer,0x802905c,SolScrollEffect | IsPointer
 Wrath Manual,WrathScrollUsability | IsPointer,WrathScrollUsability | IsPointer,0x802905c,WrathScrollEffect | IsPointer
 Spirit Dust,0x28B4C|IsPointer,0x2A0D0|IsPointer,0x802905c,0x2FF40|IsPointer
-0x46,0x8028c04,0x802a100,0x802905c,0x802ff76
+Entrap,Entrap_Usability|IsPointer,0x802a100,Entrap_Target1|IsPointer,0x802fe94
 0x47,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x48,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x49,0x8028c04,0x802a100,0x802905c,0x802ff76

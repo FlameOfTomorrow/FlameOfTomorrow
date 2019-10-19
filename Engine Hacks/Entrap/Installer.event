@@ -1,0 +1,33 @@
+
+//Entrap
+
+/*
+PUSH
+ORG $288B0+4*(TorchStaff-0x4B) //usability jump table
+POIN Entrap_Usability
+ORG $2FC90+4*(TorchStaff-0x4B) //effect jump table
+POIN 0x2FE94 //Rescue effect pointer
+ORG $28E8C+4*(TorchStaff-0x4B) //or is this effect jump table?
+POIN Entrap_Target1
+ORG $8B00E0 //Torch staff spell animation
+POIN 0x9A5214
+ORG $8B00DA //Torch staff # of people
+BYTE 0x2
+POP
+*/
+
+ALIGN 4
+Entrap_Usability:
+#incbin "Entrap_Usability.dmp"
+POIN Entrap_Target_Func|1
+ALIGN 4
+Entrap_Target1:
+#incbin "Entrap_Target1.dmp"
+POIN Entrap_Target_Func|1
+ALIGN 4
+Entrap_Target_Func:
+#incbin "Entrap_Target_Func.dmp"
+POIN Entrap_Target_Check|1
+ALIGN 4
+Entrap_Target_Check:
+#incbin "Entrap_Target_Check.dmp"

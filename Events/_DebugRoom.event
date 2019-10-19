@@ -40,7 +40,7 @@ END_MAIN
 
 Units1:
 UNIT Artemer Huntsman 0 Level(1,Ally,0) [7,7] 0 0 0 0 [IronBow,WrathManual,AdeptManual,ParagonManual] NoAI
-UNIT Helena Troubadour 0 Level(1,Ally,0) [7,8] 0 0 0 0 [Heal,PoisonStaff,Caduceus] NoAI
+UNIT Helena Troubadour 0 Level(1,Ally,0) [7,8] 0 0 0 0 [Heal,PoisonStaff,Caduceus,Entrap] NoAI
 UNIT Keith Mage 0 Level(1,Ally,0) [8,7] 0 0 0 0 [Thunder,Thrysus,Shade,Flux] NoAI
 UNIT Lexi LncArmor 0 Level(3,Ally,0) [8,8] 0 0 0 0 [SapphireLance,EnergyRing] NoAI
 UNIT Verwald Fighter 0 Level(2,Ally,0) [6,8] 0 0 0 0 [IronAxe, HandAxe, Lumine, Lightning] NoAI

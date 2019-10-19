@@ -243,3 +243,10 @@ Master Key[X]
 ##MasterKeyDescription
 Opens chests[N]
 and doors.[X]
+
+##EntrapName
+Entrap[X]
+
+##EntrapDesc
+Brings an enemy[N]
+to the user.[X]

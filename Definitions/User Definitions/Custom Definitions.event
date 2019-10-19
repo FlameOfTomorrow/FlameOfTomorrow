@@ -2,3 +2,5 @@
 #include "Item Definitions.event"
 #include "Character Definitions.event"
 #include "Song Definitions.event"
+
+#define _DEBUGROOM_
