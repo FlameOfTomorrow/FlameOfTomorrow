@@ -60,6 +60,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+UnlockAllGuideEntries
 LOAD1 0x1 Units1
 ENUN
 LOAD1 0x1 EnemyUnits
