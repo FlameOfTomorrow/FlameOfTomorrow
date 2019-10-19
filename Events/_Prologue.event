@@ -112,7 +112,7 @@ UNIT ProloguePrisoner1 CivilianF 0 Level(1,NPC,0) [1,10] 0 0 0 0 [0] GuardTileAI
 UNIT Merry Outlaw 0 Level(1,NPC,0) [4,6] 0 0 0 0 [IronBow] DoNothingAI
 UNIT ProloguePrisoner3 CivilianF2 0 Level(1,NPC,0) [4,9] 0 0 0 0 [0] GuardTileAI
 UNIT ProloguePrisoner3 Civilian 0 Level(1,NPC,0) [4,8] 0 0 0 0 [0] GuardTileAI
-UNIT ProloguePrisoner4 Civilian2F 0 Level(1,NPC,0) [12,9] 0 0 0 0 [0] GuardTileAI
+UNIT ProloguePrisoner4 CivilianF2 0 Level(1,NPC,0) [12,9] 0 0 0 0 [0] GuardTileAI
 UNIT ProloguePrisoner4 Civilian2 0 Level(1,NPC,0) [12,8] 0 0 0 0 [0] GuardTileAI
 UNIT
 
