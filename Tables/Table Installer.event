@@ -78,3 +78,5 @@
 
 #include "FE8 Nightmare modules\Skills\FE8 Skill Description Editor.event"
 
+#include "FE8 Nightmare modules\Sound Room\Sound Room Editor.event"
+

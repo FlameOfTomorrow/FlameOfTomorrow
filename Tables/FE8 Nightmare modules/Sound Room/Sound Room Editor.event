@@ -1,0 +1,12 @@
+#define csvmacro038(arg000,arg001,arg002,arg003) "WORD arg000 arg001 arg002 arg003 "
+
+PUSH
+ORG 0xa20e74
+csvmacro038(TrialSong,2940,0,SongNameTrial)
+csvmacro038(BlasterMasterS1Song,4726,0,SongNameBlasterMaster)
+csvmacro038(E1M1Song,3359,0,SongNameE1M1)
+csvmacro038(SplashSong,6214,0,SongNameSplash)
+csvmacro038(TaisenSong,3874,0,SongNameTaisen)
+csvmacro038(TheCertainPathSong,1513,0,SongNamePathToVictory)
+csvmacro038(0xFFFFFFFF,0,0,0)
+POP

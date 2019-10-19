@@ -1,0 +1,17 @@
+##SongNameTrial
+Trial (Ace Attorney)[X]
+
+##SongNameBlasterMaster
+Stage 1 (Blaster Master)[X]
+
+##SongNameE1M1
+At Doom's Gate (Doom)[X]
+
+##SongNameSplash
+Splash ()[X]
+
+##SongNameTaisen
+Taisen 4 (Puyo Pop Fever)[X]
+
+##SongNamePathToVictory
+The Certain Path To Victory[X]

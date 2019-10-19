@@ -1849,6 +1849,30 @@ __TEXTPROCESSA92:
 #incbin ".TextEntries\text_buildfileMerryDesc.fetxt.dmp"
 setText($A92, __TEXTPROCESSA92)
 
+__TEXTPROCESSA93:
+#incbin ".TextEntries\text_buildfileSongNameTrial.fetxt.dmp"
+setText($A93, __TEXTPROCESSA93)
+
+__TEXTPROCESSA94:
+#incbin ".TextEntries\text_buildfileSongNameBlasterMaster.fetxt.dmp"
+setText($A94, __TEXTPROCESSA94)
+
+__TEXTPROCESSA95:
+#incbin ".TextEntries\text_buildfileSongNameE1M1.fetxt.dmp"
+setText($A95, __TEXTPROCESSA95)
+
+__TEXTPROCESSA96:
+#incbin ".TextEntries\text_buildfileSongNameSplash.fetxt.dmp"
+setText($A96, __TEXTPROCESSA96)
+
+__TEXTPROCESSA97:
+#incbin ".TextEntries\text_buildfileSongNameTaisen.fetxt.dmp"
+setText($A97, __TEXTPROCESSA97)
+
+__TEXTPROCESSA98:
+#incbin ".TextEntries\text_buildfileSongNamePathToVictory.fetxt.dmp"
+setText($A98, __TEXTPROCESSA98)
+
 }
 
 #endif // TEXT_INSTALLER_TEXT_BUILDFILE_TXT

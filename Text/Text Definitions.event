@@ -445,5 +445,11 @@
 #define JurgenDesc $A90
 #define MerryName $A91
 #define MerryDesc $A92
+#define SongNameTrial $A93
+#define SongNameBlasterMaster $A94
+#define SongNameE1M1 $A95
+#define SongNameSplash $A96
+#define SongNameTaisen $A97
+#define SongNamePathToVictory $A98
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT
