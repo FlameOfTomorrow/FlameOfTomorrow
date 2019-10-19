@@ -178,6 +178,13 @@ POP
   ALIGN 4
   #include "Entrap/Installer.event"
   
+  
+  //Disable guide sort for glitchiness reasons
+  PUSH
+    ORG 0xCEF7C 
+    SHORT 0xE001
+  POP
+  
   ALIGN 4
   #include "IconRework/IconRework.event"   // Allows using standard Icon routines to draw skill icons
   #include "PopupRework/PopupRework.event" // Allows to expand on vanilla popups by adding components
