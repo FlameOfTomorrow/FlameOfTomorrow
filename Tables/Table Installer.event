@@ -20,6 +20,12 @@
 
 #include "FE8 Nightmare modules\Escape\Escape Quote Editor.event"
 
+#include "FE8 Nightmare modules\Guide\Guide Chapter Title.event"
+
+#include "FE8 Nightmare modules\Guide\Guide Master List.event"
+
+#include "FE8 Nightmare modules\Guide\Guide Section Title.event"
+
 #include "FE8 Nightmare modules\IERevamp Modules\FE8 Effect Anim Association Editor.event"
 
 #include "FE8 Nightmare modules\IERevamp Modules\FE8 Item AI Table.event"
