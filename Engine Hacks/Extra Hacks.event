@@ -89,4 +89,6 @@
   //255 Crit = Cannot crit (broken?)
   // #include "FE8-Modified Crit Stuff/FE8-Modified Crit Stuff EA.event"
 
+  //Custom Ballistae
+  #include "Custom Trap Display/Custom Trap Display Installer.event"
   

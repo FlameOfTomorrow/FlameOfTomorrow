@@ -78,6 +78,9 @@ this accessory.[X]
 ## IM_UnequipAccessory
 Unequip[X]
 
+## HouseText
+[MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
+
 #include "skilldesc_text.txt"
 
 #include "item text.txt"

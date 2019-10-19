@@ -1,4 +1,8 @@
 
+// Sigil
+SigilSprite:
+#incext Png2Dmp "Files/Sigil/Sigil.png" --lz77
+
 // Huntsman
 HuntsmanStanding:
 #incext Png2Dmp "Files/Huntsman/Standing.png" --lz77
@@ -56,3 +60,9 @@ AxeKnightStanding:
 #incext Png2Dmp "Files/Cavalier/Axe Standing.png" --lz77
 AxeKnightMoving:
 #incext Png2Dmp "Files/Cavalier/Axe Moving.png" --lz77
+
+// Soldier
+SoldierStanding:
+#incext Png2Dmp "Files/Soldier/Standing.png" --lz77
+SoldierMoving:
+#incext Png2Dmp "Files/Soldier/Moving.png" --lz77

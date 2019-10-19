@@ -176,3 +176,9 @@ AxeAnim(CavalierAxeAnim)
 HandaxeAnim(CavalierHandaxeAnim)
 UnarmedAnim(CavalierUnarmedAnim)
 EndAnim
+
+// Soldier
+{
+	#include "Soldier Lance Installer.event"
+	#include "Soldier Unarmed Installer.event"
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.1" tiledversion="2018.08.22" orientation="orthogonal" renderorder="right-down" width="17" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="14" nextobjectid="1">
+<map version="1.1" tiledversion="2018.08.22" orientation="orthogonal" renderorder="right-down" width="17" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="40" nextobjectid="1">
  <tileset firstgid="1" name="FE8 - Fort - 3c003d3e" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="../../../FEMapCreator/Tilesets/FE8 - Fort - 3c003d3e.png" trans="ffffff" width="512" height="512"/>
  </tileset>
@@ -85,7 +85,7 @@
    <tile gid="430"/>
    <tile gid="753"/>
    <tile gid="754"/>
-   <tile gid="526"/>
+   <tile gid="521"/>
    <tile gid="427"/>
    <tile gid="428"/>
    <tile gid="522"/>
@@ -101,7 +101,7 @@
    <tile gid="755"/>
    <tile gid="424"/>
    <tile gid="754"/>
-   <tile gid="722"/>
+   <tile gid="754"/>
    <tile gid="460"/>
    <tile gid="824"/>
    <tile gid="826"/>
@@ -111,15 +111,15 @@
    <tile gid="721"/>
    <tile gid="786"/>
    <tile gid="754"/>
-   <tile gid="720"/>
-   <tile gid="753"/>
    <tile gid="722"/>
-   <tile gid="720"/>
-   <tile gid="753"/>
+   <tile gid="722"/>
+   <tile gid="722"/>
+   <tile gid="722"/>
+   <tile gid="722"/>
    <tile gid="423"/>
    <tile gid="722"/>
-   <tile gid="754"/>
-   <tile gid="460"/>
+   <tile gid="457"/>
+   <tile gid="458"/>
    <tile gid="821"/>
    <tile gid="822"/>
    <tile gid="483"/>
@@ -128,11 +128,11 @@
    <tile gid="756"/>
    <tile gid="754"/>
    <tile gid="722"/>
-   <tile gid="752"/>
-   <tile gid="756"/>
-   <tile gid="754"/>
-   <tile gid="752"/>
-   <tile gid="756"/>
+   <tile gid="457"/>
+   <tile gid="425"/>
+   <tile gid="458"/>
+   <tile gid="721"/>
+   <tile gid="722"/>
    <tile gid="585"/>
    <tile gid="427"/>
    <tile gid="428"/>
@@ -258,7 +258,7 @@
    <tile gid="428"/>
    <tile gid="427"/>
    <tile gid="522"/>
-   <tile gid="689"/>
+   <tile gid="562"/>
    <tile gid="595"/>
    <tile gid="752"/>
    <tile gid="594"/>

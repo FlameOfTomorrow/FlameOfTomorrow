@@ -3,4 +3,6 @@
 #include "Character Definitions.event"
 #include "Song Definitions.event"
 
-#define _DEBUGROOM_
+//#define _DEBUGROOM_
+
+#define DoNothingAI DoNothing

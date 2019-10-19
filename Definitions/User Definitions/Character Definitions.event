@@ -1,3 +1,4 @@
+// Player Units
 #define Artemer 1
 #define ArtemerMug 0x2
 
@@ -24,3 +25,12 @@
 
 #define Merry 9
 #define MerryMug 0xC
+
+// Enemy Units
+#define PrologueBandit 0x80
+
+// NPC Units
+#define ProloguePrisoner1 0x81
+#define ProloguePrisoner2 0x82
+#define ProloguePrisoner3 0x83
+#define ProloguePrisoner4 0x84
