@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMagicModifiers: // Magic
-	POIN prAddUnitMagic prAddEquipMagic prAddAccessoryMagic
+	POIN prAddUnitMagic prAddEquipMagic prAddAccessoryMagic prEnfeebleStatCut
 WORD 0
 
 prAddUnitMagic:

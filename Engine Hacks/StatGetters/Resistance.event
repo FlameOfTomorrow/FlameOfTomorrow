@@ -5,7 +5,7 @@
 
 pResistanceModifiers: // Resistance
 	POIN prAddUnitResistance //prHalveIfCapturing
-	POIN prDebuffRes prAddEquipResistance prAddAccessoryResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes
+	POIN prDebuffRes prAddEquipResistance prAddAccessoryResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prEnfeebleStatCut
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif

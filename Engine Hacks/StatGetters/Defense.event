@@ -5,7 +5,7 @@
 
 pDefenseModifiers: // Defense
 	POIN prAddUnitDefense //prHalveIfCapturing
-	POIN prDebuffDef prAddEquipDefense prAddAccessoryDefense prItemPassiveDefense prRallyDef prLifeAndDeathMinus VigorDanceCheck prSkillFury prFortressDefenseDef
+	POIN prDebuffDef prAddEquipDefense prAddAccessoryDefense prItemPassiveDefense prRallyDef prLifeAndDeathMinus VigorDanceCheck prSkillFury prFortressDefenseDef prEnfeebleStatCut
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif

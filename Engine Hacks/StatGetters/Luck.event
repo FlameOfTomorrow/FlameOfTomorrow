@@ -5,7 +5,7 @@
 
 pLuckModifiers: // Luck
 	POIN prAddUnitLuck //prHalveIfCapturing 
-	POIN prDebuffLck prAddEquipLuck prAddAccessoryLuck prItemPassiveLuck prRallyLck
+	POIN prDebuffLck prAddEquipLuck prAddAccessoryLuck prItemPassiveLuck prRallyLck prEnfeebleStatCut
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif

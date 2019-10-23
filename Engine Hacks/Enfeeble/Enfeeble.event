@@ -1,0 +1,7 @@
+#define Enfeeble 1 //status ID
+
+ALIGN 4
+MESSAGE currentOffset
+prEnfeebleStatCut:
+#incbin "EnfeebleStatCut.dmp"
+WORD Enfeeble

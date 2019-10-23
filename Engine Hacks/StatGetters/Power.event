@@ -5,7 +5,7 @@
 
 pPowerModifiers: // Power
 	POIN prAddUnitPower //prHalveIfCapturing 
-	POIN prDebuffStr prAddEquipPower prAddAccessoryPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow
+	POIN prDebuffStr prAddEquipPower prAddAccessoryPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow prEnfeebleStatCut
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif

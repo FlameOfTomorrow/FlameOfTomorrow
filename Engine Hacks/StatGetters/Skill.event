@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pSkillModifiers: // Skill
-	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prAddAccessorySkill prItemPassiveSkl prRallySkl
+	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prAddAccessorySkill prItemPassiveSkl prRallySkl prEnfeebleStatCut
 	#ifdef __DebuffMinZero__
 	POIN prMinZero
 	#endif
