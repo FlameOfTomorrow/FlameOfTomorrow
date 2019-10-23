@@ -26,6 +26,9 @@ for ally units.[X]
 Total number of leadership stars[N]
 for enemy units.[X]
 
+# 0x514
+Feeble[X]
+
 #include "music text.txt"
 
 #include "statscreen_text.txt"
