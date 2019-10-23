@@ -23,6 +23,10 @@ bne ReturnFalse
 ldr r0,[r4]
 ldr r0,[r0]
 ldr r0,[r0,#40]
+ldr r1,[r4]
+ldr r1,[r1,#4]
+ldr r1,[r1,#0x28]
+orr r0,r1
 lsl r0,r0,#16
 lsr r0,r0,#24
 mov r1,#0x20
