@@ -3,7 +3,6 @@
 
 .equ gActiveUnit,0x3004E50
 .equ CheckIfHasItem,0x8018A9D
-.equ MakeTargetListForDoorAndBridges,0x8025815
 .equ GetTargetListSize,0x804FD29
 
 .macro blh to, reg=r3
@@ -58,6 +57,7 @@ bx r1
 .equ gUnitSubject,0x2033F3C
 .equ gMapRange,0x202E4E4
 .equ TryAddBridgeToTargetList,0x80257D5
+.equ ForEachAdjacentPosition,0x8024FA5
 
 MakeTargetListForDoorAndBridges:
 
