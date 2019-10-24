@@ -92,3 +92,5 @@
   //Custom Ballistae
   #include "Custom Trap Display/Custom Trap Display Installer.event"
   
+  //Chapter Objective Change
+  #include "ChangeChapterObjective/Installer.event"

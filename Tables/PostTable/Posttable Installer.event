@@ -4,7 +4,6 @@
 #include "Item Editor.event"
 #include "Table Locations.event"
 #include "Repointers.event"
-#include "Chapter Music Setter.event"
 
 // Expanded Class Table
 #define SetClassCard(ClassID,CardID) "PUSH; ORG ClassTable + (84 * ClassID) + 0x8; BYTE CardID ; POP"

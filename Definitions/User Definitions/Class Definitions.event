@@ -39,9 +39,9 @@
 #define DeserterClassCard 0xB0
 
 // Cavaliers
-#define SwordKnight 0xA0
-#define LanceKnight 0xA1
-#define AxeKnight 0xA2
+#define SwordKnight 0x9E
+#define LanceKnight 0x9F
+#define AxeKnight 0xA0
 #define CavalierAxeAnim GeneralFSwordAnim
 #define CavalierHandaxeAnim GeneralFLanceAnim
 #define SwordKnightClassCard 0xB1
