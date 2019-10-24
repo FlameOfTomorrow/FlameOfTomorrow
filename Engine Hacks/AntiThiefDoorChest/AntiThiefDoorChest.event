@@ -1,0 +1,42 @@
+/*
+0x10 Home
+0x11 Seize
+0x12 Door
+0x13 Anti-Thief Door
+0x14 Chest
+0x15 Anti-Thief Chest
+0x16 Armory
+0x17 Vendor
+0x18 Secret Shop
+0x19 Sme Arrive
+0x1A Sme Escape
+0x1B FREE
+0x1C FREE
+0x1D FREE
+0x1E FREE
+0x1F FREE
+0x20 Village Center
+0x21 FREE
+0x22 FREE
+0x23 FREE
+0x24 Snakey Stairs
+*/
+
+
+#define AntiThiefChestID 0x15
+#define AntiThiefDoorID 0x13
+
+AntiThiefChestUsability:
+#incbin "AntiThiefChestUsability.dmp"
+WORD AntiThiefChestID
+
+AntiThiefDoorUsability:
+#incbin "AntiThiefDoorUsability.dmp"
+WORD AntiThiefDoorID
+
+
+#define AntiThiefDoor(doorX,doorY) "DOOR 0 [doorX,doorY] AntiThiefDoorID"
+
+#define AntiThiefChest(item,chestX,chestY) "CHES 0 item [chestX,chestY] AntiThiefChestID"
+#define AntiThiefChestMoney(amountOfMoney,chestX,chestY) "CHES 0 0x6F+amountOfMoney*0x10000 [chestX,chestY] AntiThiefChestID"
+
