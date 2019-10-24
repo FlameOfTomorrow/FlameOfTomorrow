@@ -471,11 +471,21 @@
 #define JurgenDesc $AAA
 #define MerryName $AAB
 #define MerryDesc $AAC
-#define SongNameTrial $AAD
-#define SongNameBlasterMaster $AAE
-#define SongNameE1M1 $AAF
-#define SongNameSplash $AB0
-#define SongNameTaisen $AB1
-#define SongNamePathToVictory $AB2
+#define GregoryName $AAD
+#define GregoryDesc $AAE
+#define BanditName $AAF
+#define BanditDesc $AB0
+#define PrisonerName $AB1
+#define PrisonerDesc $AB2
+#define SongNameTrial $AB3
+#define SongNameBlasterMaster $AB4
+#define SongNameE1M1 $AB5
+#define SongNameSplash $AB6
+#define SongNameTaisen $AB7
+#define SongNamePathToVictory $AB8
+#define PrologueName $AB9
+#define PrologueObjective $ABA
+#define PrologueDetailObjective $ABB
+#define PrologueDetailObjective2 $ABC
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

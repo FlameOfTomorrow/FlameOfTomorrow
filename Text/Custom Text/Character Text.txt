@@ -51,3 +51,21 @@ Merry[X]
 
 ##MerryDesc
 MerryDesc[X]
+
+##GregoryName
+Gregory[X]
+
+##GregoryDesc
+GregoryDesc[X]
+
+##BanditName
+Bandit[X]
+
+##BanditDesc
+BanditDesc[X]
+
+##PrisonerName
+Prisoner[X]
+
+##PrisonerDesc
+PrisonerDesc[X]

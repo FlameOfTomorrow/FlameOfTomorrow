@@ -1,0 +1,12 @@
+##PrologueName
+Prologue[X]
+
+##PrologueObjective
+Escort prisoners[N]
+and then seize.[X]
+
+##PrologueDetailObjective
+Escort[X]
+
+##PrologueDetailObjective2
+Seize throne[X]

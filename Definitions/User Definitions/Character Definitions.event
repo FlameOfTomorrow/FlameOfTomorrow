@@ -26,6 +26,12 @@
 #define Merry 9
 #define MerryMug 0xC
 
+// Bosses
+#define Gregory 0x68
+#define GregoryMug 0x30
+
+#define XanthusMug 0x2F
+
 // Enemy Units
 #define PrologueBandit 0x80
 

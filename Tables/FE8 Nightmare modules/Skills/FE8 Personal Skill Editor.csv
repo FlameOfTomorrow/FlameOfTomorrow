@@ -1,12 +1,12 @@
 INLINE PersonalSkillTable,Skill
 None,0x0
-Artemer,0x0
-Helena,0x0
-Keith,ShadowgiftID
-Lexi,0x0
-Verwald,NiceThighsID
+Artemer,ForagerID
+Helena,LiveToServeID
+Keith,AdeptID
+Lexi,SwapID
+Verwald,0x0
 Spike,0x0
-Ryder,0x0
+Ryder,AcrobatID
 Jurgen,0x0
 Merry,0x0
 0,0x0
@@ -103,7 +103,7 @@ Hunter (Ch 16),0x0
 +AC0-0,0x0
 Brigand,0x0
 0,0x0
-O'Neill (Prologue),0x0
+Gregory,WatchfulID
 Glen (Cutscene),0x0
 Zonta (Ch 5x),0x0
 Vigarde (Ch 14B),0x0

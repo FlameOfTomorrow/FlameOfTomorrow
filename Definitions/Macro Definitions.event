@@ -105,7 +105,7 @@
 #define SetActiveAI(ai1,ai2) "SVAL 0x1 ai1|(ai2<<8); CHECK_ACTIVE; SADD 0x0C2; CHAI 0xFFFF" //needs snakey's fix, experimental
 #define Increment(counterID) "COUNTER_ADD counterID 0x0"
 #define Decrement(counterID) "COUNTER_SUBTRACT counterID 0x0"
-#define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 30"
+#define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 60"
 #define MaxTurns(TurnNum) "256 - TurnNum"
 #define InfiniteTurnEventPlayer(flag,event,turn) "TurnEventPlayer(flag,event,turn,MaxTurns(turn))"
 #define InfiniteTurnEventEnemy(flag,event,turn) "TurnEventEnemy(flag,event,turn,MaxTurns(turn))"

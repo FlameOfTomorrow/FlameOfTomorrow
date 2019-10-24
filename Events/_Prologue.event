@@ -1,5 +1,14 @@
 EventPointerTable(PrologueEvent, PointerList)
 
+#define PrologueEntrance [8,21]
+#define PrologueBottomLeftStairs [2,13]
+#define PrologueLeftStairs [0,6]
+#define PrologueTopLeftStairs [5,1]
+#define PrologueRightStairs [16,1]
+#define PrologueBottomRightStairs [14,13]
+#define PrologueOutsideLeft [0,18]
+#define PrologueOutsideRight [16,18]
+
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -13,11 +22,73 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+InfiniteTurnEventPlayer(0x1C,DoorCounter,1)
+//TurnEventPlayer(0x1E,LowerThief,5)
+//TurnEventPlayer(0x1F,UpperTheif,7)
 END_MAIN
+
+LowerThief:
+SpawnReinforcements(BottomThief)
+NoFade
+ENDA
+
+UpperTheif:
+SpawnReinforcements(TopThief)
+NoFade
+ENDA
+
+BottomThief:
+UNIT PrologueBandit Thief Gregory Level(1,Enemy,1) PrologueBottomRightStairs 0 0 1 REDA14R13 [IronSword,DoorKey,ChestKey,DoorKey] LootingThiefAI
+UNIT
+
+TopThief:
+UNIT PrologueBandit Outlaw Gregory Level(1,Enemy,1) PrologueRightStairs 0 0 1 REDA16R1 [IronBow,DoorKey,ChestKey,DoorKey] LootingThiefAI
+UNIT
+
+DoorCounter:
+CHECK_EVENTID 0x1B
+BEQ 0x1 0xC 0x0 //branch label 1 if door not opened
+COUNTER_CHECK 1
+SVAL 0x1 1
+BEQ 0x2 0x1 0xC //branch label 2 if counter 1 = 1
+Increment(1)
+GOTO 1
+LABEL 2 //counter 1 = 1
+SpawnReinforcements(DoorReinforcements)
+ENUT 0x1D //flag for turns passing in case i need it later
+GOTO 3
+LABEL 1 //door not opened
+ENUF 0x1C //allow event to repeat
+LABEL 3
+NoFade
+ENDA
+
+DoorReinforcements:
+UNIT PrologueBandit SwordKnight Gregory Level(2,Enemy,1) PrologueOutsideLeft 0 0 1 REDA0R18 [IronSword,LeatherShield] DefaultAI
+UNIT PrologueBandit LanceKnight Gregory Level(3,Enemy,1) PrologueOutsideRight 0 0 1 REDA16R18 [IronLance,Javelin] DefaultAI
+UNIT
 
 ALIGN 32
 CharacterBasedEvents:
+CharacterEventBothWays(0x1A,ArtemerMerryTalk,Artemer,Merry)
+CharacterEventBothWays(0x1A,KeithMerryTalk,Keith,Merry)
 END_MAIN
+
+ArtemerMerryTalk:
+MUSS Comrades
+Text(HouseText)
+CUSA Merry
+MURE 2
+NoFade
+ENDA
+
+KeithMerryTalk:
+MUSS Comrades
+Text(HouseText)
+CUSA Merry
+MURE 2
+NoFade
+ENDA
 
 MiscBasedEvents:
 AREA 0x18 NPCChecker [0,0] [16,21]
@@ -41,35 +112,40 @@ ENDA
 
 ActivateSeize:
 ENUT 0x19 //allow seize to end chapter
-Text(HouseText)
+Text(HouseText) //spike says to seize now
+SetChapterObjectiveText(PrologueDetailObjective2,PrologueObjective)
 ENDA
 
 Door1Open:
 Text(HouseText)
 SetAI(ProloguePrisoner1,0x0,0xC) // Escape AI
+ENUT 0x1B
 NoFade
 ENDA
 
 Door2Open:
 Text(HouseText)
 SetAI(Merry,0x0,0xC) // Escape AI
+ENUT 0x1B
 NoFade
 ENDA
 
 Door3Open:
 Text(HouseText)
 SetAI(ProloguePrisoner3,0x0,0xC) // Escape AI
+ENUT 0x1B
 NoFade
 ENDA
 
 Door4Open:
 Text(HouseText)
 SetAI(ProloguePrisoner4,0x0,0xC) // Escape AI
+ENUT 0x1B
 NoFade
 ENDA
 
 LocationBasedEvents:
-Seize(2,1)
+Seize(0x0,SeizeEvent,2,1)
 DoorFlag(0x10,2,11)
 DoorFlag(0x11,6,5)
 DoorFlag(0x12,6,8)
@@ -78,11 +154,24 @@ Door(13,3)
 Door(14,1)
 Door(14,11)
 Door(16,7)
-Chest(IronSword,10,0)
-Chest(IronSword,11,1)
-Chest(IronSword,14,9)
-Chest(IronSword,16,10)
+Chest(SecretBook,10,0)
+Chest(Elixir,11,1)
+Chest(Longbow,14,9)
+Chest(Mend,16,10)
 END_MAIN
+
+SeizeEvent:
+CHECK_EVENTID 0x19 //if all escaped
+BEQ 0x1 0xC 0x0 //branch label 1 if all did not escape
+CALL CallEndEvent
+LABEL 1
+Text(HouseText) //spike says units need to escape
+NoFade
+ENDA
+
+CallEndEvent:
+CALL EndingScene
+ENDB
 
 Dunno1:
 END_MAIN
@@ -96,24 +185,66 @@ END_MAIN
 Tutorial:
 END_MAIN
 
+PartyUnits:
+UNIT Artemer Huntsman 0 Level(1,Ally,0) [0,21] 0 0 0 0 [IronBow,HuntingBow,MasterKey] NoAI
+UNIT Helena Troubadour 0 Level(1,Ally,0) [1,21] 0 0 0 0 [Heal,Unlock,Vulnerary] NoAI
+UNIT Keith Mage 0 Level(1,Ally,0) [2,21] 0 0 0 0 [Thunder,PrayerRing] NoAI
+UNIT Lexi LncArmor 0 Level(3,Ally,0) [3,21] 0 0 0 0 [IronLance,IronShield,Vulnerary] NoAI
+UNIT Verwald Fighter 0 Level(2,Ally,0) [4,21] 0 0 0 0 [IronAxe, HandAxe] NoAI
+UNIT Spike Hero 0 Level(1,Ally,0) [5,21] 0 0 0 0 [SteelBlade,EmeraldAxe,SilverSword] NoAI
+UNIT
+
 Units1:
-UNIT Artemer Huntsman 0 Level(1,Ally,0) [8,18] 0 0 0 0 [IronBow,HuntingBow,Vulnerary,MasterKey] NoAI
-UNIT Helena Troubadour 0 Level(1,Ally,0) [7,18] 0 0 0 0 [Unlock] NoAI
+Unit(7,18)
+Unit(8,18)
+Unit(9,18)
+Unit(7,19)
+Unit(8,19)
+Unit(9,19)
+UNIT
+
+OpeningUnits:
+UNIT Artemer 0x1 0 Level(1,Ally,0) PrologueEntrance 0 0 1 REDA7R18 [] NoAI
+UNIT Helena 0x1 0 Level(1,Ally,0) PrologueEntrance 0 0 1 REDA8R18 [] NoAI
+UNIT Keith 0x1 0 Level(1,Ally,0) PrologueEntrance 0 0 1 REDA9R18 [] NoAI
+UNIT Lexi 0x1 0 Level(1,Ally,0) PrologueEntrance 0 0 1 REDA7R19 [] NoAI
+UNIT Verwald 0x1 0 Level(1,Ally,0) PrologueEntrance 0 0 1 REDA8R19 [] NoAI
+UNIT Spike 0x1 0 Level(1,Ally,0) PrologueEntrance 0 0 1 REDA9R19 [] NoAI
 UNIT
 
 EnemyUnits:
-UNIT ONeill Fighter 0 Level(1,Enemy,1) [2,1] 0 0 0 0 [IronAxe] NeverMoveAI
-UNIT 0x80 Cavalier 0 Level(1,Enemy,1) [8,19] 2 0 0 0 [Item100G] NeverMoveAI
+// Boss Room
+UNIT Gregory Deserter 0 Level(5,Enemy,0) [2,1] 0 0 0 0 [SteelLance,Javelin,SteelShield] NeverMoveAI
+UNIT PrologueBandit Fighter Gregory Level(4,Enemy,1) [1,2] 0 0 0 0 [IronAxe,HandAxe] NeverMoveAI
+UNIT PrologueBandit Mercenary Gregory Level(4,Enemy,1) [3,2] 0 0 0 0 [IronBlade] NeverMoveAI
+
+// Middle Hall
+UNIT PrologueBandit Archer Gregory Level(2,Enemy,1) [8,10] 0 0 0 0 [IronBow] DefaultAI
+UNIT PrologueBandit Mercenary Gregory Level(3,Enemy,1) [8,7] 0 0 0 0 [SteelSword,LeatherShield] AttackInRangeAI
+UNIT PrologueBandit Mage Gregory Level(2,Enemy,1) [7,6] 0 0 0 0 [Fire] AttackInRangeAI
+UNIT PrologueBandit Shaman Gregory Level(3,Enemy,1) [15,5] 0 0 0 0 [Flux] AttackInRangeAI
+UNIT PrologueBandit SwordArmor Gregory Level(3,Enemy,1) [13,4] 0 0 0 0 [IronBlade] AttackInRangeAI
+UNIT PrologueBandit Soldier Gregory Level(3,Enemy,1) [7,2] 0 0 0 0 [IronLance,Javelin] AttackInRangeAI
+UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) [9,3] 0 0 0 0 [SteelAxe] AttackInRangeAI
+
+// Lower Entrance
+UNIT PrologueBandit Mercenary Gregory Level(1,Enemy,1) [7,14] 0 0 0 0 [IronSword] DefaultAI
+UNIT PrologueBandit AxeArmor Gregory Level(2,Enemy,1) [8,15] 0 0 0 0 [IronAxe] DefaultAI
+UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) [9,14] 0 0 0 0 [IronAxe] DefaultAI
+UNIT PrologueBandit Soldier Gregory Level(1,Enemy,1) [3,13] 0 0 0 0 [IronLance,LeatherShield] DefaultAI
+UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) [4,12] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT PrologueBandit LanceArmor Gregory Level(2,Enemy,1) [13,14] 0 0 0 0 [Javelin] AttackInRangeAI
+UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) [12,12] 0 0 0 0 [Hammer] DefaultAI
 UNIT
 
 Prisoners:
 UNIT ProloguePrisoner1 Civilian2 0 Level(1,NPC,0) [2,9] 0 0 0 0 [0] GuardTileAI
 UNIT ProloguePrisoner1 CivilianF 0 Level(1,NPC,0) [1,10] 0 0 0 0 [0] GuardTileAI
-UNIT Merry Outlaw 0 Level(1,NPC,0) [4,6] 0 0 0 0 [IronBow] DoNothingAI
+UNIT Merry Outlaw 0 Level(3,NPC,0) [4,6] 0 0 0 0 [IronBow,Lockpick] GuardTileAI
 UNIT ProloguePrisoner3 CivilianF2 0 Level(1,NPC,0) [4,9] 0 0 0 0 [0] GuardTileAI
 UNIT ProloguePrisoner3 Civilian 0 Level(1,NPC,0) [4,8] 0 0 0 0 [0] GuardTileAI
-UNIT ProloguePrisoner4 CivilianF2 0 Level(1,NPC,0) [12,9] 0 0 0 0 [0] GuardTileAI
-UNIT ProloguePrisoner4 Civilian2 0 Level(1,NPC,0) [12,8] 0 0 0 0 [0] GuardTileAI
+UNIT ProloguePrisoner4 CivilianF3 0 Level(1,NPC,0) [12,9] 0 0 0 0 [0] GuardTileAI
+UNIT ProloguePrisoner4 Civilian3 0 Level(1,NPC,0) [12,8] 0 0 0 0 [0] GuardTileAI
 UNIT
 
 Traps1:
@@ -137,11 +268,21 @@ BeginningScene:
 	CALL GotoDebugRoom
 #endif
 
-LOAD1 0x1 Units1
+LOAD1 0x1 PartyUnits
+ENUN
+ClearAll
+LOAD1 0x1 Prisoners
 ENUN
 LOAD1 0x1 EnemyUnits
 ENUN
-LOAD1 0x1 Prisoners
+CAM1 PrologueEntrance
+CamOn
+FADU 16
+LOAD2 0x1 OpeningUnits
+ENUN
+FADI 16
+CamOff
+LOAD1 0x1 Units1
 ENUN
 GotoPrepScreen
 ENDA
