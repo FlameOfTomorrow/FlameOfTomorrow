@@ -9,6 +9,8 @@
 #define MovB 0x0
 #define ConB 0x0
 
+//StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB)
+
 ExcaliburStats:
 StatBonus(HPB,StrB,MagB,SklB,5,DefB,ResB,LckB,MovB,ConB)
 
@@ -30,7 +32,7 @@ StatBonus(HPB,StrB,MagB,SklB,2,DefB,ResB,LckB,MovB,ConB)
 GoddessIconStats:
 StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,2,MovB,ConB)
 
-DragonShieldStats:
+DracoshieldStats:
 StatBonus(HPB,StrB,MagB,SklB,SpdB,2,ResB,LckB,MovB,ConB)
 
 TalismanStats:
@@ -77,3 +79,27 @@ StatBonus(HPB,10,10,10,SpdB,10,15,10,MovB,ConB)
 
 RavagerStats:
 StatBonus(HPB,15,15,15,SpdB,15,10,LckB,MovB,ConB)
+
+LeatherShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,1,ResB,LckB,MovB,ConB)
+
+IronShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,2,ResB,LckB,MovB,ConB)
+
+SteelShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,4,ResB,LckB,MovB,ConB)
+
+SilverShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,6,2,LckB,MovB,ConB)
+
+DragonShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,8,2,LckB,MovB,ConB)
+
+AegisShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,2,8,LckB,MovB,ConB)
+
+PaviseShieldStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,8,2,LckB,MovB,ConB)
+
+LegRingStats:
+StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,1,ConB)

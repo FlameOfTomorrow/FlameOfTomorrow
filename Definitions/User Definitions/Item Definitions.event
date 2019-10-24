@@ -1,3 +1,8 @@
+//#define Dracoshield DragonShield
+#define DracoshieldIcon DragonShieldIcon
+#undef DragonShield
+#undef DragonShieldIcon
+
 #define AdeptManual 0xA3
 #define AdeptManualIcon 0xAB
 
@@ -83,3 +88,24 @@
 
 #define Entrap 0xC3
 #define EntrapIcon 0xE3
+
+#define LeatherShield 0x9A
+#define LeatherShieldIcon 0xE4
+
+#define IronShield 0x9B
+#define IronShieldIcon 0xE5
+
+#define SteelShield 0x9C
+#define SteelShieldIcon 0xE6
+
+#define SilverShield 0x9D
+#define SilverShieldIcon 0xE7
+
+#define DragonShield 0x9E
+#define DragonShieldIcon 0xE8
+
+#define PaviseShield 0x9F
+#define PaviseShieldIcon 0xE9
+
+#define AegisShield 0xA0
+#define AegisShieldIcon 0xF0

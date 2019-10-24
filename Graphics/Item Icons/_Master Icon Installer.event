@@ -118,4 +118,32 @@ ORG WeaponIconOffset(HuntingBowIcon)
 ORG WeaponIconOffset(MasterKeyIcon)
 #incext Png2Dmp "Icons/MasterKey.png"
 
+// Leather Shield
+ORG WeaponIconOffset(LeatherShieldIcon)
+#incext Png2Dmp "Icons/LeatherShield.png"
+
+// Iron Shield
+ORG WeaponIconOffset(IronShieldIcon)
+#incext Png2Dmp "Icons/IronShield.png"
+
+// Steel Shield
+ORG WeaponIconOffset(SteelShieldIcon)
+#incext Png2Dmp "Icons/SteelShield.png"
+
+// Silver Shield
+ORG WeaponIconOffset(SilverShieldIcon)
+#incext Png2Dmp "Icons/SilverShield.png"
+
+// Dragon Shield
+ORG WeaponIconOffset(DragonShieldIcon)
+#incext Png2Dmp "Icons/DragonShield.png"
+
+// Pavise Shield
+ORG WeaponIconOffset(PaviseShieldIcon)
+#incext Png2Dmp "Icons/PaviseShield.png"
+
+// Aegis Shield
+ORG WeaponIconOffset(AegisShieldIcon)
+#incext Png2Dmp "Icons/AegisShield.png"
+
 POP

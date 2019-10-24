@@ -7,6 +7,9 @@ HP Bars[.][X]
 # 0xB2
 Set health bar display[X]
 
+#0x3D9
+Dracoshield[X]
+
 #0x3A LearnedSkillText
 #first text ID in the free block
 Learned  [X]

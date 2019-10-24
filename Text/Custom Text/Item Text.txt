@@ -250,3 +250,47 @@ Entrap[X]
 ##EntrapDesc
 Brings an enemy[N]
 to the user.[X]
+
+##LeatherShieldName
+Lthr. Shield[X]
+
+##LeatherShieldDescription
+Def +1. Wt: 1.[X]
+
+##IronShieldName
+Iron Shield[X]
+
+##IronShieldDescription
+Def +2. Wt: 2.[X]
+
+##SteelShieldName
+Stl. Shield[X]
+
+##SteelShieldDescription
+Def +4. Wt: 4.[X]
+
+##SilverShieldName
+Silv. Shield[X]
+
+##SilverShieldDescription
+Def +6, Res +2. Wt: 3.[X]
+
+##DragonShieldName
+Drg. Shield[X]
+
+##DragonShieldDescription
+Def +8, Res +2. Wt: 5.[X]
+
+##PaviseShieldName
+Pav. Shield[X]
+
+##PaviseShieldDescription
+Def +8, Res +2. Wt: 4.[N]
+Grants Pavise.[X]
+
+##AegisShieldName
+Aeg. Shield[X]
+
+##AegisShieldDescription
+Def +2, Res +8. Wt: 4.[N]
+Grants Aegis.[X]
