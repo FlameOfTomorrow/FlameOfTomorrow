@@ -294,3 +294,37 @@ Aeg. Shield[X]
 ##AegisShieldDescription
 Def +2, Res +8. Wt: 4.[N]
 Grants Aegis.[X]
+
+##KnightRingName
+Knight Ring[X]
+
+##KnightRingDescription
+Continue moving[N]
+after performing[N]
+any action.[X]
+
+##LegRingName
+Leg Ring[X]
+
+##LegRingDescription
+Move +1.[X]
+
+##CritRingName
+Crit Ring[X]
+
+##CritRingDescription
+Grants +15 to[N]
+critical hit rate.[X]
+
+##PrayerRingName
+Prayer Ring[X]
+
+##PrayerRingDescription
+Restore 30%[N]
+HP each turn.[X]
+
+##SpeedRingName
+Speed Ring[X]
+
+##SpeedRingDescription
+Speed +2.[X]

@@ -146,4 +146,20 @@ ORG WeaponIconOffset(PaviseShieldIcon)
 ORG WeaponIconOffset(AegisShieldIcon)
 #incext Png2Dmp "Icons/AegisShield.png"
 
+// Knight Ring
+ORG WeaponIconOffset(KnightRingIcon)
+#incext Png2Dmp "Icons/KnightRing.png"
+
+// Leg Ring
+ORG WeaponIconOffset(LegRingIcon)
+#incext Png2Dmp "Icons/LegRing.png"
+
+// Prayer Ring
+ORG WeaponIconOffset(PrayerRingIcon)
+#incext Png2Dmp "Icons/PrayerRing.png"
+
+// Speed Ring
+ORG WeaponIconOffset(SpeedRingIcon)
+#incext Png2Dmp "Icons/SpeedRing.png"
+
 POP

@@ -103,3 +103,6 @@ StatBonus(HPB,StrB,MagB,SklB,SpdB,8,2,LckB,MovB,ConB)
 
 LegRingStats:
 StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,1,ConB)
+
+SpeedRingStats:
+StatBonus(HPB,StrB,MagB,SklB,2,DefB,ResB,LckB,MovB,ConB)

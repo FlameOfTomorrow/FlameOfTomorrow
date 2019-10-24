@@ -109,3 +109,18 @@
 
 #define AegisShield 0xA0
 #define AegisShieldIcon 0xF0
+
+#define KnightRing 0xB8
+#define KnightRingIcon 0xF1
+
+#define LegRing 0xB9
+#define LegRingIcon 0xF2
+
+#define CritRing 0x77
+#define CritRingIcon SolarBraceIcon
+
+#define PrayerRing 0x8B
+#define PrayerRingIcon 0xD0
+
+#define SpeedRing 0x90
+#define SpeedRingIcon 0x79
