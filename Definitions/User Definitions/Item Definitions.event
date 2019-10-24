@@ -108,13 +108,13 @@
 #define PaviseShieldIcon 0xE9
 
 #define AegisShield 0xA0
-#define AegisShieldIcon 0xF0
+#define AegisShieldIcon 0xEA
 
 #define KnightRing 0xB8
-#define KnightRingIcon 0xF1
+#define KnightRingIcon 0xEB
 
 #define LegRing 0xB9
-#define LegRingIcon 0xF2
+#define LegRingIcon 0xEC
 
 #define CritRing 0x77
 #define CritRingIcon SolarBraceIcon
