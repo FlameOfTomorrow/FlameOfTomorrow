@@ -124,3 +124,9 @@
 
 #define SpeedRing 0x90
 #define SpeedRingIcon 0x79
+
+#define Solstice 0x3D
+#define SolsticeIcon 0x3B
+
+#define Moonlight 0x44
+#define MoonlightIcon 0x42

@@ -162,4 +162,12 @@ ORG WeaponIconOffset(PrayerRingIcon)
 ORG WeaponIconOffset(SpeedRingIcon)
 #incext Png2Dmp "Icons/SpeedRing.png"
 
+// Solstice
+ORG WeaponIconOffset(SolsticeIcon)
+#incext Png2Dmp "Icons/Solstice.png"
+
+// Moonlight
+ORG WeaponIconOffset(MoonlightIcon)
+#incext Png2Dmp "Icons/Moonlight.png"
+
 POP
