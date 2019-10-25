@@ -180,22 +180,22 @@ bx r0
 .align
 
 
+
 .global CanUnitRefuge
 .type CanUnitRefuge, %function
 CanUnitRefuge:
 
-push {r4,r14}
+push {r4-r5,r14}
 mov r4,r1
-blh GetUnitAid,r3
-ldr r1,[r4,#4]
-mov r2,#0x11
-ldsb r2,[r1,r2]
-ldr r1,[r4]
-ldrb r1,[r1,#0x13]
-add r2,r1
-mov r1,#0x1A
-ldsb r1,[r4,r1]
-add r2,r1
+mov r5,r0
+mov r0,r4
+blh prGotoAidGetter,r3
+push {r0}
+mov r0,r5
+blh prGotoConGetter,r3
+mov r2,r0
+pop {r0}
+
 mov r1,#0
 cmp r0,r2
 bge ReturnFromCanRefugeFunc @rescue has this as blt
