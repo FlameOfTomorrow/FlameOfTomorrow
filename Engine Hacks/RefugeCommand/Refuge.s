@@ -220,13 +220,13 @@ ActionRefuge:
 
 push {r4-r7,r14}
 mov r6,r0
-ldr r4,=gActionData
-ldrb r0,[r4,#0xC]
-blh GetUnit,r3
-mov r5,r0
-ldrb r0,[r4,#0xD]
+ldr r5,=gActionData
+ldrb r0,[r5,#0xC]
 blh GetUnit,r3
 mov r4,r0
+ldrb r0,[r5,#0xD]
+blh GetUnit,r3
+mov r5,r0
 blh TryRemoveUnitFromBallista,r3
 mov r0,#0x10
 ldsb r0,[r5,r0]
@@ -247,6 +247,13 @@ mov r1,r4
 blh UnitRescue,r7
 mov r0,r4
 blh HideUnitSMS,r7
+
+@so we can pick on up it in a bit, let's set a bit in RAM
+mov r0,#1
+ldr r1,=RefugeFlagLoc
+strb r0,[r1]
+
+
 mov r0,#0
 pop {r4-r7}
 pop {r1}
@@ -255,6 +262,8 @@ bx r1
 .ltorg
 .align
 
+
+.equ RefugeFlagLoc,0x2040000 @this is where the unit buffer goes, which should be empty (or at least be done with whatever *is* there)
 
 .global RefugeSelection_OnSelect
 .type RefugeSelection_OnSelect, %function
@@ -284,3 +293,40 @@ bx r1
 .align
 
 
+
+.global PostActionRescueCorrection
+.type PostActionRescueCorrection, %function
+PostActionRescueCorrection:
+
+@we need to check to see if they have a rescuer but don't have proper status bits, then to set them if so (this will happen with refuge)
+
+@RefugeFlagLoc is 1 if we were just refuged
+
+push {r4,r14}
+mov r4,r0
+ldr r0,=RefugeFlagLoc
+ldrb r1,[r0]
+cmp r1,#1
+bne AllIsNormal @if true, all is fine
+
+@otherwise, we're in post-refuge mode
+@so we gotta set some bits!
+
+@first, let's clear the Refuge flag
+mov r1,#0
+strb r1,[r0]
+
+@bits time! gotta hide that unit!
+
+ldrb r0,[r4,#0xC]
+mov r1,#0x23
+orr r0,r1
+strb r0,[r4,#0xC]
+
+@ok! now we go back!
+
+
+AllIsNormal:
+pop {r4}
+pop {r0}
+bx r0

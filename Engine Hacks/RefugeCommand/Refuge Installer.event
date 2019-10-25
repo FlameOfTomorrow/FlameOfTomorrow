@@ -7,6 +7,3 @@ ORG 0x228FC
 SHORT 0x46C0 0xB500 
 jumpToHack(RefugeSelection_OnSelect)
 POP
-
-
-MESSAGE ActionRefuge

@@ -10,6 +10,7 @@ POIN LungeUpdate
 #ifdef ESCAPE_ARRIVE
 	POIN FinalEscapeThing
 #endif // ESCAPE_ARRIVE
+POIN PostActionRescueCorrection
 WORD 0
 
 PROTECT $1879A $187B4
