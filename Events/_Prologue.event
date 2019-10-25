@@ -22,10 +22,40 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-InfiniteTurnEventPlayer(0x1C,DoorCounter,1)
+//InfiniteTurnEventPlayer(0x1C,DoorCounter,1)
 //TurnEventPlayer(0x1E,LowerThief,5)
 //TurnEventPlayer(0x1F,UpperTheif,7)
+TurnEventPlayer(0x20,Horses,3)
+InfiniteTurnEventPlayer(0x21,ThroneReinforce,1)
 END_MAIN
+
+ThroneReinforce:
+CHECK_EVENTID 0x22
+BEQ 0x1 0xC 0x0 //branch label 1 if eid 22 not set
+SpawnReinforcements(ThroneGuys)
+GOTO 2
+LABEL 1
+ENUF 0x21 //allow event to repeat
+LABEL 2
+NoFade
+ENDA
+
+ThroneGuys:
+UNIT PrologueBandit Mercenary Gregory Level(2,Enemy,1) PrologueTopLeftStairs 0 0 1 REDA5R2 [IronSword] DefaultAI
+UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) PrologueTopLeftStairs 0 0 1 REDA6R1 [IronAxe] DefaultAI
+UNIT PrologueBandit Soldier Gregory Level(2,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R5 [IronLance] DefaultAI
+UNIT PrologueBandit Mage Gregory Level(3,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R6 [Fire] DefaultAI
+UNIT
+
+Horses:
+SpawnReinforcements(StairHorses)
+NoFade
+ENDA
+
+StairHorses:
+UNIT PrologueBandit SwordKnight Gregory Level(2,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R5 [IronSword] DefaultAI
+UNIT PrologueBandit LanceKnight Gregory Level(3,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R6 [IronLance] DefaultAI
+UNIT
 
 LowerThief:
 SpawnReinforcements(BottomThief)
@@ -92,6 +122,7 @@ ENDA
 
 MiscBasedEvents:
 AREA 0x18 NPCChecker [0,0] [16,21]
+AREA 0x22 CheckForPlayer [0,0] [6,3]
 AFEV 0x14 Door1Open 0x10
 AFEV 0x15 Door2Open 0x11
 AFEV 0x16 Door3Open 0x12
@@ -106,6 +137,16 @@ CALL ActivateSeize
 GOTO 2
 LABEL 1 //if there are NPCs left
 ENUF 0x18 //allow event to repeat
+LABEL 2
+NoFade
+ENDA
+
+CheckForPlayer:
+CHECK_ALLEGIANCE 0xFFFF
+BNE 0x1 0xC 0x0 //branch label 1 if not player
+GOTO 2
+LABEL 1
+ENUF 0x22 //allow event to repeat
 LABEL 2
 NoFade
 ENDA
@@ -221,7 +262,7 @@ UNIT PrologueBandit Mercenary Gregory Level(4,Enemy,1) [3,2] 0 0 0 0 [IronBlade]
 // Middle Hall
 UNIT PrologueBandit Archer Gregory Level(2,Enemy,1) [8,10] 0 0 0 0 [IronBow] DefaultAI
 UNIT PrologueBandit Mercenary Gregory Level(3,Enemy,1) [8,7] 0 0 0 0 [SteelSword,LeatherShield] AttackInRangeAI
-UNIT PrologueBandit Mage Gregory Level(2,Enemy,1) [7,6] 0 0 0 0 [Fire] AttackInRangeAI
+UNIT PrologueBandit Mage Gregory Level(2,Enemy,1) [7,7] 0 0 0 0 [Fire] AttackInRangeAI
 UNIT PrologueBandit Shaman Gregory Level(3,Enemy,1) [15,5] 0 0 0 0 [Flux] AttackInRangeAI
 UNIT PrologueBandit SwordArmor Gregory Level(3,Enemy,1) [13,4] 0 0 0 0 [IronBlade] AttackInRangeAI
 UNIT PrologueBandit Soldier Gregory Level(3,Enemy,1) [7,2] 0 0 0 0 [IronLance,Javelin] AttackInRangeAI

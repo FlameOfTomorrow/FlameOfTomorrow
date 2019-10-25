@@ -4,7 +4,7 @@
 	#define	SplashCrop_HDN_grp  voicegroup000
 	#define	SplashCrop_HDN_pri  0
 	#define	SplashCrop_HDN_rev  0
-	#define	SplashCrop_HDN_mvl  45
+	#define	SplashCrop_HDN_mvl  70
 	#define	SplashCrop_HDN_key  0
 	#define	SplashCrop_HDN_tbs  1
 	#define	SplashCrop_HDN_exg  0
