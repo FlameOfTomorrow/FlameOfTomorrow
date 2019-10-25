@@ -20,6 +20,15 @@
 .equ GetUnitAid,0x80189B9
 .equ gSelect_Rescue,0x0859d478 
 .equ StartTargetSelection,0x804fa3c
+.equ AreAllegiancesAllied,0x8024D8D
+.equ AddTarget,0x804F8BD
+.equ gActionData,0x203A958
+.equ GetUnit,0x8019431
+.equ TryRemoveUnitFromBallista,0x8037A6D
+.equ GetSomeFacingDirection,0x801DBD5
+.equ Make6CKOIDO,0x801DC7D
+.equ UnitRescue,0x801834D
+.equ HideUnitSMS,0x802810D
 
 
 
@@ -63,14 +72,13 @@ bx r1
 .align
 
 
-
-
-
-
 .global RefugeEffect
 .type RefugeEffect, %function
 RefugeEffect:
 push {r14}
+ldr r0,=gActionData
+mov r1,#0x20
+strb r1,[r0,#0x11]
 ldr r0,=gActiveUnit
 ldr r0,[r0]
 bl MakeRefugeTargetList
@@ -112,8 +120,7 @@ bx r0
 .align
 
 
-.equ AreAllegiancesAllied,0x8024D8D
-.equ AddTarget,0x804F8BD
+
 
 .global TryAddUnitToRefugeTargetList
 .type TryAddUnitToRefugeTargetList, %function
@@ -191,7 +198,7 @@ ldsb r1,[r4,r1]
 add r2,r1
 mov r1,#0
 cmp r0,r2
-bgt ReturnFromCanRefugeFunc @rescue has this as blt
+bge ReturnFromCanRefugeFunc @rescue has this as blt
 mov r1,#1
 ReturnFromCanRefugeFunc:
 mov r0,r1
@@ -201,4 +208,79 @@ bx r1
 
 .ltorg
 .align
+
+
+
+
+
+
+.global ActionRefuge
+.type ActionRefuge, %function
+ActionRefuge:
+
+push {r4-r7,r14}
+mov r6,r0
+ldr r4,=gActionData
+ldrb r0,[r4,#0xC]
+blh GetUnit,r3
+mov r5,r0
+ldrb r0,[r4,#0xD]
+blh GetUnit,r3
+mov r4,r0
+blh TryRemoveUnitFromBallista,r3
+mov r0,#0x10
+ldsb r0,[r5,r0]
+mov r1,#0x11
+ldsb r1,[r5,r1]
+mov r2,#0x10
+ldsb r2,[r4,r2]
+mov r3,#0x11
+ldsb r3,[r4,r3]
+blh GetSomeFacingDirection,r7
+mov r1,r0
+mov r0,r4
+mov r2,#0
+mov r3,r6
+blh Make6CKOIDO,r7
+mov r0,r5
+mov r1,r4
+blh UnitRescue,r7
+mov r0,r4
+blh HideUnitSMS,r7
+mov r0,#0
+pop {r4-r7}
+pop {r1}
+bx r1
+
+.ltorg
+.align
+
+
+.global RefugeSelection_OnSelect
+.type RefugeSelection_OnSelect, %function
+RefugeSelection_OnSelect:
+
+ldr r2,=gActionData
+ldrb r0,[r1,#2]
+
+strb r0,[r2,#0xD]
+
+ldrb r0,[r2,#0x11]
+cmp r0,#0x20
+bne ThisIsRescue
+b StoreAction
+
+ThisIsRescue:
+mov r0,#9
+
+StoreAction:
+strb r0,[r2,#0x11]
+
+mov r0,#0x17
+pop {r1}
+bx r1
+
+.ltorg
+.align
+
 

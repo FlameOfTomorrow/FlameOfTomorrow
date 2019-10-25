@@ -64,7 +64,7 @@ pActionRoutineTable:
 	NoActionRoutine               // 0x1D Post Trade/Supply
 	NoActionRoutine               // 0x1E Wait 2 (needs more research)
 	NoActionRoutine               // 0x1F Backing out (from a trap?)
-	NoActionRoutine               // 0x20 ?
+	ActionRoutine(ActionRefuge|1) // 0x20 Refuge
 	NoActionRoutine               // 0x21 Ride Ballista
 	NoActionRoutine               // 0x22 Exit Ballista
 	NoActionRoutine               // 0x23 FREE

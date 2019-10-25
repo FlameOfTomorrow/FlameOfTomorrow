@@ -318,6 +318,6 @@ MakeSigilGreen:
 #incbin "MakeSigilGreen.dmp"
 WORD 0x61
 
-MESSAGE CustomTrapDisplay
+//MESSAGE CustomTrapDisplay
 
 #endif
