@@ -1,17 +1,17 @@
 ##SongNameTrial
-Trial (Ace Attorney)[X]
+Trial[X]
 
 ##SongNameBlasterMaster
 Stage 1 (Blaster Master)[X]
 
 ##SongNameE1M1
-At Doom's Gate (Doom)[X]
+At Doom's Gate[X]
 
 ##SongNameSplash
-Splash - Hyperdimension Neptunia[X]
+Splash[X]
 
 ##SongNameTaisen
-Taisen 4 (Puyo Pop Fever)[X]
+Taisen 4[X]
 
 ##SongNamePathToVictory
 The Certain Path To Victory[X]

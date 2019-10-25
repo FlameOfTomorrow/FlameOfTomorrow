@@ -34,6 +34,7 @@
 
 // Enemy Units
 #define PrologueBandit 0x80
+#define PrologueBanditNoExp 0x85
 
 // NPC Units
 #define ProloguePrisoner1 0x81

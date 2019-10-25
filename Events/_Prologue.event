@@ -8,6 +8,44 @@ EventPointerTable(PrologueEvent, PointerList)
 #define PrologueBottomRightStairs [14,13]
 #define PrologueOutsideLeft [0,18]
 #define PrologueOutsideRight [16,18]
+#define PrologueMidStairs [8,7]
+
+/*
+0x07 -
+0x08 -
+0x09 -
+0x0A -
+0x0B -
+0x0C -
+0x0D -
+0x0E - FirstHorses Turn Event
+0x0F - HallReinforce Turn Event
+0x10 - Door Flag
+0x11 - Door Flag
+0x12 - Door Flag
+0x13 - Door Flag
+0x14 - AFEV Door
+0x15 - AFEV Door
+0x16 - AFEV Door
+0x17 - AFEV Door
+0x18 - AREA NPCChecker
+0x19 - Used to mark if all prisoners escaped
+0x1A - Merry Talk
+0x1B - Used to mark if any cell door was opened
+0x1C - DoorCounter Turn Event
+0x1D - Used to mark if DoorCounter spawned units
+0x1E - LowerThief Turn Event
+0x1F - UpperThief Turn Event
+0x20 - FirstHorses Turn Event
+0x21 - ThroneReinforce Turn Event
+0x22 - AREA CheckForPlayerThrone
+0x23 - Escape Flag
+0x24 - AREA CheckForPlayerHall
+0x25 -
+0x26 -
+0x27 - Used to mark in CheckForPlayerThrone
+0x28 - Used to mark in CheckForPalyerHall
+*/
 
 PointerList:
 POIN TurnBasedEvents
@@ -25,12 +63,32 @@ TurnBasedEvents:
 //InfiniteTurnEventPlayer(0x1C,DoorCounter,1)
 TurnEventPlayer(0x1E,LowerThief,5)
 TurnEventPlayer(0x1F,UpperThief,7)
-TurnEventPlayer(0x20,Horses,3)
+TurnEventPlayer(0x20,FirstHorses,3)
+TurnEventPlayer(0xE,FirstHorses,6)
+InfiniteTurnEventPlayer(0x0,Horses,6)
 InfiniteTurnEventPlayer(0x21,ThroneReinforce,1)
+InfiniteTurnEventPlayer(0xF,HallReinforce,1)
 END_MAIN
 
+HallReinforce:
+CHECK_EVENTID 0x28
+BEQ 0x1 0xC 0x0 //branch label 1 if eid 22 not set
+SpawnReinforcements(HallGuys)
+GOTO 2
+LABEL 1
+ENUF 0xF //allow event to repeat
+LABEL 2
+NoFade
+ENDA
+
+HallGuys:
+UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) PrologueMidStairs 0 0 1 REDA9R7 [IronAxe] DefaultAI
+UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) PrologueMidStairs 0 0 1 REDA7R7 [SteelAxe,Vulnerary] DefaultAI
+UNIT PrologueBandit Mercenary Gregory Level(2,Enemy,1) PrologueMidStairs 0 0 1 REDA8R9 [IronBlade] DefaultAI
+UNIT
+
 ThroneReinforce:
-CHECK_EVENTID 0x22
+CHECK_EVENTID 0x27
 BEQ 0x1 0xC 0x0 //branch label 1 if eid 22 not set
 SpawnReinforcements(ThroneGuys)
 GOTO 2
@@ -43,18 +101,38 @@ ENDA
 ThroneGuys:
 UNIT PrologueBandit Mercenary Gregory Level(2,Enemy,1) PrologueTopLeftStairs 0 0 1 REDA5R2 [IronSword] DefaultAI
 UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) PrologueTopLeftStairs 0 0 1 REDA6R1 [IronAxe] DefaultAI
-UNIT PrologueBandit Soldier Gregory Level(2,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R5 [IronLance] DefaultAI
+UNIT PrologueBandit Soldier Gregory Level(2,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R5 [IronLance,Vulnerary] DefaultAI
 UNIT PrologueBandit Mage Gregory Level(3,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R6 [Fire] DefaultAI
 UNIT
 
 Horses:
+CHECK_EVENTID 0x2
+BNE 0x1 0xC 0x0 //branch label 1 if boss dead
+COUNTER_CHECK 2
+SVAL 0x1 3 //turn value
+BEQ 0x2 0xC 0x1 //branch label 2 if counter 2 = turn value
+Increment(2)
+GOTO 1
+LABEL 2
 SpawnReinforcements(StairHorses)
+COUNTER_SET 2 0 //clear the counter
+LABEL 1
 NoFade
 ENDA
 
-StairHorses:
+FirstHorses:
+SpawnReinforcements(StairHorsesExp)
+NoFade
+ENDA
+
+StairHorsesExp:
 UNIT PrologueBandit SwordKnight Gregory Level(2,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R5 [IronSword] DefaultAI
 UNIT PrologueBandit LanceKnight Gregory Level(3,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R6 [IronLance] DefaultAI
+UNIT
+
+StairHorses:
+UNIT PrologueBanditNoExp SwordKnight Gregory Level(2,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R5 [IronSword] DefaultAI
+UNIT PrologueBanditNoExp LanceKnight Gregory Level(3,Enemy,1) PrologueLeftStairs 0 0 1 REDA0R6 [IronLance] DefaultAI
 UNIT
 
 LowerThief:
@@ -122,7 +200,8 @@ ENDA
 
 MiscBasedEvents:
 AREA 0x18 NPCChecker [0,0] [16,21]
-AREA 0x22 CheckForPlayer [0,0] [6,3]
+AREA 0x22 CheckForPlayerThrone [0,0] [6,3]
+AREA 0x24 CheckForPlayerHall [6,0] [14,7]
 AFEV 0x14 Door1Open 0x10
 AFEV 0x15 Door2Open 0x11
 AFEV 0x16 Door3Open 0x12
@@ -141,12 +220,24 @@ LABEL 2
 NoFade
 ENDA
 
-CheckForPlayer:
+CheckForPlayerThrone:
 CHECK_ALLEGIANCE 0xFFFF
 BNE 0x1 0xC 0x0 //branch label 1 if not player
+ENUT 0x27
 GOTO 2
 LABEL 1
 ENUF 0x22 //allow event to repeat
+LABEL 2
+NoFade
+ENDA
+
+CheckForPlayerHall:
+CHECK_ALLEGIANCE 0xFFFF
+BNE 0x1 0xC 0x0 //branch label 1 if not player
+ENUT 0x28
+GOTO 2
+LABEL 1
+ENUF 0x24 //allow event to repeat
 LABEL 2
 NoFade
 ENDA
@@ -260,7 +351,7 @@ UNIT PrologueBandit Fighter Gregory Level(4,Enemy,1) [1,2] 0 0 0 0 [IronAxe,Hand
 UNIT PrologueBandit Mercenary Gregory Level(4,Enemy,1) [3,2] 0 0 0 0 [IronBlade] NeverMoveAI
 
 // Middle Hall
-UNIT PrologueBandit Archer Gregory Level(2,Enemy,1) [8,10] 0 0 0 0 [IronBow] DefaultAI
+UNIT PrologueBandit Archer Gregory Level(2,Enemy,1) [8,10] 0 0 0 0 [IronBow,Vulnerary] DefaultAI
 UNIT PrologueBandit Mercenary Gregory Level(3,Enemy,1) [8,7] 0 0 0 0 [SteelSword,LeatherShield] AttackInRangeAI
 UNIT PrologueBandit Mage Gregory Level(2,Enemy,1) [7,7] 0 0 0 0 [Fire] AttackInRangeAI
 UNIT PrologueBandit Shaman Gregory Level(3,Enemy,1) [15,5] 0 0 0 0 [Flux] AttackInRangeAI
@@ -271,11 +362,11 @@ UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) [9,3] 0 0 0 0 [SteelAxe] At
 // Lower Entrance
 UNIT PrologueBandit Mercenary Gregory Level(1,Enemy,1) [7,14] 0 0 0 0 [IronSword] DefaultAI
 UNIT PrologueBandit AxeArmor Gregory Level(2,Enemy,1) [8,15] 0 0 0 0 [IronAxe] DefaultAI
-UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) [9,14] 0 0 0 0 [IronAxe] DefaultAI
+UNIT PrologueBandit Fighter Gregory Level(2,Enemy,1) [9,14] 0 0 0 0 [IronAxe,Vulnerary] DefaultAI
 UNIT PrologueBandit Soldier Gregory Level(1,Enemy,1) [3,13] 0 0 0 0 [IronLance,LeatherShield] DefaultAI
 UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) [4,12] 0 0 0 0 [SteelAxe] DefaultAI
 UNIT PrologueBandit LanceArmor Gregory Level(2,Enemy,1) [13,14] 0 0 0 0 [Javelin] AttackInRangeAI
-UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) [12,12] 0 0 0 0 [Hammer] DefaultAI
+UNIT PrologueBandit Fighter Gregory Level(3,Enemy,1) [12,12] 0 0 0 0 [Hammer,HandAxe] DefaultAI
 UNIT
 
 Prisoners:
@@ -319,8 +410,10 @@ ENUN
 CAM1 PrologueEntrance
 CamOn
 FADU 16
+// cutscene start
 LOAD2 0x1 OpeningUnits
 ENUN
+// cutscene end
 FADI 16
 CamOff
 LOAD1 0x1 Units1
