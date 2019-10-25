@@ -181,6 +181,9 @@ POP
   ALIGN 4
   #include "Enfeeble/Enfeeble.event"
   
+  ALIGN 4
+  #include "AntiThiefDoorChest/AntiThiefDoorChest.event"
+  
   
   //Disable guide sort for glitchiness reasons
   PUSH

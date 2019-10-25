@@ -46,7 +46,7 @@ ldr r3,=#0x8084078
 mov r14,r3
 .short 0xF800
 mov r1,#0x03
-cmp r0,#0x13
+cmp r0,#0x1A
 bne ReturnFalse
 
 @Check for rescuing
