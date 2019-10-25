@@ -229,6 +229,14 @@ __TEXTPROCESS060:
 #incbin ".TextEntries\text_buildfileEscapeDesc.fetxt.dmp"
 setText($60, __TEXTPROCESS060)
 
+__TEXTPROCESS061:
+#incbin ".TextEntries\text_buildfileUM_Refuge.fetxt.dmp"
+setText($61, __TEXTPROCESS061)
+
+__TEXTPROCESS062:
+#incbin ".TextEntries\text_buildfileUM_RefugeDesc.fetxt.dmp"
+setText($62, __TEXTPROCESS062)
+
 __TEXTPROCESS310:
 #incbin ".TextEntries\text_buildfile310.fetxt.dmp"
 setText($310, __TEXTPROCESS310)

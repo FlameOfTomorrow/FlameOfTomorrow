@@ -45,6 +45,8 @@
 #define ArriveDesc $05E
 #define EscapeName $05F
 #define EscapeDesc $060
+#define UM_Refuge $061
+#define UM_RefugeDesc $062
 #define nameCamus $903
 #define nameSirius $904
 #define nameZeke $905

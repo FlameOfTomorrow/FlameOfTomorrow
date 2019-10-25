@@ -40,9 +40,9 @@ AntiThiefDoorTarget:
 #incbin "AntiThiefDoorTarget.dmp"
 WORD AntiThiefDoorID
 
-#define AntiThiefDoor(doorX,doorY) "DOOR 0 [doorX,doorY] AntiThiefDoorID"
-#define AntiThiefDoorFlag(flag,doorX,doorY) "DOOR flag [doorX,doorY] AntiThiefDoorID"
+#define AntiThiefDoor(doorX,doorY) "LOCA 0 [doorX,doorY] AntiThiefDoorID"
+#define AntiThiefDoorFlag(flag,doorX,doorY) "LOCA flag [doorX,doorY] AntiThiefDoorID"
 
-#define AntiThiefChest(item,chestX,chestY) "CHES 0 item [chestX,chestY] AntiThiefChestID"
-#define AntiThiefChestMoney(amountOfMoney,chestX,chestY) "CHES 0 0x6F+amountOfMoney*0x10000 [chestX,chestY] AntiThiefChestID"
+#define AntiThiefChest(item,chestX,chestY) "LOCA 0 item [chestX,chestY] AntiThiefChestID"
+#define AntiThiefChestMoney(amountOfMoney,chestX,chestY) "LOCA 0 0x6F+amountOfMoney*0x10000 [chestX,chestY] AntiThiefChestID"
 

@@ -92,3 +92,9 @@ by having this unit arrive.[X]
 ##EscapeDesc
 Have this unit[NL]
 leave this chapter.[X]
+
+##UM_Refuge
+ Refuge[X]
+ 
+##UM_RefugeDesc
+ Take refuge with target.[X]

@@ -1,8 +1,0 @@
-ALIGN 4
-RefugeUsability:
-#incbin "RefugeUsability.dmp"
-POIN RefugeTargetList|1
-
-ALIGN 4
-RefugeTargetList:
-#incbin "RefugeTargetList.dmp"

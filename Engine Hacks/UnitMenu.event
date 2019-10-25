@@ -144,6 +144,9 @@ UnitMenuTable:
   MenuCommand(UM_Swap,       UM_SwapDesc,       NormalText, prSwapCommand_Usability,       prSwapCommand_Effect)
   
   UM_Rescue
+  
+  MenuCommand(UM_Refuge,UM_RefugeDesc,NormalText,RefugeUsability,RefugeEffect)
+  
   UM_Give
   UM_Take
   // MenuCommand(0x689, 0x6c5, 0, 0x228a4, RescueEffect) //rescue
