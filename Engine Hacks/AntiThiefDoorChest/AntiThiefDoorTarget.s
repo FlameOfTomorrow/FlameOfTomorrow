@@ -51,9 +51,9 @@ push {r14}
 blh GetLocationEventCommandAt,r3
 ldr r1,AntiThiefDoorID
 cmp r0,r1
-beq 83206
+beq RetTrue
 mov r0,#0
-b 83208
+b Ret
 
 RetTrue:
 mov r0,#1
