@@ -64,105 +64,7 @@ bx r1
 
 
 
-.global TryAddUnitToRefugeTargetList
-.type TryAddUnitToRefugeTargetList, %function
-TryAddUnitToRefugeTargetList:
-push {r4-r5,r14}
-mov r4,r0
-ldr r5,=gUnitSubject
-ldr r0,[r5]
-ldrb r0,[r0,#0xB]
-lsl r0,r0,#0x18
-asr r0,r0,#0x18
-mov r1,#0xB
-ldsb r1,[r4,r1]
-blh AreAllegiancesEqual,r2
-lsl r0,r0,#0x18
-cmp r0,#0
-beq GoBack1
-ldr r2,[r5]
-ldr r0,[r2,#4]
-ldrb r0,[r0,#4]
-cmp r0,#0x51
-beq GoBack1
-ldr r0,[r4,#4]
-ldrb r0,[r0,#4]
-cmp r0,#0x51
-beq GoBack1
-mov r0,r4
-add r0,#0x30
-ldrb r1,[r0]
-mov r0,#0xF
-and r0,r1
-cmp r0,#4
-beq GoBack1
-ldr r0,[r4,#0xC]
-mov r1,#0x30
-and r0,r1
-cmp r0,#0
-bne GoBack1
-mov r0,r2
-mov r1,r4
-bl CanUnitRefuge
-lsl r0,r0,#0x18
-cmp r0,#0
-beq GoBack1
-mov r0,#0x10
-ldsb r0,[r4,r0]
-mov r2,#0xB
-ldsb r2,[r4,r2]
-mov r3,#0
-blh AddTarget,r4
-GoBack1:
-pop {r4-r5}
-pop {r0}
-bx r0
 
-.ltorg
-.align
-
-
-
-
-.global CanUnitRefuge
-.type CanUnitRefuge, %function
-CanUnitRefuge:
-push {r4-r5,r14}
-mov r4,r1 @r4=target char struct
-ldr r0,=gUnitSubject
-ldr r5,[r0] @r5=user char struct
-mov r0,r4
-blh GetUnitAid,r1
-mov r2,r0
-
-ldr r0,[r5]
-ldrb r0,[r0,#0x13]
-ldr r1,[r5,#4]
-ldrb r1,[r1,#0x11]
-add r0,r1
-ldrb r1,[r5,#0x1A]
-add r0,r1
-
-cmp r2,r0
-
-blt RetFalse
-b RetTrue
-
-
-RetFalse:
-mov r0,#0
-b GoBack2
-
-RetTrue:
-mov r0,#1
-
-GoBack2:
-pop {r4-r5}
-pop {r1}
-bx r1
-
-.ltorg
-.align
 
 
 .global RefugeEffect
@@ -225,35 +127,35 @@ ldrb r0,[r0,#0xB]
 mov r1,#0xB
 ldsb r1,[r4,r1]
 blh AreAllegiancesAllied,r3
-cmo r0,#0
-beq 253AA //2535E
+cmp r0,#0
+beq ReturnFromFunc
 ldr r2,[r5]
 ldr r0,[r2,#4]
 ldrb r0,[r0,#4]
 cmp r0,#0x51
-beq 253AA //25368
+beq ReturnFromFunc
 ldr r0,[r4,#4]
 ldrb r0,[r0,#4]
 cmp r0,#0x51
-beq 253AA //25370
+beq ReturnFromFunc
 mov r0,r4
 add r0,#0x30
 ldrb r1,[r0]
 mov r0,#0xF
 and r0,r1
 cmp r0,#4
-beq 253AA //2537E
+beq ReturnFromFunc
 ldr r0,[r4,#0xC]
 mov r1,#0x30
 and r0,r1
 cmp r0,#0
-bne 253AA //25388
+bne ReturnFromFunc
 mov r0,r2
 mov r1,r4
 bl CanUnitRefuge @the thing we have to mimic
 lsl r0,r0,#0x18
 cmp r0,#0
-beq 253AA //25396
+beq ReturnFromFunc
 mov r0,#0x10
 ldsb r0,[r4,r0]
 mov r1,#0x11
@@ -262,6 +164,7 @@ mov r2,#0xB
 ldsb r2,[r4,r2]
 mov r3,#0
 blh AddTarget,r4
+ReturnFromFunc:
 pop {r4-r5}
 pop {r0}
 bx r0
@@ -280,7 +183,7 @@ blh GetUnitAid,r3
 ldr r1,[r4,#4]
 mov r2,#0x11
 ldsb r2,[r1,r2]
-lsr r1,[r4]
+ldr r1,[r4]
 ldrb r1,[r1,#0x13]
 add r2,r1
 mov r1,#0x1A

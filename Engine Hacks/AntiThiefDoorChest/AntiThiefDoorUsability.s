@@ -73,10 +73,7 @@ str r0,[r1]
 ldr r0,=gMapRange
 ldr r0,[r0]
 mov r1,#0
-@blh ClearMapWith,r3
-ldr r3,=ClearMapWith
-mov lr,r3
-.short 0xF800
+blh ClearMapWith,r3
 cmp r4,#0x14
 beq SkipClosedDoorCheck
 cmp r4,#0x1E

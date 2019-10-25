@@ -2,6 +2,7 @@
 .align
 
 .equ gMapTerrain,0x202E4DC
+.equ AddTarget,0x804F8BD
 
 .macro blh to, reg=r3
   ldr \reg, =\to
