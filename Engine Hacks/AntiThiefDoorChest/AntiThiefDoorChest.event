@@ -34,6 +34,10 @@ WORD AntiThiefChestID
 ALIGN 4
 AntiThiefDoorUsability:
 #incbin "AntiThiefDoorUsability.dmp"
+POIN AntiThiefDoorTarget
+
+AntiThiefDoorTarget:
+#incbin "AntiThiefDoorTarget.dmp"
 WORD AntiThiefDoorID
 
 MESSAGE AntiThiefChestUsability AntiThiefDoorUsability currentOffset

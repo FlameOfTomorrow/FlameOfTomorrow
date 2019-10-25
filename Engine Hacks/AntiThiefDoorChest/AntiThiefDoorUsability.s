@@ -4,6 +4,7 @@
 .equ gActiveUnit,0x3004E50
 .equ CheckIfHasItem,0x8018A9D
 .equ GetTargetListSize,0x804FD29
+.equ ClearMapWith,0x80197E5
 
 .macro blh to, reg=r3
   ldr \reg, =\to
@@ -72,12 +73,17 @@ str r0,[r1]
 ldr r0,=gMapRange
 ldr r0,[r0]
 mov r1,#0
-blh ClearMapWith,r3
+@blh ClearMapWith,r3
+ldr r3,=ClearMapWith
+mov lr,r3
+.short 0xF800
 cmp r4,#0x14
 beq SkipClosedDoorCheck
 cmp r4,#0x1E
 bne ReturnFromFunc
-ldr r2,=TryAddClosedDoorToTargetList
+ldr r2,TryAddClosedDoorToTargetList
+mov r0,#0x1
+orr r2,r0
 mov r0,r5
 mov r1,r6
 blh ForEachAdjacentPosition,r3
@@ -89,7 +95,7 @@ SkipClosedDoorCheck:
 ldr r2,=TryAddBridgeToTargetList
 mov r0,r5
 mov r1,r6
-blh ForEachAdjacentPostition,r3
+blh ForEachAdjacentPosition,r3
 
 ReturnFromFunc:
 pop {r4-r6}
@@ -100,67 +106,5 @@ bx r0
 .align
 
 
-.equ gMapTerrain,0x202E4DC
-
 TryAddClosedDoorToTargetList:
-
-push {r4-r6,r14}
-mov r4,r0
-mov r5,r1
-ldr r0,=gMapTerrain
-ldr r1,[r0]
-lsl r0,r5,#2
-add r0,r0,r1
-ldr r0,[r0]
-add r0,r4
-ldrb r0,[r0]
-cmp r0,#0x1E
-bne Return
-mov r0,r4
-mov r1,r5
-bl IsThereClosedDoorAt
-lsl r0,r0,#0x18
-cmp r0,#0
-beq Return
-mov r0,r4
-mov r1,r5
-mov r2,#0x1E
-mov r3,#0
-blh AddTarget,r6
-
-Return:
-pop {r4-r6}
-pop {r0}
-bx r0
-
-.ltorg
-.align
-
-.equ GetLocationEventCommandAt,0x8084079
-
-IsThereClosedDoorAt:
-
-push {r14}
-blh GetLocationEventCommandAt,r3
-ldr r1,AntiThiefDoorID
-cmp r0,r1
-beq 83206
-mov r0,#0
-b 83208
-
-RetTrue:
-mov r0,#1
-
-Ret:
-pop {r1}
-bx r1
-
-.ltorg
-.align
-
-AntiThiefDoorID:
-@WORD AntiThiefDoorID
-
-
-
-
+@POIN AntiThiefDoorTarget
