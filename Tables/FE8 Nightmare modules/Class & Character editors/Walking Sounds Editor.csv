@@ -1,6 +1,6 @@
 INLINE WalkingSoundTable,Walking Sound
 None,0x0
-Ephraim Lord,0x0
+Huntsman,0x0
 Eirika Lord,0x0
 Ephraim Master Lord,CavalryWalk
 Eirika Master Lord,CavalryWalk
@@ -127,39 +127,39 @@ Cyclops,ArmorWalk
 Elder Bael,SpiderWalk
 Journeyman (2),0x0
 Pupil (2),0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
-Ephraim Lord,0x0
+Dread Fighter,0x0
+Dread Fighter (F),0x0
+Deserter,0x0
+Spartan,0x0
+Dark Flier,PegasusWalk
+Arbalist,PegasusWalk
+Nomad,CavalryWalk
+Outlaw,0x0
+Adventurer,0x0
+Dark Mage,0x0
+Nephilim,PegasusWalk
+Harrier,PegasusWalk
+War Monk,0x0
+War Cleric,0x0
+Sword Armor,ArmorWalk
+Lance Armor,ArmorWalk
+Axe Armor,ArmorWalk
+Bow Armor,ArmorWalk
+Sword Paladin,CavalryWalk
+Lance Paladin ,CavalryWalk
+Axe Paladin,CavalryWalk
+Mage Armor,ArmorWalk
+Baron,ArmorWalk
+Sorcerer,0x0
+Dark Knight,CavalryWalk
+Dark Knight (F),CavalryWalk
+Griffon Knight,PegasusWalk
+Deva,PegasusWalk
+Harbringer,ArmorWalk
+Thumaturge,CavalryWalk
+Sword Knight,CavalryWalk
+Lance Knight,CavalryWalk
+Axe Knight,CavalryWalk
 Ephraim Lord,0x0
 Ephraim Lord,0x0
 Ephraim Lord,0x0
