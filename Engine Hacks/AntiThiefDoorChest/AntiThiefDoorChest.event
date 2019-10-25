@@ -1,4 +1,6 @@
 //This is a table of pointers to lists of coordinate pairs at which thieves will not target map objects present
+
+ThiefDenyListTable:
 POIN PrologueDenyList
 POIN EmptyDenyList
 POIN EmptyDenyList
@@ -33,10 +35,30 @@ POIN EmptyDenyList
 
 
 PrologueDenyList:
-
-
+BYTE 2 11
+BYTE 6 5
+BYTE 6 8
+BYTE 11 7
+//here on is for testing
+BYTE 13 3
+BYTE 14 1
+BYTE 14 11
+BYTE 16 7
+BYTE 0xFF 0xFF //terminator
 
 EmptyDenyList:
-BYTE 0xFF
+BYTE 0xFF 0xFF //terminator
 
 
+
+
+//the actual hax part
+PUSH
+ORG 0x831F4
+jumpToHack(DenyThievesMapObjects)
+POP
+
+
+DenyThievesMapObjects:
+#incbin "source.dmp"
+POIN ThiefDenyListTable

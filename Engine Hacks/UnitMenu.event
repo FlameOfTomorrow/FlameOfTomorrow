@@ -125,11 +125,9 @@ UnitMenuTable:
   
   //UM_Chest
   MenuCommand(0x683,0x6CE,NormalText,0x23E1D,0x23E59) 
-  MenuCommand(0x683,0x6CE,NormalText,AntiThiefChestUsability,0x23E59)
   
   //UM_Door
   MenuCommand(0x684,0x6CD,NormalText,0x23DB5,0x23DF5)
-  MenuCommand(0x684,0x6CD,NormalText,AntiThiefDoorUsability,0x23DF5)
   
   UM_Armory
   UM_Vendor

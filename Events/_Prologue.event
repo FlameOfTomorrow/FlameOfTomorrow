@@ -24,7 +24,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 //InfiniteTurnEventPlayer(0x1C,DoorCounter,1)
 TurnEventPlayer(0x1E,LowerThief,5)
-TurnEventPlayer(0x1F,UpperTheif,7)
+TurnEventPlayer(0x1F,UpperThief,7)
 TurnEventPlayer(0x20,Horses,3)
 InfiniteTurnEventPlayer(0x21,ThroneReinforce,1)
 END_MAIN
@@ -62,7 +62,7 @@ SpawnReinforcements(BottomThief)
 NoFade
 ENDA
 
-UpperTheif:
+UpperThief:
 SpawnReinforcements(TopThief)
 NoFade
 ENDA
