@@ -13,6 +13,7 @@
 
     //Text
     #include "Text/Install Text Data.event"
+	ALIGN 4
 	MESSAGE Used text data ends at currentOffset
 
     //Graphics
