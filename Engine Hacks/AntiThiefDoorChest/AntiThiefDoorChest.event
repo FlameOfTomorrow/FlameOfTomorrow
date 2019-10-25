@@ -40,8 +40,6 @@ AntiThiefDoorTarget:
 #incbin "AntiThiefDoorTarget.dmp"
 WORD AntiThiefDoorID
 
-MESSAGE AntiThiefChestUsability AntiThiefDoorUsability currentOffset
-
 #define AntiThiefDoor(doorX,doorY) "DOOR 0 [doorX,doorY] AntiThiefDoorID"
 
 #define AntiThiefChest(item,chestX,chestY) "CHES 0 item [chestX,chestY] AntiThiefChestID"
