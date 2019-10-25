@@ -12,7 +12,7 @@
   #define Skl_Arrow_Y 0x28
   #define Spd_Arrow_X 0xC0
   #define Spd_Arrow_Y 0x28
-  #define Trv_Icon_X 0x8
+  #define Trv_Icon_X 0x56
   #define Trv_Icon_Y 0x56
   
   #include "Display Growths Options/Display Growths Options.txt"
