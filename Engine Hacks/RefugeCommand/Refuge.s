@@ -198,11 +198,11 @@ pop {r0}
 
 mov r1,#0
 cmp r0,r2
-bge ReturnFromCanRefugeFunc @rescue has this as blt
+blt ReturnFromCanRefugeFunc @rescue has this as blt
 mov r1,#1
 ReturnFromCanRefugeFunc:
 mov r0,r1
-pop {r4}
+pop {r4-r5}
 pop {r1}
 bx r1
 

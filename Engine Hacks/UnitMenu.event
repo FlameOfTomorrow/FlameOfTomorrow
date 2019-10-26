@@ -143,7 +143,8 @@ UnitMenuTable:
   
   UM_Rescue
   
-  MenuCommand(UM_Refuge,UM_RefugeDesc,NormalText,RefugeUsability,RefugeEffect)
+  MenuCommand(UM_Refuge,UM_RefugeDesc,NormalText,RefugeUsability,RefugeEffect) 
+  
   
   UM_Give
   UM_Take

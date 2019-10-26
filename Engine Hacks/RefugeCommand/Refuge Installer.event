@@ -9,6 +9,6 @@ jumpToHack(RefugeSelection_OnSelect)
 POP
 
 
-MESSAGE PostActionRescueCorrection ActionRefuge
+MESSAGE PostActionRescueCorrection ActionRefuge CanUnitRefuge
 
 
