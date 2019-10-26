@@ -18,25 +18,25 @@ EventPointerTable(PrologueEvent, PointerList)
 0x0B -
 0x0C -
 0x0D -
-0x0E - FirstHorses Turn Event
+0x0E - 
 0x0F - HallReinforce Turn Event
 0x10 - Door Flag
 0x11 - Door Flag
 0x12 - Door Flag
 0x13 - Door Flag
-0x14 - AFEV Door
-0x15 - AFEV Door
-0x16 - AFEV Door
-0x17 - AFEV Door
+0x14 - 
+0x15 - 
+0x16 - 
+0x17 - 
 0x18 - AREA NPCChecker
 0x19 - Used to mark if all prisoners escaped
 0x1A - Merry Talk
-0x1B - Used to mark if any cell door was opened
-0x1C - DoorCounter Turn Event
-0x1D - Used to mark if DoorCounter spawned units
-0x1E - LowerThief Turn Event
-0x1F - UpperThief Turn Event
-0x20 - FirstHorses Turn Event
+0x1B - 
+0x1C - 
+0x1D - 
+0x1E - 
+0x1F - 
+0x20 - 
 0x21 - ThroneReinforce Turn Event
 0x22 - AREA CheckForPlayerThrone
 0x23 - Escape Flag
@@ -60,11 +60,10 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-//InfiniteTurnEventPlayer(0x1C,DoorCounter,1)
-TurnEventPlayer(0x1E,LowerThief,5)
-TurnEventPlayer(0x1F,UpperThief,7)
-TurnEventPlayer(0x20,FirstHorses,3)
-TurnEventPlayer(0xE,FirstHorses,6)
+TurnEventPlayer(0x0,LowerThief,5)
+TurnEventPlayer(0x0,UpperThief,7)
+TurnEventPlayer(0x0,FirstHorses,3)
+TurnEventPlayer(0x0,FirstHorses,6)
 InfiniteTurnEventPlayer(0x0,Horses,6)
 InfiniteTurnEventPlayer(0x21,ThroneReinforce,1)
 InfiniteTurnEventPlayer(0xF,HallReinforce,1)
@@ -153,24 +152,6 @@ TopThief:
 UNIT PrologueBandit Outlaw Gregory Level(1,Enemy,1) PrologueRightStairs 0 0 1 REDA16R1 [IronBow,Lockpick] LootingThiefAI
 UNIT
 
-DoorCounter:
-CHECK_EVENTID 0x1B
-BEQ 0x1 0xC 0x0 //branch label 1 if door not opened
-COUNTER_CHECK 1
-SVAL 0x1 1
-BEQ 0x2 0x1 0xC //branch label 2 if counter 1 = 1
-Increment(1)
-GOTO 1
-LABEL 2 //counter 1 = 1
-SpawnReinforcements(DoorReinforcements)
-ENUT 0x1D //flag for turns passing in case i need it later
-GOTO 3
-LABEL 1 //door not opened
-ENUF 0x1C //allow event to repeat
-LABEL 3
-NoFade
-ENDA
-
 DoorReinforcements:
 UNIT PrologueBandit SwordKnight Gregory Level(2,Enemy,1) PrologueOutsideLeft 0 0 1 REDA0R18 [IronSword,LeatherShield] DefaultAI
 UNIT PrologueBandit LanceKnight Gregory Level(3,Enemy,1) PrologueOutsideRight 0 0 1 REDA16R18 [IronLance,Javelin] DefaultAI
@@ -202,10 +183,10 @@ MiscBasedEvents:
 AREA 0x18 NPCChecker [0,0] [16,21]
 AREA 0x22 CheckForPlayerThrone [0,0] [6,3]
 AREA 0x24 CheckForPlayerHall [6,0] [14,7]
-AFEV 0x14 Door1Open 0x10
-AFEV 0x15 Door2Open 0x11
-AFEV 0x16 Door3Open 0x12
-AFEV 0x17 Door4Open 0x13
+AFEV 0x0 Door1Open 0x10
+AFEV 0x0 Door2Open 0x11
+AFEV 0x0 Door3Open 0x12
+AFEV 0x0 Door4Open 0x13
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -251,28 +232,28 @@ ENDA
 Door1Open:
 Text(HouseText)
 SetAI(ProloguePrisoner1,0x0,0xC) // Escape AI
-ENUT 0x1B
+ENUF 0x10
 NoFade
 ENDA
 
 Door2Open:
 Text(HouseText)
 SetAI(Merry,0x0,0xC) // Escape AI
-ENUT 0x1B
+ENUF 0x11
 NoFade
 ENDA
 
 Door3Open:
 Text(HouseText)
 SetAI(ProloguePrisoner3,0x0,0xC) // Escape AI
-ENUT 0x1B
+ENUF 0x12
 NoFade
 ENDA
 
 Door4Open:
 Text(HouseText)
 SetAI(ProloguePrisoner4,0x0,0xC) // Escape AI
-ENUT 0x1B
+ENUF 0x13
 NoFade
 ENDA
 
