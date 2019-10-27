@@ -82,8 +82,15 @@ strb r1,[r0,#0x11]
 ldr r0,=gActiveUnit
 ldr r0,[r0]
 bl MakeRefugeTargetList
+
+@so we can pick on up it in a bit, let's set a bit in RAM
+mov r0,#1
+ldr r1,=RefugeFlagLoc
+strb r0,[r1]
+
 ldr r0,=gSelect_Rescue
 blh StartTargetSelection,r1
+
 mov r0,#7
 pop {r1}
 bx r1
@@ -248,10 +255,7 @@ blh UnitRescue,r7
 mov r0,r4
 blh HideUnitSMS,r7
 
-@so we can pick on up it in a bit, let's set a bit in RAM
-mov r0,#1
-ldr r1,=RefugeFlagLoc
-strb r0,[r1]
+
 
 
 mov r0,#0
@@ -330,3 +334,109 @@ AllIsNormal:
 pop {r4}
 pop {r0}
 bx r0
+
+
+
+.equ Text_Clear,0x8003DC9
+.equ String_GetFromIndex,0x800A241
+.equ Text_InsertNumberOr2Dashes,0x80044A5
+.equ Text_InsertString,0x8004481
+
+
+@hook @ 34AA4 with r0 and do a "should we get aid or con" check (rescue is aid)
+
+.global RescueDisplayAidCheck
+.type RescueDisplayAidCheck, %function
+RescueDisplayAidCheck:
+push {r6}
+mov r5,r1
+blh Text_Clear,r6
+ldr r6,=RefugeFlagLoc
+ldrb r6,[r6]
+cmp r6,#1
+beq DisplayConInstead
+ldr r0,=#0x4F8
+b PostDisplayCondition
+DisplayConInstead:
+ldr r0,=#0x4F7
+PostDisplayCondition:
+blh String_GetFromIndex,r6
+mov r3,r0
+mov r0,r4
+mov r1,#0
+mov r2,#3
+blh Text_InsertString,r6
+
+ldr r6,=RefugeFlagLoc
+ldrb r6,[r6]
+cmp r6,#1
+beq GetConInstead
+blh prGotoAidGetter,r6
+b PostGetterCondition
+GetConInstead:
+blh prGotoConGetter,r6
+PostGetterCondition:
+mov r3,r0
+mov r0,r4
+mov r1,#0x38
+mov r2,#2
+blh Text_InsertNumberOr2Dashes,r6
+pop {r6}
+pop {r4-r5}
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+@8 bytes to hook at 34A60 for another one (rescue is con)
+
+.global RescueDisplayConCheck
+.type RescueDisplayConCheck, %function
+RescueDisplayConCheck:
+push {r6}
+mov r4,r1
+blh Text_Clear,r6
+
+@check which word to display
+ldr r0,=RefugeFlagLoc
+ldrb r6,[r6]
+cmp r6,#1
+beq DisplayAidInstead
+ldr r0,=#0x4F7
+b AfterDisplayCondition
+DisplayAidInstead:
+ldr r0,=#0x4F8
+AfterDisplayCondition:
+blh String_GetFromIndex,r6
+mov r3,r0
+mov r0,r4
+mov r1,#0
+mov r2,#3
+blh Text_InsertString,r6
+
+mov r0,r4
+
+@check which stat to get
+ldr r6,=RefugeFlagLoc
+ldrb r6,[r6]
+cmp r6,#1
+beq GetAidInstead
+blh prGotoConGetter,r6
+b AfterGetterCondition
+GetAidInstead:
+blh prGotoAidGetter,r6
+AfterGetterCondition:
+mov r3,r0
+mov r0,r5
+mov r1,#0x38
+mov r2,#2
+blh Text_InsertNumberOr2Dashes,r6
+pop {r6}
+pop {r4-r5}
+pop {r0}
+bx r0
+
+.ltorg
+.align

@@ -6,9 +6,12 @@ PUSH
 ORG 0x228FC
 SHORT 0x46C0 0xB500 
 jumpToHack(RefugeSelection_OnSelect)
+ORG 0x34AA8
+//jumpToHack(RescueDisplayAidCheck)
+ORG 0x34A60
+//jumpToHack(RescueDisplayConCheck)
 POP
 
 
-MESSAGE PostActionRescueCorrection ActionRefuge CanUnitRefuge
 
 
