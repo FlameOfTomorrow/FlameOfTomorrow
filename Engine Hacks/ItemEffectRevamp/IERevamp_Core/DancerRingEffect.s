@@ -33,6 +33,17 @@ mov r1, #0xF
 and r1,r5	@get status effect
 lsr r2,r5,#0x4	@get status duration
 bl 	InflictStatusOnUnit
+
+
+@also dance
+sub r0,#0x30
+ldr	r1,[r0,#0xC]
+ldr	r2,=#0x80323A0
+ldr	r2,[r2]
+and	r1,r2
+str	r1,[r0,#0xC]
+
+
 ldr 	r1, =#0x203A4D4
 mov 	r0, #0x80
 lsl 	r0, r0, #0x2

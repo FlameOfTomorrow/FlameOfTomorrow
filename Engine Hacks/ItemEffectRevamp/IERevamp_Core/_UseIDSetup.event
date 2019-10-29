@@ -118,7 +118,11 @@
 		
 	//change checks for dancer rings to check for the effect id instead
 	ORG $2FBBC	//$2FBEA
+	#ifndef DancerRingRefresh
 		#include "DancerRingEffect.event"
+	#else
+		#include "DancerRingEffect_Refresh.event"
+	#endif //DancerRingRefresh
 		
 	//change part that updates status effect on BattleTargetUnit
 	ORG $30038
