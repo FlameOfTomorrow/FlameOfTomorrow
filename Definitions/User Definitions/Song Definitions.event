@@ -4,3 +4,4 @@
 #define TaisenSong 0x1A
 #define SplashSong 0x19
 #define TheCertainPathSong 0x10
+#define MinibossPMSong 0x1B

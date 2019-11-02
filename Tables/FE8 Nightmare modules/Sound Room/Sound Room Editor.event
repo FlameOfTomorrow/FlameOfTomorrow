@@ -8,5 +8,6 @@ csvmacro038(E1M1Song,3359,0,SongNameE1M1)
 csvmacro038(SplashSong,6214,0,SongNameSplash)
 csvmacro038(TaisenSong,3874,0,SongNameTaisen)
 csvmacro038(TheCertainPathSong,1513,0,SongNamePathToVictory)
+csvmacro038(MinibossPMSong,1887,0,SongNameMinibossPM)
 csvmacro038(0xFFFFFFFF,0,0,0)
 POP

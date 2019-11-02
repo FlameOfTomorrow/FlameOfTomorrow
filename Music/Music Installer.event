@@ -34,3 +34,6 @@ SongTable(SplashSong,SplashCrop_HDN,BattleMusicGroup)
 
 SongTable(TheCertainPathSong,TheCertainPathToVictory,MapMusicGroup)
 #include "s Files/TheCertainPathToVictory.event"
+
+SongTable(MinibossPMSong,MinibossPM,BattleMusicGroup)
+#include "s Files/MinibossPM.event"
