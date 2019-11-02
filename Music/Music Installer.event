@@ -37,3 +37,9 @@ SongTable(TheCertainPathSong,TheCertainPathToVictory,MapMusicGroup)
 
 SongTable(MinibossPMSong,MinibossPM,BattleMusicGroup)
 #include "s Files/MinibossPM.event"
+
+SongTable(GeneralGuyPMSong,GeneralGuyPM,BattleMusicGroup)
+#include "s Files/GeneralGuyPM.event"
+
+SongTable(TubbaBlubbaPMSong,TubbaBlubbaPM,BattleMusicGroup)
+#include "s Files/TubbaBlubbaPM.event"

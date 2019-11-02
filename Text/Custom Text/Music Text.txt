@@ -19,3 +19,9 @@ The Certain Path To Victory[X]
 ##SongNameMinibossPM
 Hey You! (Paper Mario)[X]
 
+##SongNameGeneralGuyPM
+Keeping Pace (Paper Mario)[X]
+
+##SongNameTubbaBlubbaPM
+Ghost Gulping (Paper Mario)[X]
+
