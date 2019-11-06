@@ -24,9 +24,9 @@ EventPointerTable(PrologueEvent, PointerList)
 0x11 - Door Flag
 0x12 - Door Flag
 0x13 - Door Flag
-0x14 - 
-0x15 - 
-0x16 - 
+0x14 - Prisoner Death Quote
+0x15 - AFEV PrisonerDies
+0x16 - Prisoner Death Warning
 0x17 - 
 0x18 - AREA NPCChecker
 0x19 - Used to mark if all prisoners escaped
@@ -187,8 +187,24 @@ AFEV 0x0 Door1Open 0x10
 AFEV 0x0 Door2Open 0x11
 AFEV 0x0 Door3Open 0x12
 AFEV 0x0 Door4Open 0x13
+AFEV 0x15 PrisonerDies 0x14
 CauseGameOverIfLordDies
 END_MAIN
+
+PrisonerDies:
+CHECK_EVENTID 0x16
+BNE 1 0x0 0xC //branch label 1 if warning flag set
+Text(ProloguePrisonerWarning)
+ENUF 0x14 //allow death quote to repeat
+ENUF 0x15 //allow event to repeat
+ENUT 0x16 //set warning flag
+GOTO 2
+LABEL 1
+Text(ProloguePrisonerLose)
+ASMC 0x00D391 //game over
+LABEL 2
+NoFade
+ENDA
 
 NPCChecker:
 CHECK_OTHERS
@@ -391,10 +407,28 @@ ENUN
 CAM1 PrologueEntrance
 CamOn
 Text(0x3,PrologueOP1)
-FADU 16
 // cutscene start
 LOAD2 0x1 OpeningUnits
 ENUN
+TEXTSTART
+TEXTSHOW PrologueOP2
+TEXTEND
+FlashCursor(7,21,60)
+FlashCursor(8,21,60)
+FlashCursor(9,21,60)
+TEXTCONT
+TEXTEND
+CAM1 Gregory
+FlashCursor(Gregory,60)
+TEXTCONT
+TEXTEND
+CAM1 Artemer
+TEXTCONT
+TEXTEND
+EndConvo
+CAM1 Gregory
+FlashCursor(Gregory,60)
+TextNoFade(0xC,PrologueOP3)
 // cutscene end
 FADI 16
 CamOff

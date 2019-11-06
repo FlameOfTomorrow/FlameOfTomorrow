@@ -1,15 +1,31 @@
 ##PrologueName
 Prologue[X]
 
+
+
+
+
 ##PrologueObjective
 Escort prisoners[N]
 and then seize.[X]
 
+
+
+
+
 ##PrologueDetailObjective
 Escort[X]
 
+
+
+
+
 ##PrologueDetailObjective2
 Seize throne[X]
+
+
+
+
 
 ##PrologueOP1
 [Left][LoadKeith][FarRight][LoadLexi][MoveFarRight][Left][MoveLeft][FarRight][MoveFarRight]
@@ -174,3 +190,172 @@ if you'll excuse me.[AN]
 [MoveFarFarLeft][Clear]
 
 [MidLeft][CloseEyes][Beat][A][X]
+
+
+
+
+
+##PrologueOP2
+[FarFarLeft][LoadSpike][MoveLeft]
+Alright, here's[N]
+the place.[AN]
+
+[MidRight][LoadHelena][FarLeft][LoadKeith]
+It's... bigger[N]
+than I expected.[AN]
+
+[Left]
+Helena, if you would.[AN]
+[Left][Clear][FarLeft][Clear]
+
+[MidRight]
+We're going to need to[N]
+get all the prisoners out.[AN]
+Once we open their cells,[AN]
+we'll direct them out[N]
+here so they can escape.[AN][Event]
+Some townsfolk have prepared[N]
+wagons to get them out of here.[AN]
+After that's done we just[N]
+need to reclaim this fort.[AN][Event]
+We'll need to defeat their[N]
+leader eventually to do so,[AN]
+but defeating him earlier[N]
+may stop their advance.[AN][Event]
+
+[Left][LoadVerwald]
+Nice and simple, huh?[AN]
+Come in swinging and[N]
+bust them outta there...[AN][CloseEyes][....][....][OpenEyes][MoveLeft]
+I like it![AN]
+
+[FarLeft][LoadLexi]
+But how are we going[N]
+to open the cells?[AN]
+
+[MidRight]
+I brought an unlock staff with me.[AN]
+The local blacksmith was also kind[N]
+enough to give us this master key.[AN]
+Artemer can hold onto it for now.[AN]
+
+[Left][Clear][LoadArtemer]
+Thank you.[AN]
+
+[FarLeft][Clear][LoadSpike]
+If there's no complaints,[N]
+let's move already.[AN]
+Lead the way, bud.[AN]
+
+[Left]
+I will do[N]
+my best.[A][X]
+
+
+
+
+##PrologueOP3
+[MidRight][LoadGregory][FarFarLeft][LoadPirate][MoveMidLeft][MoveMidLeft]
+Boss![N]
+We've got trouble![AN]
+Some mercenaries[N]
+'ave showed up![AN]
+
+[MidRight]
+Those lowly villagers[N]
+must have sent them...[AN]
+Bastards ought to know[N]
+their place in this world.[AN]
+We can handle this[N]
+lot, no problem.[AN]
+Call for the reinforcements![AN]
+And if those slave runts[N]
+try to escape, kill 'em![AN]
+That'll send 'em right on[N]
+back into their cells.[AN]
+
+[MidLeft]
+Sir, yes sir![AN]
+[MoveFarFarRight][Clear]
+
+[MidRight][Beat][AN]
+Alright, you lug.[N]
+[MoveMidLeft][Clear][LoadGregory]
+I see you sulking about.[AN]
+
+[MidRight][LoadXanthus]
+Hopefully that eyesight of yours[N]
+helps you oversee those prisoners.[AN]
+
+[MidLeft]
+Hmph. You'd do best[N]
+to watch your tongue.[AN]
+Leave my own business[N]
+to me, you snake.[AN]
+You'll get your[N]
+damned people,[AN]
+to whatever ends you[N]
+freaks are using them.[AN]
+
+[MidRight]
+As long as you hold[N]
+your end of our deal.[AN][Smile]
+Try not to kill too[N]
+many in the meantime, hm?[AN][Smile]
+[Clear]
+
+[MidLeft]
+I have a feeling I'm involved[N]
+in something I shouldn't be...[A][X]
+
+
+
+
+##PrologueGregoryBattle
+[MidLeft][LoadGregory]
+Didn't expect ya to make it[N]
+it all the way up here...[AN]
+Looks like I'll get to[N]
+have some fun with ya![A][X]
+
+
+
+
+##PrologueGregoryDeath
+[MidLeft][LoadGregory]
+This ain't... the end[N]
+of me... Ya... Urgh...[A][CloseEyes][.....][X]
+
+
+
+
+##ProloguePrisonerWarning
+[MidRight][LoadArtemer][MidLeft][LoadSpike]
+What the hell are[N]
+you doing, pal?[AN]
+If these people all die,[N]
+we ain't gettin' paid![AN]
+
+[MidRight]
+I apoligize.[N]
+I lack experience.[AN]
+
+[MidLeft]
+Just... try[N]
+to focus, huh?[A][X]
+
+
+
+
+##ProloguePrisonerLose
+[MidRight][LoadArtemer][MidLeft][LoadSpike]
+Another one?![N]
+God damnit...[AN]
+
+[MidRight][Beat][AN]
+
+[MidLeft]
+Just step aside, bud.[AN]
+I'll handle[N]
+things from here.[AN]
+What a mess...[A][X]

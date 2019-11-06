@@ -95,5 +95,6 @@ Unequip[X]
 #include "Custom Text/Class Text.txt"
 #include "Custom Text/Character Text.txt"
 #include "Custom Text/Music Text.txt"
+#include "Custom Text/Quotes.txt"
 
 #include "Custom Text/Story Text/_Prologue.txt"

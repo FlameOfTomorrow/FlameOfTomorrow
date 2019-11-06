@@ -1,0 +1,108 @@
+[FarFarLeft][LoadSpike][MoveLeft]
+
+Alright, here's[N]
+
+the place.[AN]
+
+
+
+[MidRight][LoadHelena][FarLeft][LoadKeith]
+
+It's... bigger[N]
+
+than I expected.[AN]
+
+
+
+[Left]
+
+Helena, if you would.[AN]
+
+[Left][Clear][FarLeft][Clear]
+
+
+
+[MidRight]
+
+We're going to need to[N]
+
+get all the prisoners out.[AN]
+
+Once we open their cells,[AN]
+
+we'll direct them out[N]
+
+here so they can escape.[AN][Event]
+
+Some townsfolk have prepared[N]
+
+wagons to get them out of here.[AN]
+
+After that's done we just[N]
+
+need to reclaim this fort.[AN][Event]
+
+We'll need to defeat their[N]
+
+leader eventually to do so,[AN]
+
+but defeating him earlier[N]
+
+may stop their advance.[AN][Event]
+
+
+
+[Left][LoadVerwald]
+
+Nice and simple, huh?[AN]
+
+Come in swinging and[N]
+
+bust them outta there...[AN][CloseEyes][....][....][OpenEyes][MoveLeft]
+
+I like it![AN]
+
+
+
+[FarLeft][LoadLexi]
+
+But how are we going[N]
+
+to open the cells?[AN]
+
+
+
+[MidRight]
+
+I brought an unlock staff with me.[AN]
+
+The local blacksmith was also kind[N]
+
+enough to give us this master key.[AN]
+
+Artemer can hold onto it for now.[AN]
+
+
+
+[Left][Clear][LoadArtemer]
+
+Thank you.[AN]
+
+
+
+[FarLeft][Clear][LoadSpike]
+
+If there's no complaints,[N]
+
+let's move already.[AN]
+
+Lead the way, bud.[AN]
+
+
+
+[Left]
+
+I will do[N]
+
+my best.[A][X]
+

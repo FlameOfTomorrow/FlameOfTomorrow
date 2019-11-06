@@ -1,0 +1,36 @@
+##ArtemerDeath
+[MidRight][LoadArtemer]
+Such a pitiful way[N]
+to die... Father...[A][CloseEyes][.....][X]
+
+##HelenaDeath
+[MidRight][LoadHelena]
+Ack... no... I still need[N]
+to... Help them... Help...[A][CloseEyes][.....][X]
+
+##KeithDeath
+[MidRight][LoadKeith]
+Gurgling on my own blood...[N]
+Heh... a fitting end...[A][CloseEyes][.....][X]
+
+##LexiDeath
+[MidRight][LoadLexi]
+So careless... This is[N]
+unlike me... I'm sorry.[A][CloseEyes][.....][X]
+
+##VerwaldDeath
+[MidRight][LoadVerwald]
+Sorry, honey...[N]
+I broke my promise...[A][CloseEyes][.....][X]
+
+##SpikeDeath
+[MidRight][LoadSpike]
+Died like I lived...[N]
+It's not so bad.[AN]
+I've waited a long[N]
+time for this.[A][CloseEyes][.....][X]
+
+##MerryDeath
+[MidRight][LoadMerry]
+No, no... I'm not...[N]
+Ready to die... yet...[A][CloseEyes][.....][X]

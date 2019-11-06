@@ -2030,24 +2030,76 @@ __TEXTPROCESSABB:
 setText($ABB, __TEXTPROCESSABB)
 
 __TEXTPROCESSABC:
-#incbin ".TextEntries\text_buildfilePrologueName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileArtemerDeath.fetxt.dmp"
 setText($ABC, __TEXTPROCESSABC)
 
 __TEXTPROCESSABD:
-#incbin ".TextEntries\text_buildfilePrologueObjective.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileHelenaDeath.fetxt.dmp"
 setText($ABD, __TEXTPROCESSABD)
 
 __TEXTPROCESSABE:
-#incbin ".TextEntries\text_buildfilePrologueDetailObjective.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileKeithDeath.fetxt.dmp"
 setText($ABE, __TEXTPROCESSABE)
 
 __TEXTPROCESSABF:
-#incbin ".TextEntries\text_buildfilePrologueDetailObjective2.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileLexiDeath.fetxt.dmp"
 setText($ABF, __TEXTPROCESSABF)
 
 __TEXTPROCESSAC0:
-#incbin ".TextEntries\text_buildfilePrologueOP1.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileVerwaldDeath.fetxt.dmp"
 setText($AC0, __TEXTPROCESSAC0)
+
+__TEXTPROCESSAC1:
+#incbin ".TextEntries\text_buildfileSpikeDeath.fetxt.dmp"
+setText($AC1, __TEXTPROCESSAC1)
+
+__TEXTPROCESSAC2:
+#incbin ".TextEntries\text_buildfileMerryDeath.fetxt.dmp"
+setText($AC2, __TEXTPROCESSAC2)
+
+__TEXTPROCESSAC3:
+#incbin ".TextEntries\text_buildfilePrologueName.fetxt.dmp"
+setText($AC3, __TEXTPROCESSAC3)
+
+__TEXTPROCESSAC4:
+#incbin ".TextEntries\text_buildfilePrologueObjective.fetxt.dmp"
+setText($AC4, __TEXTPROCESSAC4)
+
+__TEXTPROCESSAC5:
+#incbin ".TextEntries\text_buildfilePrologueDetailObjective.fetxt.dmp"
+setText($AC5, __TEXTPROCESSAC5)
+
+__TEXTPROCESSAC6:
+#incbin ".TextEntries\text_buildfilePrologueDetailObjective2.fetxt.dmp"
+setText($AC6, __TEXTPROCESSAC6)
+
+__TEXTPROCESSAC7:
+#incbin ".TextEntries\text_buildfilePrologueOP1.fetxt.dmp"
+setText($AC7, __TEXTPROCESSAC7)
+
+__TEXTPROCESSAC8:
+#incbin ".TextEntries\text_buildfilePrologueOP2.fetxt.dmp"
+setText($AC8, __TEXTPROCESSAC8)
+
+__TEXTPROCESSAC9:
+#incbin ".TextEntries\text_buildfilePrologueOP3.fetxt.dmp"
+setText($AC9, __TEXTPROCESSAC9)
+
+__TEXTPROCESSACA:
+#incbin ".TextEntries\text_buildfilePrologueGregoryBattle.fetxt.dmp"
+setText($ACA, __TEXTPROCESSACA)
+
+__TEXTPROCESSACB:
+#incbin ".TextEntries\text_buildfilePrologueGregoryDeath.fetxt.dmp"
+setText($ACB, __TEXTPROCESSACB)
+
+__TEXTPROCESSACC:
+#incbin ".TextEntries\text_buildfileProloguePrisonerWarning.fetxt.dmp"
+setText($ACC, __TEXTPROCESSACC)
+
+__TEXTPROCESSACD:
+#incbin ".TextEntries\text_buildfileProloguePrisonerLose.fetxt.dmp"
+setText($ACD, __TEXTPROCESSACD)
 
 }
 

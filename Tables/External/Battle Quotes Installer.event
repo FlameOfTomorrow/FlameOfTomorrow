@@ -5,7 +5,7 @@
 
 ALIGN 4
 BattleQuoteTable:
-
+TwoWayBattleQuote(0x0,Gregory,Prologue,PrologueGregoryBattle)
 EndQuote
 
 PUSH

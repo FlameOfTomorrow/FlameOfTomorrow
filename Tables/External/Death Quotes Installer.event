@@ -4,10 +4,20 @@ ALIGN 4
 DeathQuoteTable:
 //ChapterSpecificDeathQuotes
 //ChapterDeathQuote(Character,Chapter,Flag,TextID)
-
+ChapterDeathQuote(Gregory,Prologue,DefeatBossFlag,PrologueGregoryDeath)
+ChapterDeathQuote(ProloguePrisoner1,Prologue,0x14,0)
+ChapterDeathQuote(ProloguePrisoner2,Prologue,0x14,0)
+ChapterDeathQuote(ProloguePrisoner3,Prologue,0x14,0)
+ChapterDeathQuote(ProloguePrisoner4,Prologue,0x14,0)
 //AlwaysDeathQuotes
 //AlwaysDeathQuote(Character,Flag,TextID)
-
+AlwaysDeathQuote(Artemer,GameOverFlag,ArtemerDeath)
+AlwaysDeathQuote(Helena,0x0,HelenaDeath)
+AlwaysDeathQuote(Keith,0x0,KeithDeath)
+AlwaysDeathQuote(Lexi,0x0,LexiDeath)
+AlwaysDeathQuote(Verwald,0x0,VerwaldDeath)
+AlwaysDeathQuote(Spike,0x0,SpikeDeath)
+AlwaysDeathQuote(Merry,0x0,MerryDeath)
 EndQuote
 
 PUSH

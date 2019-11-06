@@ -81,3 +81,5 @@
 [LoadBraidGirl] = [LoadFace][0x62][0x1]
 [LoadKelikGirl] = [LoadFace][0x63][0x1]
 [LoadLoli] = [LoadFace][0x64][0x1]
+[LoadPirate] = [LoadFace][0x4C][0x1]
+[LoadBandit] = [LoadFace][0x4D][0x1]
