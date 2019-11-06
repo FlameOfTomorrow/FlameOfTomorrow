@@ -490,5 +490,12 @@
 #define PrologueDetailObjective $ABB
 #define PrologueDetailObjective2 $ABC
 #define PrologueOP1 $ABD
+#define SongNameMinibossPM $AB9
+#define SongNameGeneralGuyPM $ABA
+#define SongNameTubbaBlubbaPM $ABB
+#define PrologueName $ABC
+#define PrologueObjective $ABD
+#define PrologueDetailObjective $ABE
+#define PrologueDetailObjective2 $ABF
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

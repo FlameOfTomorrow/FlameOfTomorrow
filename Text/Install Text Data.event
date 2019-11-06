@@ -2018,24 +2018,35 @@ __TEXTPROCESSAB8:
 setText($AB8, __TEXTPROCESSAB8)
 
 __TEXTPROCESSAB9:
-#incbin ".TextEntries\text_buildfilePrologueName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSongNameMinibossPM.fetxt.dmp"
 setText($AB9, __TEXTPROCESSAB9)
 
 __TEXTPROCESSABA:
-#incbin ".TextEntries\text_buildfilePrologueObjective.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSongNameGeneralGuyPM.fetxt.dmp"
 setText($ABA, __TEXTPROCESSABA)
 
 __TEXTPROCESSABB:
-#incbin ".TextEntries\text_buildfilePrologueDetailObjective.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileSongNameTubbaBlubbaPM.fetxt.dmp"
 setText($ABB, __TEXTPROCESSABB)
 
 __TEXTPROCESSABC:
-#incbin ".TextEntries\text_buildfilePrologueDetailObjective2.fetxt.dmp"
+#incbin ".TextEntries\text_buildfilePrologueName.fetxt.dmp"
 setText($ABC, __TEXTPROCESSABC)
 
 __TEXTPROCESSABD:
 #incbin ".TextEntries\text_buildfilePrologueOP1.fetxt.dmp"
 setText($ABD, __TEXTPROCESSABD)
+
+#incbin ".TextEntries\text_buildfilePrologueObjective.fetxt.dmp"
+setText($ABD, __TEXTPROCESSABD)
+
+__TEXTPROCESSABE:
+#incbin ".TextEntries\text_buildfilePrologueDetailObjective.fetxt.dmp"
+setText($ABE, __TEXTPROCESSABE)
+
+__TEXTPROCESSABF:
+#incbin ".TextEntries\text_buildfilePrologueDetailObjective2.fetxt.dmp"
+setText($ABF, __TEXTPROCESSABF)
 
 }
 
