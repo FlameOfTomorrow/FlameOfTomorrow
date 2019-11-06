@@ -485,11 +485,6 @@
 #define SongNameSplash $AB6
 #define SongNameTaisen $AB7
 #define SongNamePathToVictory $AB8
-#define PrologueName $AB9
-#define PrologueObjective $ABA
-#define PrologueDetailObjective $ABB
-#define PrologueDetailObjective2 $ABC
-#define PrologueOP1 $ABD
 #define SongNameMinibossPM $AB9
 #define SongNameGeneralGuyPM $ABA
 #define SongNameTubbaBlubbaPM $ABB
@@ -497,5 +492,6 @@
 #define PrologueObjective $ABD
 #define PrologueDetailObjective $ABE
 #define PrologueDetailObjective2 $ABF
+#define PrologueOP1 $AC0
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

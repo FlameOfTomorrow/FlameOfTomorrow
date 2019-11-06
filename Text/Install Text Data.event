@@ -2034,9 +2034,6 @@ __TEXTPROCESSABC:
 setText($ABC, __TEXTPROCESSABC)
 
 __TEXTPROCESSABD:
-#incbin ".TextEntries\text_buildfilePrologueOP1.fetxt.dmp"
-setText($ABD, __TEXTPROCESSABD)
-
 #incbin ".TextEntries\text_buildfilePrologueObjective.fetxt.dmp"
 setText($ABD, __TEXTPROCESSABD)
 
@@ -2047,6 +2044,10 @@ setText($ABE, __TEXTPROCESSABE)
 __TEXTPROCESSABF:
 #incbin ".TextEntries\text_buildfilePrologueDetailObjective2.fetxt.dmp"
 setText($ABF, __TEXTPROCESSABF)
+
+__TEXTPROCESSAC0:
+#incbin ".TextEntries\text_buildfilePrologueOP1.fetxt.dmp"
+setText($AC0, __TEXTPROCESSAC0)
 
 }
 
