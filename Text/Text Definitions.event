@@ -489,5 +489,6 @@
 #define PrologueObjective $ABA
 #define PrologueDetailObjective $ABB
 #define PrologueDetailObjective2 $ABC
+#define PrologueOP1 $ABD
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

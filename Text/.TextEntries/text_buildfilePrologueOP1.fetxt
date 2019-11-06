@@ -1,176 +1,323 @@
-##PrologueName
-Prologue[X]
-
-##PrologueObjective
-Escort prisoners[N]
-and then seize.[X]
-
-##PrologueDetailObjective
-Escort[X]
-
-##PrologueDetailObjective2
-Seize throne[X]
-
-##PrologueOP1
 [Left][LoadKeith][FarRight][LoadLexi][MoveFarRight][Left][MoveLeft][FarRight][MoveFarRight]
+
 [FarFarLeft][LoadArtemer][MoveMidLeft][Left][MoveRight][Clear][LoadKeith]
+
 Can we help you?[AN]
 
+
+
 [MidLeft]
+
 I am looking for a...[.....][N]
+
 mercenary's... um...[AN]
 
+
+
 [FarRight]
+
 Mercenary's guild?[N]
+
 That's us.[AN]
 
+
+
 [MidLeft]
+
 That is the word.[AN]
 
+
+
 [Right]
+
 Do you need to hire[N]
+
 us for something?[AN]
 
+
+
 [MidLeft]
+
 No. I am looking for work.[AN]
 
+
+
 [FarFarLeft][LoadVerwald]
+
 Ohh, a new guy eh?[N]
+
 Let me take a look...[AN]
+
 [MoveFarLeft][MoveFarLeft][Clear][MidRight][LoadVerwald][MoveLeft][MoveLeft][Clear][FarLeft][LoadVerwald]
+
 [Smile]Yeah, yeah![AN]
+
 You look like you have[N]
+
 some meat on your bones![AN][Smile]
 
+
+
 [Right][CloseEyes]
+
 Hopefully he has some[N]
+
 meat in his head too,[AN]
+
 unlike a certain someone...[AN][OpenEyes]
 
+
+
 [FarLeft]
+
 Gahaha! You crack me up, pal.[AN]
 
+
+
 [FarRight]
+
 I'm not too sure[N]
+
 he was joking, Verwald...[AN]
+
 [Clear][FarLeft][Clear][FarFarLeft][LoadHelena][MoveFarLeft][MidLeft][MoveLeft][FarFarRight][LoadSpike][MoveFarRight]
+
 Alright, you lot.[N]
+
 I've got our latest job.[AN][....]
+
 ...And this is?[AN]
 
+
+
 [Left]
+
 I am here looking for work.[AN]
 
+
+
 [FarRight]
+
 Fresh meat, huh.[AN]
+
 You look tougher than these little[N]
+
 kids I've been getting recently,[AN]
+
 at least. Welcome aboard...[AN]
+
 Erm...[AN]
+
+
 
 [Left][Beat][AN]
 
+
+
 [FarRight]
+
 Your name?[AN]
 
+
+
 [Left]
+
 I am called Artemer.[AN]
 
+
+
 [FarRight]
+
 Right, Artemer.[N]
+
 I'm Spike.[AN]
+
 The rest of you lot[N]
+
 can talk later.[AN]
+
 Helena, give the[N]
+
 briefing, please.[AN]
 
+
+
 [FarLeft]
+
 Right.[AN]
+
 It seems like the locals have been[N]
+
 getting robbed more and more lately.[AN]
+
 Those bandits are awful bold of late.[AN]
+
 They're not only taking[N]
+
 valuables, but prisoners as well.[AN]
 
+
+
 [Right][Clear][LoadLexi]
+
 Prisoners...[N]
+
 What for? Ransom?[AN]
 
+
+
 [Left][Clear][LoadVerwald]
+
 Wish it were so lighthearted,[N]
+
 kid. Those are slaves.[AN]
 
+
+
 [FarRight]
+
 God knows what black market[N]
+
 they're being sold on.[AN]
 
+
+
 [FarRight][Clear][LoadKeith]
+
 So if I'm understanding right,[AN]
+
 we're breaking into their[N]
+
 base and rescuing those people.[AN]
 
+
+
 [FarLeft]
+
 You got the jist of it.[AN]
+
 Be on your guard though - these[N]
+
 bandits won't be pulling punches.[AN]
 
+
+
 [Left][Clear][LoadArtemer]
+
 Bandits? They are weak.[AN]
 
+
+
 [Right]
+
 What makes you say that?[AN]
 
+
+
 [Left]
+
 They lack conviction.[N]
+
 I have killed many before.[AN]
+
 Fell for animal traps.[AN]
+
 Made for animals much[N]
+
 smaller than bandits.[AN]
 
+
+
 [Right][Clear][LoadSpike]
+
 Someone sounds sure of himself.[AN]
+
 Say... why don't you[N]
+
 take charge here, buddy?[AN]
 
+
+
 [FarRight]
+
 Him? But he just got here...[N]
+
 I don't follow your reasoning.[AN]
 
+
+
 [Right]
+
 You'll get it when[N]
+
 you're older, kid.[AN]
 
+
+
 [Left]
+
 Very well.[N]
+
 I will take charge.[AN]
 
+
+
 [Right]
+
 Excellent.[AN]
+
 You all go get prepared.[N]
+
 Show this guy around.[AN]
 
+
+
 [FarRight][Clear][Left][Clear]
+
 [Right][MoveMidRight][FarLeft][MoveMidLeft]
+
 He'll get it when[N]
+
 he's older...?[AN]
+
 Get what?[AN]
 
+
+
 [MidRight]
+
 He'll get that I'm too[N]
+
 damned old to be babysitting,[AN]
+
 that's what.[AN]
 
+
+
 [MidLeft]
+
 Are you sure about this?[AN]
 
+
+
 [MidRight]
+
 Relax. It's not like[N]
+
 we're going anywhere.[AN]
+
 You can show him[N]
+
 the ropes and all that.[AN]
+
 Now, I've got my own[N]
+
 preparations to make,[AN]
+
 if you'll excuse me.[AN]
+
 [MoveFarFarLeft][Clear]
+
+
 
 [MidLeft][CloseEyes][Beat][A][X]

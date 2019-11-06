@@ -2033,6 +2033,10 @@ __TEXTPROCESSABC:
 #incbin ".TextEntries\text_buildfilePrologueDetailObjective2.fetxt.dmp"
 setText($ABC, __TEXTPROCESSABC)
 
+__TEXTPROCESSABD:
+#incbin ".TextEntries\text_buildfilePrologueOP1.fetxt.dmp"
+setText($ABD, __TEXTPROCESSABD)
+
 }
 
 #endif // TEXT_INSTALLER_TEXT_BUILDFILE_TXT

@@ -25,6 +25,14 @@ LexiMugData:
 #incext PortraitFormatter "Lexi.png"
 setMugEntry(LexiMug, LexiMugData, 2, 6, 2, 4)
 
+MerryMugData:
+#incext PortraitFormatter "Merry.png"
+setMugEntry(MerryMug, MerryMugData, 4, 6, 4, 4)
+
+XanthusMugData:
+#incext PortraitFormatter "Xanthus.png"
+setMugEntry(XanthusMug, XanthusMugData, 2, 5, 3, 3)
+
 
 // Class Cards
 HeroCardFile:

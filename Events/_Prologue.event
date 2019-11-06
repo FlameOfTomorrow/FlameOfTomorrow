@@ -390,6 +390,7 @@ LOAD1 0x1 EnemyUnits
 ENUN
 CAM1 PrologueEntrance
 CamOn
+Text(0x3,PrologueOP1)
 FADU 16
 // cutscene start
 LOAD2 0x1 OpeningUnits
