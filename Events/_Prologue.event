@@ -415,6 +415,7 @@ Text(0x3,PrologueOP1)
 LOAD2 0x1 OpeningUnits
 ENUN
 MUSC 0x7
+EVBIT_T 5
 TEXTSTART
 TEXTSHOW PrologueOP2
 TEXTEND
@@ -431,6 +432,7 @@ CAM1 Artemer
 TEXTCONT
 TEXTEND
 EndConvo
+EVBIT_F 5
 CAM1 Gregory
 FlashCursor(Gregory,60)
 MUSC 0x2E
