@@ -9,6 +9,7 @@ ChapterDeathQuote(ProloguePrisoner1,Prologue,0x14,0)
 ChapterDeathQuote(ProloguePrisoner2,Prologue,0x14,0)
 ChapterDeathQuote(ProloguePrisoner3,Prologue,0x14,0)
 ChapterDeathQuote(ProloguePrisoner4,Prologue,0x14,0)
+ChapterDeathQuote(Merry,Prologue,0x14,MerryDeath)
 //AlwaysDeathQuotes
 //AlwaysDeathQuote(Character,Flag,TextID)
 AlwaysDeathQuote(Artemer,GameOverFlag,ArtemerDeath)

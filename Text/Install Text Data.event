@@ -2101,6 +2101,46 @@ __TEXTPROCESSACD:
 #incbin ".TextEntries\text_buildfileProloguePrisonerLose.fetxt.dmp"
 setText($ACD, __TEXTPROCESSACD)
 
+__TEXTPROCESSACE:
+#incbin ".TextEntries\text_buildfilePrologueCell1.fetxt.dmp"
+setText($ACE, __TEXTPROCESSACE)
+
+__TEXTPROCESSACF:
+#incbin ".TextEntries\text_buildfilePrologueCell2.fetxt.dmp"
+setText($ACF, __TEXTPROCESSACF)
+
+__TEXTPROCESSAD0:
+#incbin ".TextEntries\text_buildfilePrologueCell3.fetxt.dmp"
+setText($AD0, __TEXTPROCESSAD0)
+
+__TEXTPROCESSAD1:
+#incbin ".TextEntries\text_buildfilePrologueCell4.fetxt.dmp"
+setText($AD1, __TEXTPROCESSAD1)
+
+__TEXTPROCESSAD2:
+#incbin ".TextEntries\text_buildfilePrologueSeizeStart.fetxt.dmp"
+setText($AD2, __TEXTPROCESSAD2)
+
+__TEXTPROCESSAD3:
+#incbin ".TextEntries\text_buildfilePrologueSeizeBefore.fetxt.dmp"
+setText($AD3, __TEXTPROCESSAD3)
+
+__TEXTPROCESSAD4:
+#incbin ".TextEntries\text_buildfilePrologueArtemerMerry.fetxt.dmp"
+setText($AD4, __TEXTPROCESSAD4)
+
+__TEXTPROCESSAD5:
+#incbin ".TextEntries\text_buildfilePrologueKeithMerry.fetxt.dmp"
+setText($AD5, __TEXTPROCESSAD5)
+
+__TEXTPROCESSAD6:
+#incbin ".TextEntries\text_buildfilePrologueEnding1.fetxt.dmp"
+setText($AD6, __TEXTPROCESSAD6)
+
+__TEXTPROCESSAD7:
+#incbin ".TextEntries\text_buildfilePrologueEnding2.fetxt.dmp"
+setText($AD7, __TEXTPROCESSAD7)
+
 }
 
 #endif // TEXT_INSTALLER_TEXT_BUILDFILE_TXT

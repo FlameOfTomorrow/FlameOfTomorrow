@@ -506,5 +506,15 @@
 #define PrologueGregoryDeath $ACB
 #define ProloguePrisonerWarning $ACC
 #define ProloguePrisonerLose $ACD
+#define PrologueCell1 $ACE
+#define PrologueCell2 $ACF
+#define PrologueCell3 $AD0
+#define PrologueCell4 $AD1
+#define PrologueSeizeStart $AD2
+#define PrologueSeizeBefore $AD3
+#define PrologueArtemerMerry $AD4
+#define PrologueKeithMerry $AD5
+#define PrologueEnding1 $AD6
+#define PrologueEnding2 $AD7
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

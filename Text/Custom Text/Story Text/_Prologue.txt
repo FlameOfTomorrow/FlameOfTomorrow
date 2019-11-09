@@ -53,7 +53,7 @@ No. I am looking for work.[AN]
 [FarFarLeft][LoadVerwald]
 Ohh, a new guy eh?[N]
 Let me take a look...[AN]
-[MoveFarLeft][MoveFarLeft][Clear][MidRight][LoadVerwald][MoveLeft][MoveLeft][Clear][FarLeft][LoadVerwald]
+[MidLeft][MoveLeft][FarFarLeft][MoveMidLeft][MoveMidLeft][MoveFarLeft]
 [Smile]Yeah, yeah![AN]
 You look like you have[N]
 some meat on your bones![AN][Smile]
@@ -69,7 +69,7 @@ Gahaha! You crack me up, pal.[AN]
 [FarRight]
 I'm not too sure[N]
 he was joking, Verwald...[AN]
-[Clear][FarLeft][Clear][FarFarLeft][LoadHelena][MoveFarLeft][MidLeft][MoveLeft][FarFarRight][LoadSpike][MoveFarRight]
+[Clear][FarLeft][Clear][FarFarLeft][LoadHelena][MoveFarLeft][FarFarRight][LoadSpike][MoveFarRight]
 Alright, you lot.[N]
 I've got our latest job.[AN][....]
 ...And this is?[AN]
@@ -209,19 +209,20 @@ Helena, if you would.[AN]
 [Left][Clear][FarLeft][Clear]
 
 [MidRight]
-We're going to need to[N]
-get all the prisoners out.[AN]
-Once we open their cells,[AN]
-we'll direct them out[N]
-here so they can escape.[AN][Event]
-Some townsfolk have prepared[N]
-wagons to get them out of here.[AN]
-After that's done we just[N]
-need to reclaim this fort.[AN][Event]
-We'll need to defeat their[N]
-leader eventually to do so,[AN]
-but defeating him earlier[N]
-may stop their advance.[AN][Event]
+We're going to focus[N]
+on those prisoners.[AN]
+Once we open a cell,[AN]
+we'll lead them out[N]
+here to get them away.[AN][Event]
+Some townsfolk have[N]
+wagons prepared there.[AN]
+After they're all out,[AN]
+we need to reclaim[N]
+this fort as well.[AN][Event]
+That means need to[N]
+defeat their leader,[AN]
+but doing so early[N]
+may be benificial.[AN]
 
 [Left][LoadVerwald]
 Nice and simple, huh?[AN]
@@ -359,3 +360,282 @@ Just step aside, bud.[AN]
 I'll handle[N]
 things from here.[AN]
 What a mess...[A][X]
+
+
+
+
+##PrologueCell1
+[MidRight][LoadCurrent][MidLeft][LoadOldMan]
+Oh, thank heavens![AN]
+I was worried we'd be[N]
+locked up here for good...[AN]
+Let's get out of[N]
+here while we can![A][X]
+
+
+
+
+##PrologueCell2
+[MidRight][LoadCurrent][MidLeft][LoadMerry]
+Hm? What's[N]
+this about?[A][X]
+
+
+
+
+##PrologueCell3
+[MidRight][LoadCurrent][MidLeft][LoadKelikGirl]
+Are we... being rescued?[N]
+I don't know what to say.[AN]
+...Thank you.[A][X]
+
+
+
+
+##PrologueCell4
+[MidRight][LoadCurrent][FarLeft][LoadBraidGirl][Left][LoadYoungMan]
+Ah, we're saved![AN]
+
+[FarLeft][HalfCloseEyes]
+The light hurts my[N]
+eyes after so long...[A][X]
+
+
+
+
+##PrologueSeizeStart
+[MidRight][LoadArtemer][MidLeft][LoadSpike]
+Alright, that's[N]
+the last of them.[AN]
+Artemer, you go take[N]
+control of the throne.[AN]
+
+[MidRight]
+Right.[A][X]
+
+
+
+
+##PrologueSeizeBefore
+[MidRight][LoadArtemer][MidLeft][LoadSpike]
+I know you're new here,[AN]
+but we still have[N]
+prisoners to rescue.[AN]
+Try to keep your[N]
+eyes open, bud.[AN]
+
+[MidRight]
+My apologies.[A][X]
+
+
+
+
+
+##PrologueArtemerMerry
+[MidRight][LoadArtemer][MidLeft][LoadMerry]
+Oh my, aren't you[N]
+a strong one...[AN]
+
+[MidRight]
+True strength is of[N]
+the mind, not the body.[AN]
+
+[MidLeft]
+Er... right.[AN]
+Are you breaking me out,[N]
+or giving me life advice?[AN]
+
+[MidRight]
+I apologize.[AN]
+You are free[N]
+now, young one.[AN]
+We will defend[N]
+you as you escape.[AN]
+[MoveFarFarLeft][Clear]
+
+[MidLeft]
+Hmm... wait...[AN]
+if they protect[N]
+me while I...[AN]
+[MoveMidRight][Clear][MidRight][LoadMerry]
+Hey! Sir! Wait![AN]
+
+
+[FarFarLeft][LoadArtemer][MoveMidLeft]
+Yes?[AN]
+
+[MidRight]
+Since you were[N]
+so kind to me...[AN]
+how about[N]
+I repay the favor?[AN]
+I'm pretty deft[N]
+with my hands,[AN]
+and not too shabby[N]
+with a bow either.[AN]
+
+[MidLeft]
+You wish to assist us?[AN]
+...Very well.[N]
+Come with me, then.[AN]
+
+[MidRight]
+Oh, of course,[N]
+of course![AN]
+Heheheh.[A][X]
+
+
+
+
+##PrologueKeithMerry
+[MidLeft][LoadMerry][MidRight][LoadKeith]
+Merry?![AN]
+
+[MidLeft]
+Oh, hey Keith![AN]
+
+[MidRight]
+Argh, you little...[AN]
+didn't I tell you[N]
+to quit thieving?[AN]
+
+[MidLeft]
+It's not like[N]
+I have a choice![AN]
+You know how it is![AN]
+
+[MidRight]
+Yes yes, I was there, but...[AN]
+surely you could figure[N]
+something else out.[AN]
+Look where it's gotten you.[AN]
+
+[MidLeft]
+I have figured something out![AN]
+I'll have you know I'm[N]
+not even a thief anymore.[AN]
+The only thing I[N]
+steal is information.[AN]
+Yup, I'm a spy now.[AN]
+
+[MidRight]
+Oh, so you're a[N]
+spy now, is that it?[AN]
+You're still making your[N]
+living hiding in shadows...[AN]
+Is this really what you[N]
+want of yourself?[AN]
+What your brother wanted?[AN]
+
+[MidLeft][MoveMidLeft]
+Don't go bringing[N]
+him into this![AN]
+Besides, have you[N]
+got a better idea?![AN]
+Since you're so[N]
+smart, Mr. Genius![AN]
+
+[MidRight][CloseEyes]
+...You know what? Yeah, I do.[AN][OpenEyes]
+Come with me. You're doing[N]
+some honest work, for once.[AN]
+[MoveFarLeft][MoveFarLeft]
+
+[Left]
+Hey, what are you...[AN][FarLeft][MoveFarFarLeft][MidLeft][MoveFarLeft]
+Hey! Let me go! Ugh![AN]
+I can come by[N]
+myself, you know![A][X]
+
+
+
+
+##PrologueEnding1
+[Left][LoadHelena][Right][LoadArtemer][FarRight][LoadVerwald][FarLeft][LoadSpike]
+Looks like that's a wrap.[AN]
+Not too shabby, bud.[N]
+For your first go.[AN]
+
+[Right]
+Thank you.[AN]
+
+[FarRight]
+Guess all that's left[N]
+is to get paid. Gahaha![AN]
+
+[Left]
+It's already pretty late.[AN]
+We should rest[N]
+here for the night.[AN]
+
+[FarLeft][Clear][LoadKeith]
+I'm going to take[N]
+a look around.[AN]
+Surely they have some[N]
+food stockpiled somewhere.[AN]
+
+[FarRight]
+Food, eh?[AN][Smile]
+Now you're talking, pal![N]
+Let's check 'er out![AN][Smile]
+
+[Left][Clear][LoadLexi]
+Must you always[N]
+be so loud...?[A][X]
+
+
+
+
+
+##PrologueEnding2
+[MidRight][LoadHelena][MidLeft][LoadSpike][CloseEyes]
+[Beat][AN][OpenEyes]
+
+[MidRight]
+You noticed it too.[AN]
+
+[MidLeft]
+You don't get this[N]
+old without knowing...[AN]
+When something's[N]
+just not right.[AN]
+I couldn't see them[N]
+with my eyes, but...[AN]
+
+[MidRight][MoveRight][FarFarRight][LoadArtemer][MoveFarRight]
+A male. About 127 pounds.[N]
+A bit under 6 feet tall.[AN]
+
+[MidLeft]
+How could you...?[AN]
+
+[FarRight]
+A hunter knows what to listen for.[N]
+This is what my father taught me.[AN]
+
+[Right]
+You don't suspect he's the one[N]
+who was buying the slaves...?[AN]
+
+[MidLeft][CloseEyes]
+I see no other reason[N]
+to be sneaking around.[AN][OpenEyes]
+Well, it's none of[N]
+our business anyways.[AN]
+Unless we're getting[N]
+paid for it. [Smile][MoveMidLeft][....]Heh.[AN][Smile]
+
+[Right][CloseEyes]
+Still...[AN][OpenEyes]
+
+[FarRight]
+They are gone now.[N]
+Should I track them...?[AN]
+
+[Right]
+No, don't worry about it.[N]
+If we need to deal with them...[AN]
+We'll do it when that time comes.[AN]
+
+[MidLeft][CloseEyes]
+Hopefully never.[A][X]

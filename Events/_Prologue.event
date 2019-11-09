@@ -165,7 +165,7 @@ END_MAIN
 
 ArtemerMerryTalk:
 MUSS Comrades
-Text(HouseText)
+Text(PrologueArtemerMerry)
 CUSA Merry
 MURE 2
 NoFade
@@ -173,7 +173,7 @@ ENDA
 
 KeithMerryTalk:
 MUSS Comrades
-Text(HouseText)
+Text(PrologueKeithMerry)
 CUSA Merry
 MURE 2
 NoFade
@@ -241,39 +241,42 @@ ENDA
 
 ActivateSeize:
 ENUT 0x19 //allow seize to end chapter
-Text(HouseText) //spike says to seize now
+Text(PrologueSeizeStart) //spike says to seize now
 SetChapterObjectiveText(PrologueDetailObjective2,PrologueObjective)
 ENDA
 
 Door1Open:
-Text(HouseText)
+Text(PrologueCell1)
 SetAI(ProloguePrisoner1,0x0,0xC) // Escape AI
 ENUF 0x10
 NoFade
 ENDA
 
 Door2Open:
-Text(HouseText)
+Text(PrologueCell2)
 SetAI(Merry,0x0,0xC) // Escape AI
 ENUF 0x11
 NoFade
 ENDA
 
 Door3Open:
-Text(HouseText)
+Text(PrologueCell3)
 SetAI(ProloguePrisoner3,0x0,0xC) // Escape AI
 ENUF 0x12
 NoFade
 ENDA
 
 Door4Open:
-Text(HouseText)
+Text(PrologueCell4)
 SetAI(ProloguePrisoner4,0x0,0xC) // Escape AI
 ENUF 0x13
 NoFade
 ENDA
 
 LocationBasedEvents:
+#ifdef _DEBUG_
+	Seize(0x0,EndingScene,7,18)
+#endif
 Seize(0x0,SeizeEvent,2,1)
 DoorFlag(0x10,2,11)
 DoorFlag(0x11,6,5)
@@ -294,7 +297,7 @@ CHECK_EVENTID 0x19 //if all escaped
 BEQ 0x1 0xC 0x0 //branch label 1 if all did not escape
 CALL CallEndEvent
 LABEL 1
-Text(HouseText) //spike says units need to escape
+Text(PrologueSeizeBefore) //spike says units need to escape
 NoFade
 ENDA
 
@@ -406,10 +409,12 @@ LOAD1 0x1 EnemyUnits
 ENUN
 CAM1 PrologueEntrance
 CamOn
+MUSC 0x5
 Text(0x3,PrologueOP1)
 // cutscene start
 LOAD2 0x1 OpeningUnits
 ENUN
+MUSC 0x7
 TEXTSTART
 TEXTSHOW PrologueOP2
 TEXTEND
@@ -428,6 +433,7 @@ TEXTEND
 EndConvo
 CAM1 Gregory
 FlashCursor(Gregory,60)
+MUSC 0x2E
 TextNoFade(0xC,PrologueOP3)
 // cutscene end
 FADI 16
@@ -438,6 +444,11 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
+FADI 16
+MUSC 0x31
+TextNoFade(0x10,PrologueEnding1)
+MUSC 0x4A
+TextNoFade(0x11,PrologueEnding2)
 MNC2 0x1
 NoFade
 ENDA
