@@ -84,6 +84,9 @@ this accessory.[X]
 ## IM_UnequipAccessory
 Unequip[X]
 
+## RefugeScrollText
+Select a unit to refuge this unit.[X]
+
 ## HouseText
 [MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
 

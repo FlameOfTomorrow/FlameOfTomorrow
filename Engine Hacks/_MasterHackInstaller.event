@@ -164,7 +164,7 @@ POP
   #include "SkillScrolls/SkillScrolls.event"
   
   ALIGN 4
-  #include "RefugeCommand/Refuge Installer.event"
+  #include "RefugeCommand/Refuge.event"
   
   ALIGN 4
   #include "LeadershipStars/Installer.event"

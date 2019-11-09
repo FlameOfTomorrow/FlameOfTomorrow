@@ -29,6 +29,7 @@
 .equ Make6CKOIDO,0x801DC7D
 .equ UnitRescue,0x801834D
 .equ HideUnitSMS,0x802810D
+.equ prChangeActiveUnitFacing,0x801F50C @ r0 = xTarget, r1 = yTarget
 
 
 
@@ -75,25 +76,25 @@ bx r1
 .global RefugeEffect
 .type RefugeEffect, %function
 RefugeEffect:
-push {r14}
-ldr r0,=gActionData
-mov r1,#0x20
-strb r1,[r0,#0x11]
-ldr r0,=gActiveUnit
-ldr r0,[r0]
-bl MakeRefugeTargetList
 
-@so we can pick on up it in a bit, let's set a bit in RAM
-mov r0,#1
-ldr r1,=RefugeFlagLoc
-strb r0,[r1]
+push {lr}
+	
+	@ Loading Active Unit
+	ldr r3, =gActiveUnit
+	ldr r0, [r3]
 
-ldr r0,=gSelect_Rescue
-blh StartTargetSelection,r1
-
-mov r0,#7
-pop {r1}
-bx r1
+	@ Making Target List
+	bl MakeRefugeTargetList
+	
+	@ Making Target Selection 6C
+	ldr r0, =RefugeSelectorDefinition
+	blh StartTargetSelection,r3
+	
+	@ 0x01 = ???, 0x02 = Kill Menu, 0x04 = Beep Sound, 0x10 = Clear Menu Gfx
+	mov r0, #0x17
+	
+	pop {r1}
+	bx r1
 
 .ltorg
 .align
@@ -217,10 +218,6 @@ bx r1
 .align
 
 
-
-
-
-
 .global ActionRefuge
 .type ActionRefuge, %function
 ActionRefuge:
@@ -228,10 +225,10 @@ ActionRefuge:
 push {r4-r7,r14}
 mov r6,r0
 ldr r5,=gActionData
-ldrb r0,[r5,#0xC]
+ldrb r0,[r5,#0xC] @current unit
 blh GetUnit,r3
-mov r4,r0
-ldrb r0,[r5,#0xD]
+mov r4,r0 
+ldrb r0,[r5,#0xD] @target unit
 blh GetUnit,r3
 mov r5,r0
 blh TryRemoveUnitFromBallista,r3
@@ -255,8 +252,16 @@ blh UnitRescue,r7
 mov r0,r4
 blh HideUnitSMS,r7
 
+@set refuge flag
+ldr r0,=RefugeFlagLoc
+mov r1,#1
+strb r1,[r0]
 
-
+@set has moved bit in user's char struct
+ldrb r0,[r4,#0xC]
+mov r1,#0x40
+orr r0,r1
+strb r0,[r4,#0xC]
 
 mov r0,#0
 pop {r4-r7}
@@ -266,41 +271,141 @@ bx r1
 .ltorg
 .align
 
-
 .equ RefugeFlagLoc,0x2040000 @this is where the unit buffer goes, which should be empty (or at least be done with whatever *is* there)
 
-.global RefugeSelection_OnSelect
-.type RefugeSelection_OnSelect, %function
-RefugeSelection_OnSelect:
+.global Refuge_TargetCheck
+.type Refuge_TargetCheck, %function
+Refuge_TargetCheck:
+push {r4, lr}
+@ r4 = target unit struct
+mov r4, r0	
+ldr r0,=gActiveUnit
+ldr r0,[r0]
+mov r1,r4
+bl CanUnitRefuge @returns true or false
+cmp r0, #0
+	
+EndTargetCheck:
+	pop {r4}
+	pop {r1}
+	bx r1
+	
+.ltorg
+.align
 
-ldr r2,=gActionData
-ldrb r0,[r1,#2]
+.global CheckCanBeRefuged
+.type CheckCanBeRefuged, %function
+CheckCanBeRefuged:
+push {r4-r7,r14}
+mov r4,r0 @r4=target unit
+ldr r0,=gActiveUnit
+ldr r5,[r0] @r5=active unit
+@are units allied
+ldrb r0,[r4,#0xB]
+ldrb r1,[r5,#0xB]
+blh AreAllegiancesAllied,r3
+cmp r0,#0
+beq CanBeRefugedRetFalse
+@get target's aid
+mov r0,r4
+blh prGotoAidGetter,r3
+mov r0,r6
+blh prGotoConGetter,r3
+mov r0,r7
+@check if target aid is > our con
+cmp r6,r7
+blt CanBeRefugedRetTrue
 
-strb r0,[r2,#0xD]
+CanBeRefugedRetFalse:
+mov r0,#0
+b CanBeRefugedGoBack
 
-ldrb r0,[r2,#0x11]
-cmp r0,#0x20
-bne ThisIsRescue
-b StoreAction
+CanBeRefugedRetTrue:
+mov r0,#1
 
-ThisIsRescue:
-mov r0,#9
-
-StoreAction:
-strb r0,[r2,#0x11]
-
-mov r0,#0x17
+CanBeRefugedGoBack:
+pop {r4-r7}
 pop {r1}
 bx r1
 
 .ltorg
 .align
 
+.global Refuge_OnChange
+.type Refuge_OnChange, %function
+Refuge_OnChange:
+	push {r4, lr}
+	
+	ldrb r0, [r1, #0]
+	ldrb r1, [r1, #1]
+	
+	blh prChangeActiveUnitFacing,r3
+	
+	pop {r4}
+	
+	pop {r1}
+	bx r1
 
+.ltorg
+.align
 
-.global PostActionRescueCorrection
-.type PostActionRescueCorrection, %function
-PostActionRescueCorrection:
+.global Refuge_OnSelection
+.type Refuge_OnSelection, %function
+Refuge_OnSelection:
+	push {r4, lr}
+	
+	@ r4 = Target Struct
+	mov r4, r1
+	
+	@ r0 = Target Unit Struct
+	ldrb r0, [r4, #2]
+	blh GetUnit,r3
+	
+	@ r3 = Action Struct
+	ldr r3, =gActionData
+	
+	@ Target active x
+	ldrb r1, [r0, #0x10]
+	strb r1, [r3, #0x0E]
+	
+	@ Target active y
+	ldrb r1, [r0, #0x11]
+	strb r1, [r3, #0x0F]
+	
+	@ Target Unit index
+	ldrb r0, [r4, #2]
+	strb r0, [r3, #0x0D]
+	
+	@ r0 = Active Unit Struct
+	ldr r0, =gActiveUnit
+	ldr r0, [r0]
+	
+	@ Target target x
+	ldrb r1, [r0, #0x10]
+	strb r1, [r3, #0x13]
+	
+	@ Target target y
+	ldrb r1, [r0, #0x11]
+	strb r1, [r3, #0x14]
+	
+	mov r0,#0x27
+	strb r0, [r3, #0x11] @ Action Index
+	
+	
+	@ 0x02 = Kill Unit Selection, 0x04 = Beep Sound, 0x10 = Clear Unit Selection Gfx
+	mov r0, #0x16
+	
+	pop {r4}
+	
+	pop {r1}
+	bx r1
+
+.ltorg
+.align
+
+.global PostActionRefugeCorrection
+.type PostActionRefugeCorrection, %function
+PostActionRefugeCorrection:
 
 @we need to check to see if they have a rescuer but don't have proper status bits, then to set them if so (this will happen with refuge)
 
@@ -334,109 +439,3 @@ AllIsNormal:
 pop {r4}
 pop {r0}
 bx r0
-
-
-
-.equ Text_Clear,0x8003DC9
-.equ String_GetFromIndex,0x800A241
-.equ Text_InsertNumberOr2Dashes,0x80044A5
-.equ Text_InsertString,0x8004481
-
-
-@hook @ 34AA4 with r0 and do a "should we get aid or con" check (rescue is aid)
-
-.global RescueDisplayAidCheck
-.type RescueDisplayAidCheck, %function
-RescueDisplayAidCheck:
-push {r6}
-mov r5,r1
-blh Text_Clear,r6
-ldr r6,=RefugeFlagLoc
-ldrb r6,[r6]
-cmp r6,#1
-beq DisplayConInstead
-ldr r0,=#0x4F8
-b PostDisplayCondition
-DisplayConInstead:
-ldr r0,=#0x4F7
-PostDisplayCondition:
-blh String_GetFromIndex,r6
-mov r3,r0
-mov r0,r4
-mov r1,#0
-mov r2,#3
-blh Text_InsertString,r6
-
-ldr r6,=RefugeFlagLoc
-ldrb r6,[r6]
-cmp r6,#1
-beq GetConInstead
-blh prGotoAidGetter,r6
-b PostGetterCondition
-GetConInstead:
-blh prGotoConGetter,r6
-PostGetterCondition:
-mov r3,r0
-mov r0,r4
-mov r1,#0x38
-mov r2,#2
-blh Text_InsertNumberOr2Dashes,r6
-pop {r6}
-pop {r4-r5}
-pop {r0}
-bx r0
-
-.ltorg
-.align
-
-
-@8 bytes to hook at 34A60 for another one (rescue is con)
-
-.global RescueDisplayConCheck
-.type RescueDisplayConCheck, %function
-RescueDisplayConCheck:
-push {r6}
-mov r4,r1
-blh Text_Clear,r6
-
-@check which word to display
-ldr r0,=RefugeFlagLoc
-ldrb r6,[r6]
-cmp r6,#1
-beq DisplayAidInstead
-ldr r0,=#0x4F7
-b AfterDisplayCondition
-DisplayAidInstead:
-ldr r0,=#0x4F8
-AfterDisplayCondition:
-blh String_GetFromIndex,r6
-mov r3,r0
-mov r0,r4
-mov r1,#0
-mov r2,#3
-blh Text_InsertString,r6
-
-mov r0,r4
-
-@check which stat to get
-ldr r6,=RefugeFlagLoc
-ldrb r6,[r6]
-cmp r6,#1
-beq GetAidInstead
-blh prGotoConGetter,r6
-b AfterGetterCondition
-GetAidInstead:
-blh prGotoAidGetter,r6
-AfterGetterCondition:
-mov r3,r0
-mov r0,r5
-mov r1,#0x38
-mov r2,#2
-blh Text_InsertNumberOr2Dashes,r6
-pop {r6}
-pop {r4-r5}
-pop {r0}
-bx r0
-
-.ltorg
-.align
