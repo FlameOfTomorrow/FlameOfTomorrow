@@ -55,7 +55,7 @@ Other Vulnerary,0x8028b56,0x802a0da,0x802905c,0x802feec
 Another Vulnerary,0x8028b60,0x802a100,0x802905c,0x802fec4
 Juna Fruit,0x8028bf8,0x802a0f4,0x802905c,0x802ff70
 Latona,0x8028b98,0x802a100,0x8029014,0x802ff48
-Adept Manual,AdeptScrollUsability | IsPointer,AdeptScrollUsability | IsPointer,0x802905c,AdeptScrollEffect | IsPointer
+Adept Manual,AdeptScrollUsability | IsPointer,AdeptScrollPrepUsability|IsPointer,0x802905c,AdeptScrollEffect | IsPointer
 Aegis Manual,AegisScrollUsability | IsPointer,AegisScrollUsability | IsPointer,0x802905c,AegisScrollEffect | IsPointer
 Astra Manual,AstraScrollUsability | IsPointer,AstraScrollUsability | IsPointer,0x802905c,AstraScrollEffect | IsPointer
 Boon Manual,BoonScrollUsability | IsPointer,BoonScrollUsability | IsPointer,0x802905c,BoonScrollEffect | IsPointer

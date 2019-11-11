@@ -12,6 +12,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD AdeptID
 
+ALIGN 4
+AdeptScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN AdeptScrollUsability|1
+
 // Aegis
 ALIGN 4
 AegisScrollUsability:
