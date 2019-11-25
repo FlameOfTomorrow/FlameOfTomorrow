@@ -60,7 +60,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x0,LowerThief,5)
+//TurnEventPlayer(0x0,LowerThief,5)
 TurnEventPlayer(0x0,UpperThief,7)
 TurnEventPlayer(0x0,FirstHorses,3)
 TurnEventPlayer(0x0,FirstHorses,6)
@@ -149,7 +149,7 @@ UNIT PrologueBandit Thief Gregory Level(1,Enemy,1) PrologueBottomRightStairs 0 0
 UNIT
 
 TopThief:
-UNIT PrologueBandit Outlaw Gregory Level(1,Enemy,1) PrologueRightStairs 0 0 1 REDA16R1 [IronBow,Lockpick] LootingThiefAI
+UNIT PrologueBandit Outlaw Gregory Level(1,Enemy,1) PrologueRightStairs 0 0 1 REDA16R1 [IronBow,DoorKey,ChestKey,ChestKey] LootingThiefAI
 UNIT
 
 DoorReinforcements:

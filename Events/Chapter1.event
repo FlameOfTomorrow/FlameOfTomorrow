@@ -1,0 +1,158 @@
+EventPointerTable(Ch1Event, PointerList)
+
+/*
+0x07 - Village 1
+0x08 - Village 2
+0x09 - Ryder / Ruby Talk
+0x0A -
+0x0B -
+0x0C -
+0x0D -
+0x0E -
+0x0F -
+0x10 -
+0x11 -
+0x12 -
+0x13 -
+0x14 -
+0x15 -
+0x16 -
+0x17 -
+0x18 -
+0x19 -
+0x1A -
+0x1B -
+0x1C -
+0x1D -
+0x1E -
+0x1F -
+0x20 -
+0x21 -
+0x22 -
+0x23 - Escape Flag
+0x24 -
+0x25 -
+0x26 -
+0x27 -
+0x28 -
+*/
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(0x9,NPCTalk,Artemer,Ryder)
+CharacterEventBothWays(0x9,NPCTalk,Artemer,Ruby)
+END_MAIN
+
+NPCTalk:
+MUSS Comrades
+Text(HouseText)
+CUSA Ryder
+CUSA Ruby
+CUSA Jurgen
+MURE 2
+NoFade
+ENDA
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+LocationBasedEvents:
+#ifdef _DEBUG_
+	Seize(0x0,EndingScene,0,8)
+#endif
+Village(0x7,Village1Event,4,17)
+Village(0x8,Village2Event,10,3)
+Armory(ArmoryItems,16,8)
+Vendor(VendorItems,15,15)
+END_MAIN
+
+Village1Event:
+VillageEventItem(HouseText,0x0,RedGem)
+NoFade
+ENDA
+
+Village2Event:
+VillageEventItem(HouseText,0x0,TorchStaff)
+NoFade
+ENDA
+
+ALIGN 4
+ArmoryItems:
+SHLI IronSword IronBlade IronLance IronAxe IronBow SteelBow ShortBow LeatherShield 0x0
+ALIGN 4
+VendorItems:
+SHLI Torch Fire Thunder Lightning Heal Vulnerary 0x0
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+Unit(0,8)
+Unit(2,8)
+Unit(1,9)
+Unit(0,10)
+Unit(2,10)
+Unit(1,11)
+Unit(3,11)
+UNIT
+
+EnemyUnits:
+UNIT Belardo Brigand 0x0 Level(7,Enemy,0) [19,3] 0 0 0 0 [IronAxe,SteelShield,HandAxe,Halberd] GuardTileAI
+UNIT Ch1Bandit LanceArmor 0x0 Level(5,Enemy,1) [9,8] 0 0 0 0 [IronLance,Javelin] NeverMoveAI
+UNIT Ch1Bandit AxeArmor 0x0 Level(5,Enemy,1) [11,8] 0 0 0 0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT
+
+NPCUnits:
+UNIT Ruby LanceKnight 0x0 Level(3,NPC,0) [4,4] 0 0 0 0 [IronLance,LeatherShield,Javelin] GuardTileAI
+UNIT Ryder SwordKnight 0x0 Level(4,NPC,0) [5,3] 0 0 0 0 [IronSword,IronShield,Zanbato] GuardTileAI
+UNIT Jurgen Priest 0x0 Level(4,NPC,0) [4,3] 0 0 0 0 [Lightning,Mend,Vulnerary] GuardTileAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units1
+ENUN
+LOAD1 0x1 EnemyUnits
+ENUN
+LOAD1 0x1 NPCUnits
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MNC2 0x2
+NoFade
+ENDA

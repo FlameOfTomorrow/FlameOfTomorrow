@@ -5,3 +5,6 @@ ALIGN 4
 {
 	#include "_Prologue.event"
 }
+{
+	#include "Chapter1.event"
+}

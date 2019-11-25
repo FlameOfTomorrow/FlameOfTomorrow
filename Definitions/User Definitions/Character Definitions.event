@@ -26,15 +26,23 @@
 #define Merry 9
 #define MerryMug 0xC
 
+#define Ruby 0xA
+#define RubyMug 0xE
+
 // Bosses
 #define Gregory 0x68
 #define GregoryMug 0x30
 
 #define XanthusMug 0x2F
 
+#define Belardo 0x46
+#define BelardoMug 0x31
+
 // Enemy Units
 #define PrologueBandit 0x80
 #define PrologueBanditNoExp 0x85
+
+#define Ch1Bandit 0x86
 
 // NPC Units
 #define ProloguePrisoner1 0x81
