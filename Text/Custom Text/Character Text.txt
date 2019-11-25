@@ -69,3 +69,15 @@ Prisoner[X]
 
 ##PrisonerDesc
 PrisonerDesc[X]
+
+##RubyName
+Ruby[X]
+
+##RubyDesc
+RubyDesc[X]
+
+##BelardoName
+Belardo[X]
+
+##BelardoDesc
+BelardoDesc[X]

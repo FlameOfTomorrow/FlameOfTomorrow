@@ -19,3 +19,9 @@ KeithMage:
 LexiKnight:
 	#incbin "./_palettes/LexiKnight.lzpal" 
 
+RyderCavalier:
+	#incbin "./_palettes/RyderCavalier.lzpal" 
+
+RubyCavalier:
+	#incbin "./_palettes/RubyCavalier.lzpal" 
+

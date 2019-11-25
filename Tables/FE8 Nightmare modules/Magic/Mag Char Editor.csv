@@ -9,7 +9,7 @@ Spike,1,5
 Ryder,2,20
 Jurgen,4,40
 Merry,6,45
-0,0,5
+Ruby,0,15
 0,1,10
 0,5,65
 0,1,60
@@ -69,7 +69,7 @@ Orson (Ch 5x),3,10
 Valter (Ch 15),2,5
 Selena (Ch 10B +ACY- 13B),10,40
 Valter (Prologue),2,5
-Breguet (Ch 1),0,5
+Belardo,0,5
 Bone (Ch 2),0,5
 Bazba (Ch 3),1,10
 Entombed (Ch 4),1,5
@@ -103,7 +103,7 @@ Hunter (Ch 16),3,10
 +AC0-0,0,0
 Brigand,0,0
 0,0,0
-O'Neill (Prologue),0,5
+Gregory,0,5
 Glen (Cutscene),0,0
 Zonta (Ch 5x),1,5
 Vigarde (Ch 14B),5,15
@@ -127,13 +127,13 @@ Orson (Ch 16),3,5
 0,0,0
 0,0,0
 Grado Soldier (Special),0,0
-Grado Soldier 1 (Normal),0,0
-Grado Soldier 2,0,0
-Grado Soldier 3,0,0
-Grado Soldier 4,0,0
-Grado Soldier 5,0,0
-Grado Soldier 6,0,0
-Grado Soldier 7,0,0
+Prologue Bandit,0,0
+Prologue Prisoner 1,0,0
+Prologue Prisoner 2,0,0
+Prologue Prisoner 3,0,0
+Prologue Prisoner 4,0,0
+Prologue Bandit No EXP,0,0
+Chapter 1 Bandit,0,0
 Grado Soldier 8,0,0
 Grado Soldier 9,0,0
 Grado Soldier 10 (Duessel's),0,0

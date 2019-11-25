@@ -21,7 +21,7 @@ Escort[X]
 
 
 ##PrologueDetailObjective2
-Seize throne[X]
+Seize Throne[X]
 
 
 

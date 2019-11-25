@@ -1,0 +1,21 @@
+##Chapter1Name
+Chapter 1[X]
+
+
+
+
+
+##Chapter1Objective
+Defeat Belardo.[X]
+
+
+
+
+
+##Chapter1DetailObjective
+Defeat Boss[X]
+
+
+
+
+

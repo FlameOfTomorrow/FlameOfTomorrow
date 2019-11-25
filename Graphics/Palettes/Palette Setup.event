@@ -6,11 +6,11 @@
 
 // ArtemerHuntsman
 	setPalette(0x1,ArtemerHuntsman)
-	setCBSP(0x1,Artemer,0x2,Huntsman)
+	setCBSP(0x1,Artemer,0x1,Huntsman)
 
 // VerwaldFighter
 	setPalette(0x2,VerwaldFighter)
-	setCBSP(0x2,Verwald,0x2,Fighter)
+	setCBSP(0x2,Verwald,0x1,Fighter)
 
 // SpikeHero
 	setPalette(0x3,SpikeHero)
@@ -18,12 +18,20 @@
 
 // HelenaTroubadour
 	setPalette(0x4,HelenaTroubadour)
-	setCBSP(0x4,Helena,0x2,Troubadour)
+	setCBSP(0x4,Helena,0x1,Troubadour)
 
 // KeithMage
 	setPalette(0x5,KeithMage)
-	setCBSP(0x5,Keith,0x2,Mage)
+	setCBSP(0x5,Keith,0x1,Mage)
 
 // LexiKnight
 	setPalette(0x6,LexiKnight)
-	setCBSP(0x6,Lexi,0x2,LanceArmor)
+	setCBSP(0x6,Lexi,0x1,LanceArmor)
+
+// RyderCavalier
+	setPalette(0x7,RyderCavalier)
+	setCBSP(0x7,Ryder,0x1,SwordKnight)
+
+// RubyCavalier
+	setPalette(0x8,RubyCavalier)
+	setCBSP(0x8,Ruby,0x1,LanceKnight)

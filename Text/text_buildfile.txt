@@ -101,3 +101,4 @@ Select a unit to refuge this unit.[X]
 #include "Custom Text/Quotes.txt"
 
 #include "Custom Text/Story Text/_Prologue.txt"
+#include "Custom Text/Story Text/Chapter1.txt"

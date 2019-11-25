@@ -33,6 +33,18 @@ XanthusMugData:
 #incext PortraitFormatter "Xanthus.png"
 setMugEntry(XanthusMug, XanthusMugData, 2, 5, 3, 3)
 
+RubyMugData:
+#incext PortraitFormatter "Ruby.png"
+setMugEntry(RubyMug, RubyMugData, 3, 6, 3, 4)
+
+RyderMugData:
+#incext PortraitFormatter "Ryder.png"
+setMugEntry(RyderMug, RyderMugData, 3, 5, 3, 3)
+
+JurgenMugData:
+#incext PortraitFormatter "Jurgen.png"
+setMugEntry(JurgenMug, JurgenMugData, 2, 5, 2, 3)
+
 
 // Class Cards
 HeroCardFile:
