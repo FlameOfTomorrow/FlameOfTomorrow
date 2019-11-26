@@ -25,3 +25,11 @@ Keeping Pace (Paper Mario)[X]
 ##SongNameTubbaBlubbaPM
 Ghost Gulping (Paper Mario)[X]
 
+##SongNameFE4Attack
+Attack (FE4)[X]
+
+##SongNameFE5Defense
+Defend (FE5)[X]
+
+##SongNameKindredCry
+Kindred Cry (Final Fantasy XI)[X]

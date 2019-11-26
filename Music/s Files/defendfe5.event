@@ -1,0 +1,539 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	defendfe5_grp  voicegroup000
+	#define	defendfe5_pri  0
+	#define	defendfe5_rev  0
+	#define	defendfe5_mvl  127
+	#define	defendfe5_key  0
+	#define	defendfe5_tbs  1
+	#define	defendfe5_exg  0
+	#define	defendfe5_cmp  1
+
+	// .rodata
+	//	defendfe5
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+defendfe5_1:
+	BYTE	KEYSH   defendfe5_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   80*defendfe5_tbs/2
+	BYTE		VOICE   47
+	BYTE		VOL     102*defendfe5_mvl/mxv
+	BYTE	W03
+defendfe5_1_B1:
+	BYTE		PAN     c_v+25
+	BYTE		N24     En2   v104
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N12     Fn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W09
+// 001   ----------------------------------------
+	BYTE	W03
+	BYTE		N24     An2 
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		N08     Fn2 
+	BYTE	W09
+// 002   ----------------------------------------
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	defendfe5_1_B1
+defendfe5_1_B2:
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.3) ****************//
+
+defendfe5_2:
+	BYTE	KEYSH   defendfe5_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     68*defendfe5_mvl/mxv
+	BYTE	W03
+defendfe5_2_B1:
+	BYTE		PAN     c_v-25
+	BYTE	W01
+	BYTE		N05     An3   v124
+	BYTE	W06
+	BYTE		N02     Bn3   v080
+	BYTE	W03
+	BYTE		N01     Cn4   v076
+	BYTE	W03
+	BYTE		N04     An3   v116
+	BYTE	W06
+	BYTE		        En4   v084
+	BYTE	W06
+	BYTE		N05     An3   v127
+	BYTE	W06
+	BYTE		N02     Bn3   v076
+	BYTE	W03
+	BYTE		N01     Cn4   v072
+	BYTE	W03
+	BYTE		N02     Dn4   v124
+	BYTE	W03
+	BYTE		N01     Cn4   v100
+	BYTE	W03
+	BYTE		        Bn3   v124
+	BYTE	W06
+	BYTE		N05     An3   v127
+	BYTE	W06
+	BYTE		N02     Bn3   v072
+	BYTE	W03
+	BYTE		N01     Cn4   v076
+	BYTE	W03
+	BYTE		N04     An3   v116
+	BYTE	W06
+	BYTE		        En4   v076
+	BYTE	W06
+	BYTE		N05     An3   v124
+	BYTE	W06
+	BYTE		N02     Bn3   v076
+	BYTE	W03
+	BYTE		N01     Cn4   v084
+	BYTE	W03
+	BYTE		N04     Dn4   v116
+	BYTE	W06
+	BYTE		N03     En4   v076
+	BYTE	W02
+// 001   ----------------------------------------
+	BYTE	W04
+	BYTE		N05     Bn3   v124
+	BYTE	W06
+	BYTE		N02     Cs4   v092
+	BYTE	W03
+	BYTE		N01     Dn4   v084
+	BYTE	W03
+	BYTE		N04     Cn4   v096
+	BYTE	W06
+	BYTE		N03     Gn4   v108
+	BYTE	W06
+	BYTE		N05     Cs4   v116
+	BYTE	W06
+	BYTE		N02     Ds4   v088
+	BYTE	W03
+	BYTE		N01     En4   v068
+	BYTE	W03
+	BYTE		N04     Dn4   v104
+	BYTE	W06
+	BYTE		N03     An4   v116
+	BYTE	W06
+	BYTE		N05     Cs4 
+	BYTE	W06
+	BYTE		N02     Ds4   v096
+	BYTE	W03
+	BYTE		N01     En4   v104
+	BYTE	W03
+	BYTE		N04     Cn4   v108
+	BYTE	W06
+	BYTE		N02     Gn4 
+	BYTE	W06
+	BYTE		N05     Bn3 
+	BYTE	W06
+	BYTE		N02     Dn4   v084
+	BYTE	W03
+	BYTE		N01     Fs4   v120
+	BYTE	W03
+	BYTE		N04     Fn4   v104
+	BYTE	W06
+	BYTE		        Gs3   v120
+	BYTE	W02
+// 002   ----------------------------------------
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	defendfe5_2_B1
+defendfe5_2_B2:
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.4) ****************//
+
+defendfe5_3:
+	BYTE	KEYSH   defendfe5_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   60
+	BYTE		VOL     106*defendfe5_mvl/mxv
+	BYTE	W03
+defendfe5_3_B1:
+	BYTE		PAN     c_v+34
+	BYTE	W24
+	BYTE		N05     En2   v124
+	BYTE	W06
+	BYTE		        An2 
+	BYTE	W06
+	BYTE		        Gs2 
+	BYTE	W06
+	BYTE		N02     En2   v112
+	BYTE	W03
+	BYTE		        Gs2   v116
+	BYTE	W03
+	BYTE		N07     An2   v092
+	BYTE	W12
+	BYTE		N08     As2   v096
+	BYTE	W12
+	BYTE		        Bn2   v092
+	BYTE	W12
+	BYTE		N09     Cn3   v084
+	BYTE	W09
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	defendfe5_3_B1
+defendfe5_3_B2:
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.6) ****************//
+
+defendfe5_4:
+	BYTE	KEYSH   defendfe5_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		PAN     c_v-16
+	BYTE	W03
+defendfe5_4_B1:
+	BYTE		VOL     40*defendfe5_mvl/mxv
+	BYTE	W01
+	BYTE		N05     An3   v124
+	BYTE	W06
+	BYTE		N02     Bn3   v080
+	BYTE	W03
+	BYTE		N01     Cn4   v076
+	BYTE	W03
+	BYTE		N04     An3   v116
+	BYTE	W06
+	BYTE		        En4   v084
+	BYTE	W06
+	BYTE		N05     An3   v127
+	BYTE	W06
+	BYTE		N02     Bn3   v076
+	BYTE	W03
+	BYTE		N01     Cn4   v072
+	BYTE	W03
+	BYTE		N02     Dn4   v124
+	BYTE	W03
+	BYTE		N01     Cn4   v100
+	BYTE	W03
+	BYTE		        Bn3   v124
+	BYTE	W06
+	BYTE		N05     An3   v127
+	BYTE	W06
+	BYTE		N02     Bn3   v072
+	BYTE	W03
+	BYTE		N01     Cn4   v076
+	BYTE	W03
+	BYTE		N04     An3   v116
+	BYTE	W06
+	BYTE		        En4   v076
+	BYTE	W06
+	BYTE		N05     An3   v124
+	BYTE	W06
+	BYTE		N02     Bn3   v076
+	BYTE	W03
+	BYTE		N01     Cn4   v084
+	BYTE	W03
+	BYTE		N04     Dn4   v116
+	BYTE	W06
+	BYTE		N03     En4   v076
+	BYTE	W02
+// 001   ----------------------------------------
+	BYTE	W04
+	BYTE		N05     Bn3   v124
+	BYTE	W06
+	BYTE		N02     Cs4   v092
+	BYTE	W03
+	BYTE		N01     Dn4   v084
+	BYTE	W03
+	BYTE		N04     Cn4   v096
+	BYTE	W06
+	BYTE		N03     Gn4   v108
+	BYTE	W06
+	BYTE		N05     Cs4   v116
+	BYTE	W06
+	BYTE		N02     Ds4   v088
+	BYTE	W03
+	BYTE		N01     En4   v068
+	BYTE	W03
+	BYTE		N04     Dn4   v104
+	BYTE	W06
+	BYTE		N03     An4   v116
+	BYTE	W06
+	BYTE		N05     Cs4 
+	BYTE	W06
+	BYTE		N02     Ds4   v096
+	BYTE	W03
+	BYTE		N01     En4   v104
+	BYTE	W03
+	BYTE		N04     Cn4   v108
+	BYTE	W06
+	BYTE		N02     Gn4 
+	BYTE	W06
+	BYTE		N05     Bn3 
+	BYTE	W06
+	BYTE		N02     Dn4   v084
+	BYTE	W03
+	BYTE		N01     Fs4   v120
+	BYTE	W03
+	BYTE		N04     Fn4   v104
+	BYTE	W06
+	BYTE		        Gs3   v120
+	BYTE	W02
+// 002   ----------------------------------------
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	defendfe5_4_B1
+defendfe5_4_B2:
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.7) ****************//
+
+defendfe5_5:
+	BYTE	KEYSH   defendfe5_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   63
+	BYTE		VOL     56*defendfe5_mvl/mxv
+	BYTE	W03
+defendfe5_5_B1:
+	BYTE		PAN     c_v+25
+	BYTE	W03
+	BYTE		N01     En2   v116
+	BYTE	W03
+	BYTE		        En2   v064
+	BYTE	W03
+	BYTE		        Fs2   v076
+	BYTE	W03
+	BYTE		        Gn2   v092
+	BYTE	W03
+	BYTE		        En2 
+	BYTE	W03
+	BYTE		        En2   v060
+	BYTE	W03
+	BYTE		N02     Cn3   v056
+	BYTE	W06
+	BYTE		N01     En2   v112
+	BYTE	W03
+	BYTE		        En2   v056
+	BYTE	W03
+	BYTE		        Fs2   v084
+	BYTE	W03
+	BYTE		        Gn2   v104
+	BYTE	W03
+	BYTE		        Fn2   v084
+	BYTE	W03
+	BYTE		N02     En2   v096
+	BYTE	W09
+	BYTE		N01     En2   v108
+	BYTE	W03
+	BYTE		        En2   v060
+	BYTE	W03
+	BYTE		        Fs2   v072
+	BYTE	W03
+	BYTE		        Gn2   v088
+	BYTE	W03
+	BYTE		        En2   v092
+	BYTE	W03
+	BYTE		        En2   v056
+	BYTE	W03
+	BYTE		N02     Cn3   v052
+	BYTE	W06
+	BYTE		N01     En2   v104
+	BYTE	W03
+	BYTE		        En2   v068
+	BYTE	W03
+	BYTE		        Fs2   v080
+	BYTE	W03
+	BYTE		        Gn2   v092
+	BYTE	W03
+	BYTE		        An2   v064
+	BYTE	W03
+	BYTE		N02     Cn3   v060
+	BYTE	W03
+// 001   ----------------------------------------
+	BYTE	W03
+	BYTE		N05     Fs2   v108
+	BYTE	W06
+	BYTE		N02     Gs2   v092
+	BYTE	W03
+	BYTE		        An2   v084
+	BYTE	W03
+	BYTE		N04     Gn2   v096
+	BYTE	W06
+	BYTE		N03     Dn3   v072
+	BYTE	W06
+	BYTE		N05     Gs2   v076
+	BYTE	W06
+	BYTE		N02     As2   v088
+	BYTE	W03
+	BYTE		        Bn2   v068
+	BYTE	W03
+	BYTE		N04     An2   v092
+	BYTE	W06
+	BYTE		N03     En3   v072
+	BYTE	W13
+	BYTE		PAN     c_v+25
+	BYTE		N01     Cs4   v104
+	BYTE	W02
+	BYTE		        Cs5   v084
+	BYTE	W02
+	BYTE		N07     Cs4   v116
+	BYTE	W08
+	BYTE		PAN     c_v+0
+	BYTE		N01     Cn4   v104
+	BYTE	W02
+	BYTE		        Cn5   v084
+	BYTE	W02
+	BYTE		N07     Cn4   v116
+	BYTE	W08
+	BYTE		PAN     c_v-14
+	BYTE		N01     Bn3   v104
+	BYTE	W02
+	BYTE		        Bn4   v084
+	BYTE	W02
+	BYTE		N07     Bn3   v116
+	BYTE	W08
+	BYTE		PAN     c_v+0
+	BYTE		N01     As3   v104
+	BYTE	W02
+// 002   ----------------------------------------
+	BYTE		        As4   v084
+	BYTE	W01
+	BYTE		        As3   v116
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	defendfe5_5_B1
+defendfe5_5_B2:
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.8) ****************//
+
+defendfe5_6:
+	BYTE	KEYSH   defendfe5_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   30
+	BYTE	W03
+defendfe5_6_B1:
+	BYTE		VOL     87*defendfe5_mvl/mxv
+	BYTE		PAN     c_v+25
+	BYTE		N05     An1   v127
+	BYTE	W06
+	BYTE		N02     Bn1   v068
+	BYTE	W03
+	BYTE		N01     Cn2   v064
+	BYTE	W03
+	BYTE		N04     An1   v092
+	BYTE	W06
+	BYTE		        En2   v072
+	BYTE	W06
+	BYTE		N05     An1   v127
+	BYTE	W06
+	BYTE		N02     Bn1   v064
+	BYTE	W03
+	BYTE		N01     Cn2   v068
+	BYTE	W03
+	BYTE		N02     Dn2   v104
+	BYTE	W03
+	BYTE		N01     Cn2   v076
+	BYTE	W03
+	BYTE		        Bn1 
+	BYTE	W06
+	BYTE		N05     An1   v127
+	BYTE	W06
+	BYTE		N02     Bn1   v068
+	BYTE	W03
+	BYTE		N01     Cn2   v064
+	BYTE	W03
+	BYTE		N04     An1   v092
+	BYTE	W06
+	BYTE		        En2   v072
+	BYTE	W06
+	BYTE		N05     An1   v124
+	BYTE	W06
+	BYTE		N02     Bn1   v064
+	BYTE	W03
+	BYTE		N01     Cn2   v068
+	BYTE	W03
+	BYTE		N04     Dn2   v076
+	BYTE	W06
+	BYTE		N03     En2 
+	BYTE	W03
+// 001   ----------------------------------------
+	BYTE	W03
+	BYTE		N05     Bn1   v108
+	BYTE	W06
+	BYTE		N02     Cs2   v092
+	BYTE	W03
+	BYTE		N01     Dn2   v084
+	BYTE	W03
+	BYTE		N04     Cn2   v076
+	BYTE	W06
+	BYTE		N02     Gn2   v064
+	BYTE	W06
+	BYTE		N05     Cs2   v096
+	BYTE	W06
+	BYTE		N02     Ds2   v088
+	BYTE	W03
+	BYTE		N01     En2   v068
+	BYTE	W03
+	BYTE		N04     Dn2   v076
+	BYTE	W06
+	BYTE		N02     An2   v064
+	BYTE	W06
+	BYTE		N05     Cs2   v116
+	BYTE	W06
+	BYTE		N02     Ds2   v084
+	BYTE	W03
+	BYTE		N01     En2   v076
+	BYTE	W03
+	BYTE		N04     Cn2   v084
+	BYTE	W06
+	BYTE		N02     Gn2   v080
+	BYTE	W06
+	BYTE		N05     Bn1   v120
+	BYTE	W06
+	BYTE		N02     Dn2   v084
+	BYTE	W03
+	BYTE		N01     Fs2   v080
+	BYTE	W03
+	BYTE		N04     Fn2   v116
+	BYTE	W06
+	BYTE		N05     Gs1   v120
+	BYTE	W03
+// 002   ----------------------------------------
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	defendfe5_6_B1
+defendfe5_6_B2:
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+defendfe5:
+	BYTE	6	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	defendfe5_pri	// Priority
+	BYTE	defendfe5_rev	// Reverb.
+
+	POIN2	defendfe5_grp
+
+	POIN2	defendfe5_1
+	POIN2	defendfe5_2
+	POIN2	defendfe5_3
+	POIN2	defendfe5_4
+	POIN2	defendfe5_5
+	POIN2	defendfe5_6
+
+	

@@ -43,3 +43,13 @@ SongTable(GeneralGuyPMSong,GeneralGuyPM,BattleMusicGroup)
 
 SongTable(TubbaBlubbaPMSong,TubbaBlubbaPM,BattleMusicGroup)
 #include "s Files/TubbaBlubbaPM.event"
+
+SongTable(FE4AttackSong,attackfe4,BattleMusicGroup)
+#include "s Files/attackfe4.event"
+
+SongTable(FE5DefendSong,defendfe5,BattleMusicGroup)
+#include "s Files/defendfe5.event"
+
+SongTable(KindredCrySong,KindredCry,MapMusicGroup)
+#include "s Files/KindredCry.event"
+
