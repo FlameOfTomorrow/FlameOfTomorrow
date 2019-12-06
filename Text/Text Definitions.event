@@ -536,5 +536,7 @@
 #define Chapter1Name $AE9
 #define Chapter1Objective $AEA
 #define Chapter1DetailObjective $AEB
+#define DebugBaseEntryName $AEC
+#define DebugBaseEntryConvo $AED
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

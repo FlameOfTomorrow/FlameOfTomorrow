@@ -122,3 +122,4 @@ Select a unit to refuge this unit.[X]
 
 #include "Custom Text/Story Text/_Prologue.txt"
 #include "Custom Text/Story Text/Chapter1.txt"
+#include "Custom Text/Story Text/DebugRoom.txt"

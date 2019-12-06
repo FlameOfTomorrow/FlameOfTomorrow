@@ -31,8 +31,15 @@ Chapter(0x8)
 		bg(0x30)
 		name(Chapter8BaseConvo1NameText)
 		event(BaseConvoTestEvent)
-
 */
+
+Chapter(0x37)
+	Entry
+		bg(0x10)
+		name(DebugBaseEntryName)
+		text(DebugBaseEntryConvo)
+		music(TubbaBlubbaPMSong)
+		importance(3)
 
 POP
 }

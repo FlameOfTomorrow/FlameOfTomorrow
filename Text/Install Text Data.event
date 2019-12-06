@@ -2221,6 +2221,14 @@ __TEXTPROCESSAEB:
 #incbin ".TextEntries\text_buildfileChapter1DetailObjective.fetxt.dmp"
 setText($AEB, __TEXTPROCESSAEB)
 
+__TEXTPROCESSAEC:
+#incbin ".TextEntries\text_buildfileDebugBaseEntryName.fetxt.dmp"
+setText($AEC, __TEXTPROCESSAEC)
+
+__TEXTPROCESSAED:
+#incbin ".TextEntries\text_buildfileDebugBaseEntryConvo.fetxt.dmp"
+setText($AED, __TEXTPROCESSAED)
+
 }
 
 #endif // TEXT_INSTALLER_TEXT_BUILDFILE_TXT
