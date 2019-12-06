@@ -64,6 +64,8 @@
 
 #include "FE8 Nightmare modules\Poison\Set Poison Item Table.event"
 
+#include "FE8 Nightmare modules\Prep Screen\Prep Screen Table.event"
+
 #include "FE8 Nightmare modules\Skills\FE8 Character Level Up Skill Editor.event"
 
 #include "FE8 Nightmare modules\Skills\FE8 Class Level Up Skill Editor.event"

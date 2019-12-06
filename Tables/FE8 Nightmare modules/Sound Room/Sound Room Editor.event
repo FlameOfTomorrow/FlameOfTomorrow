@@ -1,18 +1,18 @@
-#define csvmacro038(arg000,arg001,arg002,arg003) "WORD arg000 arg001 arg002 arg003 "
+#define csvmacro039(arg000,arg001,arg002,arg003) "WORD arg000 arg001 arg002 arg003 "
 
 PUSH
 ORG 0xa20e74
-csvmacro038(TrialSong,2940,0,SongNameTrial)
-csvmacro038(BlasterMasterS1Song,4726,0,SongNameBlasterMaster)
-csvmacro038(E1M1Song,3359,0,SongNameE1M1)
-csvmacro038(SplashSong,6214,0,SongNameSplash)
-csvmacro038(TaisenSong,3874,0,SongNameTaisen)
-csvmacro038(TheCertainPathSong,1513,0,SongNamePathToVictory)
-csvmacro038(MinibossPMSong,1887,0,SongNameMinibossPM)
-csvmacro038(GeneralGuyPMSong,2462,0,SongNameGeneralGuyPM)
-csvmacro038(TubbaBlubbaPMSong,2090,0,SongNameTubbaBlubbaPM)
-csvmacro038(FE4AttackSong,767,0,SongNameFE4Attack)
-csvmacro038(FE5DefendSong,396,0,SongNameFE5Defense)
-csvmacro038(KindredCrySong,5892,0,SongNameKindredCry)
-csvmacro038(0xFFFFFFFF,0,0,0)
+csvmacro039(TrialSong,2940,0,SongNameTrial)
+csvmacro039(BlasterMasterS1Song,4726,0,SongNameBlasterMaster)
+csvmacro039(E1M1Song,3359,0,SongNameE1M1)
+csvmacro039(SplashSong,6214,0,SongNameSplash)
+csvmacro039(TaisenSong,3874,0,SongNameTaisen)
+csvmacro039(TheCertainPathSong,1513,0,SongNamePathToVictory)
+csvmacro039(MinibossPMSong,1887,0,SongNameMinibossPM)
+csvmacro039(GeneralGuyPMSong,2462,0,SongNameGeneralGuyPM)
+csvmacro039(TubbaBlubbaPMSong,2090,0,SongNameTubbaBlubbaPM)
+csvmacro039(FE4AttackSong,767,0,SongNameFE4Attack)
+csvmacro039(FE5DefendSong,396,0,SongNameFE5Defense)
+csvmacro039(KindredCrySong,5892,0,SongNameKindredCry)
+csvmacro039(0xFFFFFFFF,0,0,0)
 POP
