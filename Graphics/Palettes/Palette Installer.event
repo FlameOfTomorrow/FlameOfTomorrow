@@ -25,3 +25,6 @@ RyderCavalier:
 RubyCavalier:
 	#incbin "./_palettes/RubyCavalier.lzpal" 
 
+VerwaldWarrior:
+	#incbin "./_palettes/VerwaldWarrior.lzpal" 
+

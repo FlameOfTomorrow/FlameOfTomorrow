@@ -182,3 +182,20 @@ EndAnim
 	#include "Soldier Lance Installer.event"
 	#include "Soldier Unarmed Installer.event"
 }
+
+// Bearded Warrior
+{
+#include "Beard Warrior Axe Installer.event"
+#include "Beard Warrior Handaxe Installer.event"
+#include "Beard Warrior Bow Installer.event"
+#include "Beard Warrior Unarmed Installer.event"
+}
+
+ALIGN 4
+BeardWarriorAnimation:
+AxeAnim(BeardWarriorAxeAnim)
+HandaxeAnim(BeardWarriorHandaxeAnim)
+BowAnim(BeardWarriorBowAnim)
+UnarmedAnim(BeardWarriorUnarmedAnim)
+EndAnim
+

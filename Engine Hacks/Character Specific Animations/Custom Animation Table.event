@@ -6,5 +6,11 @@ BYTE 0x00  //dummy
 BYTE 0x00  //dummy
 WORD BeardFighterAnimation|IsPointer  //Animation Pointer
 
+BYTE Verwald
+BYTE Warrior
+BYTE 0x00
+BYTE 0x00
+WORD BeardWarriorAnimation|IsPointer
+
 // Terminator
 WORD 0x00 0x00

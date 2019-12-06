@@ -35,3 +35,7 @@
 // RubyCavalier
 	setPalette(0x8,RubyCavalier)
 	setCBSP(0x8,Ruby,0x1,LanceKnight)
+
+// VerwaldWarrior
+	setPalette(0x9,VerwaldWarrior)
+	setCBSP(0x9,Verwald,0x3,Warrior)

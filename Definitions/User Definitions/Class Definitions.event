@@ -8,6 +8,12 @@
 #define BeardFighterHandaxeAnim EirikaUnarmedAnim
 #define BeardFighterUnarmedAnim GreatLordLanceAnim
 
+// Beard Warrior
+#define BeardWarriorAxeAnim GreatKnightFSwordAnim
+#define BeardWarriorHandaxeAnim GreatKnightFLanceAnim
+#define BeardWarriorBowAnim GreatKnightFAxeAnim
+#define BeardWarriorUnarmedAnim GreatKnightFHandaxeAnim
+
 // Armors
 #define SwordArmor 0x8E
 #define SwdArmor SwordArmor
