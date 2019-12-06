@@ -32,3 +32,5 @@
 // Define to show Mov and Con in level up and promotion screens.
 // Note that doing so may cause minor graphical errors.
 // #define ExpandedLevelUpScreen
+
+//#define _DEBUGROOM_
