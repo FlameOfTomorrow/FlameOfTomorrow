@@ -3446,11 +3446,10 @@ KindredCry_12_B2:
 KindredCry_13:
 	BYTE	KEYSH   KindredCry_key+0
 // 000   ----------------------------------------
+	BYTE		VOICE   127
 	BYTE		PAN     c_v+2
 	BYTE		VOL     95*KindredCry_mvl/mxv
-	BYTE	W48
-	BYTE		VOICE   127
-	BYTE	W48
+	BYTE	W96
 KindredCry_13_B1:
 // 001   ----------------------------------------
 KindredCry_13_001:
@@ -3481,114 +3480,114 @@ KindredCry_13_001:
 	BYTE	W96
 // 008   ----------------------------------------
 KindredCry_13_008:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N24     An2   v112
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
 	BYTE	PEND
 // 009   ----------------------------------------
 KindredCry_13_009:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N24     An2   v112
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N12     As3   v100
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N12     As3   v100
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
 	BYTE	PEND
 // 010   ----------------------------------------
 KindredCry_13_010:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N24     An2   v112
 	BYTE		N12     As3   v100
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
 	BYTE	PEND
 // 011   ----------------------------------------
 KindredCry_13_011:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N24     An2   v112
 	BYTE		N12     As3   v100
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N03     En1   v088
+	BYTE		N03     Dn1   v088
 	BYTE	W03
 	BYTE		N03   
 	BYTE	W03
@@ -3596,7 +3595,7 @@ KindredCry_13_011:
 	BYTE	W03
 	BYTE		N03   
 	BYTE	W03
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3628,7 +3627,7 @@ KindredCry_13_011:
 // 022   ----------------------------------------
 KindredCry_13_022:
 	BYTE	W48
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
 	BYTE		N12   
 	BYTE	W12
@@ -3640,27 +3639,27 @@ KindredCry_13_022:
 	 POIN2	KindredCry_13_008
 // 024   ----------------------------------------
 KindredCry_13_024:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3670,25 +3669,25 @@ KindredCry_13_024:
 	 POIN2	KindredCry_13_024
 // 026   ----------------------------------------
 KindredCry_13_026:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W12
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N03     En1   v088
+	BYTE		N03     Dn1   v088
 	BYTE	W03
 	BYTE		N03   
 	BYTE	W03
@@ -3696,7 +3695,7 @@ KindredCry_13_026:
 	BYTE	W03
 	BYTE		N03   
 	BYTE	W03
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3727,10 +3726,10 @@ KindredCry_13_026:
 	BYTE	W96
 // 037   ----------------------------------------
 KindredCry_13_037:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE		N24     An2   v112
 	BYTE	W24
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3738,13 +3737,13 @@ KindredCry_13_037:
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W48
 	BYTE	PEND
 // 038   ----------------------------------------
 KindredCry_13_038:
 	BYTE	W24
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3752,9 +3751,9 @@ KindredCry_13_038:
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W24
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3765,9 +3764,9 @@ KindredCry_13_038:
 	BYTE	PEND
 // 039   ----------------------------------------
 KindredCry_13_039:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W72
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3778,9 +3777,9 @@ KindredCry_13_039:
 	BYTE	PEND
 // 040   ----------------------------------------
 KindredCry_13_040:
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W24
-	BYTE		N06     En1   v072
+	BYTE		N06     Dn1   v072
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
@@ -3788,7 +3787,7 @@ KindredCry_13_040:
 	BYTE	W06
 	BYTE		N06   
 	BYTE	W06
-	BYTE		N12     En1   v088
+	BYTE		N12     Dn1   v088
 	BYTE	W48
 	BYTE	PEND
 // 041   ----------------------------------------

@@ -3445,11 +3445,10 @@ KindredCry_12_B2:
 KindredCry_13:
 	.byte	KEYSH , KindredCry_key+0
 @ 000   ----------------------------------------
+	.byte		VOICE , 127
 	.byte		PAN   , c_v+2
 	.byte		VOL   , 95*KindredCry_mvl/mxv
-	.byte	W48
-	.byte		VOICE , 127
-	.byte	W48
+	.byte	W96
 KindredCry_13_B1:
 @ 001   ----------------------------------------
 KindredCry_13_001:
@@ -3480,114 +3479,114 @@ KindredCry_13_001:
 	.byte	W96
 @ 008   ----------------------------------------
 KindredCry_13_008:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N24   , An2 , v112
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PEND
 @ 009   ----------------------------------------
 KindredCry_13_009:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N24   , An2 , v112
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N12   , As3 , v100
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N12   , As3 , v100
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PEND
 @ 010   ----------------------------------------
 KindredCry_13_010:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N24   , An2 , v112
 	.byte		N12   , As3 , v100
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
 	.byte	PEND
 @ 011   ----------------------------------------
 KindredCry_13_011:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N24   , An2 , v112
 	.byte		N12   , As3 , v100
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N03   , En1 , v088
+	.byte		N03   , Dn1 , v088
 	.byte	W03
 	.byte		N03   
 	.byte	W03
@@ -3595,7 +3594,7 @@ KindredCry_13_011:
 	.byte	W03
 	.byte		N03   
 	.byte	W03
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3627,7 +3626,7 @@ KindredCry_13_011:
 @ 022   ----------------------------------------
 KindredCry_13_022:
 	.byte	W48
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
 	.byte		N12   
 	.byte	W12
@@ -3639,27 +3638,27 @@ KindredCry_13_022:
 	 .word	KindredCry_13_008
 @ 024   ----------------------------------------
 KindredCry_13_024:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3669,25 +3668,25 @@ KindredCry_13_024:
 	 .word	KindredCry_13_024
 @ 026   ----------------------------------------
 KindredCry_13_026:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W12
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N03   , En1 , v088
+	.byte		N03   , Dn1 , v088
 	.byte	W03
 	.byte		N03   
 	.byte	W03
@@ -3695,7 +3694,7 @@ KindredCry_13_026:
 	.byte	W03
 	.byte		N03   
 	.byte	W03
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3726,10 +3725,10 @@ KindredCry_13_026:
 	.byte	W96
 @ 037   ----------------------------------------
 KindredCry_13_037:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte		N24   , An2 , v112
 	.byte	W24
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3737,13 +3736,13 @@ KindredCry_13_037:
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W48
 	.byte	PEND
 @ 038   ----------------------------------------
 KindredCry_13_038:
 	.byte	W24
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3751,9 +3750,9 @@ KindredCry_13_038:
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W24
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3764,9 +3763,9 @@ KindredCry_13_038:
 	.byte	PEND
 @ 039   ----------------------------------------
 KindredCry_13_039:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W72
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3777,9 +3776,9 @@ KindredCry_13_039:
 	.byte	PEND
 @ 040   ----------------------------------------
 KindredCry_13_040:
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W24
-	.byte		N06   , En1 , v072
+	.byte		N06   , Dn1 , v072
 	.byte	W06
 	.byte		N06   
 	.byte	W06
@@ -3787,7 +3786,7 @@ KindredCry_13_040:
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-	.byte		N12   , En1 , v088
+	.byte		N12   , Dn1 , v088
 	.byte	W48
 	.byte	PEND
 @ 041   ----------------------------------------
