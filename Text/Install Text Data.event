@@ -49,6 +49,10 @@ __TEXTPROCESS514:
 #incbin ".TextEntries\text_buildfile514.fetxt.dmp"
 setText($514, __TEXTPROCESS514)
 
+__TEXTPROCESS553:
+#incbin ".TextEntries\text_buildfile553.fetxt.dmp"
+setText($553, __TEXTPROCESS553)
+
 __TEXTPROCESS793:
 #incbin ".TextEntries\text_buildfile793.fetxt.dmp"
 setText($793, __TEXTPROCESS793)

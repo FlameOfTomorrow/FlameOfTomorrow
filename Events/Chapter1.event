@@ -56,6 +56,7 @@ ALIGN 32
 CharacterBasedEvents:
 CharacterEventBothWays(0x9,NPCTalk,Artemer,Ryder)
 CharacterEventBothWays(0x9,NPCTalk,Artemer,Ruby)
+CharacterEventBothWays(0x9,NPCTalk,Artemer,Jurgen)
 END_MAIN
 
 NPCTalk:
@@ -126,6 +127,33 @@ EnemyUnits:
 UNIT Belardo Brigand 0x0 Level(7,Enemy,0) [19,3] 0 0 0 0 [IronAxe,SteelShield,HandAxe,Halberd] GuardTileAI
 UNIT Ch1Bandit LanceArmor 0x0 Level(5,Enemy,1) [9,8] 0 0 0 0 [IronLance,Javelin] NeverMoveAI
 UNIT Ch1Bandit AxeArmor 0x0 Level(5,Enemy,1) [11,8] 0 0 0 0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT Ch1Bandit Fighter 0x0 Level(5,Enemy,1) [7,10] 0 0 0 0 [IronAxe,Vulnerary] AttackInRangeAI
+UNIT Ch1Bandit Mercenary 0x0 Level(5,Enemy,1) [7,12] 0 0 0 0 [IronBlade] AttackInRangeAI
+UNIT Ch1Bandit Mercenary 0x0 Level(5,Enemy,1) [1,18] 0 0 0 0 [IronSword,IronShield] NoAI
+UNIT Ch1Bandit Deserter 0x0 Level(5,Enemy,1) [0,18] 0 0 0 0 [IronLance,Javelin] NoAI
+UNIT Ch1Bandit Brigand 0x0 Level(5,Enemy,1) [19,12] 0 0 0 0 [IronAxe,LeatherShield] LootingThiefAI
+UNIT Ch1Bandit SwordArmor 0x0 Level(5,Enemy,1) [12,14] 0 0 0 0 [SteelSword,IronShield] AttackInRangeAI
+UNIT Ch1Bandit Fighter 0x0 Level(5,Enemy,1) [13,15] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT Ch1Bandit Archer 0x0 Level(5,Enemy,1) [12,16] 0 0 0 0 [SteelBow] AttackInRangeAI
+UNIT Ch1Bandit Mercenary 0x0 Level(5,Enemy,1) [6,18] 0 0 0 0 [PoisonSword] AttackInRangeAI
+UNIT Ch1Bandit Shaman 0x0 Level(5,Enemy,1) [5,18] 0 0 0 0 [Flux] AttackInRangeAI
+UNIT Ch1Bandit Mage 0x0 Level(5,Enemy,1) [9,11] 0 0 0 0 [Thunder] AttackInRangeAI
+UNIT Ch1Bandit Archer 0x0 Level(5,Enemy,1) [9,7] 0 0 0 0 [IronBow] AttackInRangeAI
+UNIT Ch1Bandit Archer 0x0 Level(5,Enemy,1) [11,6] 0 0 0 0 [SteelBow] AttackInRangeAI
+UNIT Ch1Bandit Deserter 0x0 Level(5,Enemy,1) [10,7] 0 0 0 0 [SteelLance,LeatherShield] AttackInRangeAI
+UNIT Ch1Bandit Deserter 0x0 Level(5,Enemy,1) [16,0] 0 0 0 0 [SteelLance] NoAI
+UNIT Ch1Bandit Fighter 0x0 Level(5,Enemy,1) [17,0] 0 0 0 0 [HandAxe] NoAI
+UNIT Ch1Bandit Deserter 0x0 Level(5,Enemy,1) [12,4] 0 0 0 0 [IronLance] NoAI
+UNIT Ch1Bandit Fighter 0x0 Level(5,Enemy,1) [12,5] 0 0 0 0 [IronAxe] NoAI
+UNIT Ch1Bandit LanceArmor 0x0 Level(5,Enemy,1) [18,5] 0 0 0 0 [Javelin,IronShield] NeverMoveAI
+UNIT Ch1Bandit SwordArmor 0x0 Level(5,Enemy,1) [19,5] 0 0 0 0 [LightBrand] NeverMoveAI
+UNIT Ch1Bandit Mage 0x0 Level(5,Enemy,1) [14,10] 0 0 0 0 [Fire,Vulnerary] AttackInRangeAI
+UNIT Ch1Bandit Mercenary 0x0 Level(5,Enemy,1) [14,12] 0 0 0 0 [IronBlade,LeatherShield] AttackInRangeAI
+UNIT Ch1Bandit Archer 0x0 Level(5,Enemy,1) [16,11] 0 0 0 0 [IronBow] AttackInRangeAI
+UNIT Ch1Bandit Deserter 0x0 Level(5,Enemy,1) [18,8] 0 0 0 0 [ToxinLance,IronShield] AttackInRangeAI
+UNIT Ch1Bandit Shaman 0x0 Level(5,Enemy,1) [17,17] 0 0 0 0 [Flux,Vulnerary] AttackInRangeAI
+UNIT Ch1Bandit Mercenary 0x0 Level(5,Enemy,1) [8,16] 0 0 0 0 [IronBlade] AttackInRangeAI
+UNIT Ch1Bandit Archer 0x0 Level(5,Enemy,1) [7,16] 0 0 0 0 [IronBow] AttackInRangeAI
 UNIT
 
 NPCUnits:

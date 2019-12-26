@@ -32,6 +32,10 @@ for enemy units.[X]
 # 0x514
 Feeble[X]
 
+# 0x553
+Feeling weak...[N]
+Combat stats are lowered.[X]
+
 #include "music text.txt"
 
 #include "statscreen_text.txt"

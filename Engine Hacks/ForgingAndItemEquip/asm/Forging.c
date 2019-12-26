@@ -25,27 +25,28 @@ int GetItemUses(int item) {
 
 int GetItemMight(int item) {
 	int mightBonus = 0;
-	if(ITEM_FORGED(item) && GetItemForgeBonuses(item) != 0)
-		mightBonus = GetItemForgeBonuses(item)->mightBonus;
+	if(ITEM_FORGED(item)) {
+		if (GetItemForgeBonuses(item) != 0) mightBonus = GetItemForgeBonuses(item)->mightBonus;
+		else mightBonus = 1;
+	}
 	return GetItemData(ITEM_INDEX(item))->might + mightBonus;
 }
 
 int GetItemHit(int item) {
 	int hitBonus = 0;
-	if(ITEM_FORGED(item) && GetItemForgeBonuses(item) != 0)
-		hitBonus = GetItemForgeBonuses(item)->hitBonus;
+	if(ITEM_FORGED(item)) {
+		if (GetItemForgeBonuses(item) != 0) hitBonus = GetItemForgeBonuses(item)->hitBonus;
+		else hitBonus = 5;
+	}
 	return GetItemData(ITEM_INDEX(item))->hit + hitBonus;
-}
-
-void ComputeBattleUnitHitRate(struct BattleUnit* bu) {
-    bu->battleHitRate = (bu->unit.skl * 2) + GetItemHit(bu->weapon) + (bu->unit.lck / 2) + bu->wTriangleHitBonus;
-	if(AccessoryEffectTester(&bu->unit, 5)) bu->battleHitRate += 10;
 }
 
 int GetItemCrit(int item) {
 	int critBonus = 0;
-	if(ITEM_FORGED(item) && GetItemForgeBonuses(item) != 0)
-		critBonus = GetItemForgeBonuses(item)->critBonus;
+	if(ITEM_FORGED(item)) {
+		if (GetItemForgeBonuses(item) != 0) critBonus = GetItemForgeBonuses(item)->critBonus;
+		else critBonus = 5;
+	}
 	return GetItemData(ITEM_INDEX(item))->crit + critBonus;
 }
 
@@ -66,7 +67,7 @@ void DrawItemMenuLine(struct TextHandle* text, int item, s8 isUsable, u16* mapOu
 
     Text_Display(text, mapOut + 2);
 	
-	if (!isItemAnAccessory) DrawUiNumberOrDoubleDashes(mapOut + 11, isUsable ? TEXT_COLOR_BLUE : TEXT_COLOR_GRAY, GetItemUses(item));
+	if (!(GetItemAttributes(item) & IA_ACCESSORY) || (GetItemAttributes(item) & (IA_DEPLETEUSESONDEFENSE | IA_DEPLETEUSESONATTACK))) DrawUiNumberOrDoubleDashes(mapOut + 11, isUsable ? TEXT_COLOR_BLUE : TEXT_COLOR_GRAY, GetItemUses(item));
 
     DrawIcon(mapOut, GetItemIconId(item), 0x4000);
 }
@@ -87,7 +88,7 @@ void DrawItemMenuLineLong(struct TextHandle* text, int item, s8 isUsable, u16* m
 
     Text_Display(text, mapOut + 2);
 
-	if(!isItemAnAccessory) {
+	if (!(GetItemAttributes(item) & IA_ACCESSORY) || (GetItemAttributes(item) & (IA_DEPLETEUSESONDEFENSE | IA_DEPLETEUSESONATTACK))) {
 		DrawUiNumberOrDoubleDashes(mapOut + 10, isUsable ? TEXT_COLOR_BLUE : TEXT_COLOR_GRAY, GetItemUses(item));
 		DrawUiNumberOrDoubleDashes(mapOut + 13, isUsable ? TEXT_COLOR_BLUE : TEXT_COLOR_GRAY, GetItemMaxUses(item));
 		DrawSpecialUiChar(mapOut + 11, isUsable ? TEXT_COLOR_NORMAL : TEXT_COLOR_GRAY, 0x16); // draw special character?
@@ -103,7 +104,7 @@ void DrawItemMenuLineNoColor(struct TextHandle* text, int item, u16* mapOut) {
 
     Text_Display(text, mapOut + 2);
 
-	if(!(ITEM_EQUIPPED(item))) {
+	if (!(GetItemAttributes(item) & IA_ACCESSORY) || (GetItemAttributes(item) & (IA_DEPLETEUSESONDEFENSE | IA_DEPLETEUSESONATTACK))) {
 		DrawSpecialUiChar(mapOut + 11, Text_GetColorId(text), GetItemUses(item));
 	}
 	
@@ -124,7 +125,7 @@ void DrawItemStatScreenLine(struct TextHandle* text, int item, int nameColor, u1
     Text_DrawString(text, GetItemName(item));
 	if(ITEM_FORGED(item)) Text_DrawString(text, "+");
 
-	if(!isItemAnAccessory) {
+	if (!(GetItemAttributes(item) & IA_ACCESSORY) || (GetItemAttributes(item) & (IA_DEPLETEUSESONDEFENSE | IA_DEPLETEUSESONATTACK))) {
 		color = (nameColor == TEXT_COLOR_GRAY) ? TEXT_COLOR_GRAY : TEXT_COLOR_NORMAL;
 		DrawSpecialUiChar(mapOut + 12, color, 0x16);
 
@@ -147,4 +148,59 @@ u16 GetItemAfterUse(int item) {
         return 0; // return no item if uses < 0
 
     return item; // return used item
+}
+
+/*int DrawItemDescBoxInfo(u16 item) {
+	struct TextHandle* text = (struct TextHandle*)0x203E7AC;
+	Text_InsertString(text, 0, 8, GetWeaponTypeDisplayString(GetItemType(item)));
+	
+}*/
+
+int DrawItemDescBoxStats(u16 item) {
+	struct TextHandle* text = (struct TextHandle*)0x203E7AC;
+	
+	// Weapon Rank
+	Text_InsertString(text, 32, 7, GetItemDisplayRankString(item));
+	
+	// Range
+	Text_InsertString(text, 0x43, 7, GetItemDisplayRangeString2(item));
+	
+	// Weight
+	Text_InsertNumberOr2Dashes(text, 0x81, 7, GetItemWeight(item));
+	
+	text = (struct TextHandle*)(0x203E7AC + 8);
+	
+	
+	if(ITEM_FORGED(item)) {
+		// Might
+		Text_InsertNumberOr2Dashes(text, 0x20, 8, GetItemMight(item));
+	
+		// Hit
+		Text_InsertNumberOr2Dashes(text, 0x51, 8, GetItemHit(item));
+	
+		// Crit
+		Text_InsertNumberOr2Dashes(text, 0x81, 8, GetItemCrit(item));
+	}
+	else {
+		// Might
+		Text_InsertNumberOr2Dashes(text, 0x20, 7, GetItemMight(item));
+	
+		// Hit
+		Text_InsertNumberOr2Dashes(text, 0x51, 7, GetItemHit(item));
+	
+		// Crit
+		Text_InsertNumberOr2Dashes(text, 0x81, 7, GetItemCrit(item));
+	}
+}
+
+void ForgeActiveUnitEquippedWeaponASMC() {
+	int item = GetUnitEquippedWeapon(gActiveUnit);
+	if(item) {
+		gActiveUnit->items[GetUnitEquippedWeaponSlot(gActiveUnit)] = (item | 0x4000);
+	}
+}
+
+int CanUnitSeize(Unit *unit) {
+	if(unit->pCharacterData->attributes & CA_LORD != 0 || unit->pClassData->attributes & CA_LORD != 0) return 1;
+	return 0;
 }

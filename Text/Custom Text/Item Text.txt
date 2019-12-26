@@ -171,11 +171,11 @@ Incases enemies in[N]
 stone for a while.[X]
 
 ##PoisonStaffName
-Poison[X]
+Enfeeble[X]
 
 ##PoisonStaffDesc
-Inflicts poison on[N]
-enemies for a while.[X]
+Lowers enemy combat[N]
+stats for a while.[X]
 
 ##RubySwordName
 Ruby Sword[X]
