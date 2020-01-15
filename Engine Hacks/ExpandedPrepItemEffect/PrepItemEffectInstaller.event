@@ -9,10 +9,6 @@ POP
 #include "ExpandedPrepItemEffect.event"
 
 ALIGN 4
-CheckExpandedPrepItemIDsWrapper:
-#incbin "CheckExpandedPrepItemIDsWrapper.dmp"
-
-ALIGN 4
 PrepItemEffectTable:
 ORG currentOffset+(0xFF*4)
 

@@ -46,6 +46,10 @@ ORG FreeSpaceBLRange //defined in custom definitions
   ALIGN 4
   // Magic Split
   #include "Strmag/BL Range.event"
+  
+  ALIGN 4
+  CheckExpandedPrepItemIDsWrapper:
+  #incbin "ExpandedPrepItemEffect/CheckExpandedPrepItemIDsWrapper.dmp"
 
 #undef inBLRange
 POP
