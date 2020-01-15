@@ -8,6 +8,8 @@ POP
 
 #include "ExpandedPrepItemEffect.event"
 
+MESSAGE PrepItemEffectWrapper
+
 ALIGN 4
 PrepItemEffectTable:
 ORG currentOffset+(0xFF*4)
