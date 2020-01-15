@@ -1,0 +1,21 @@
+PUSH
+ORG $9cd10
+POIN NewPrepScreenItemsProc
+ORG $9cb74
+BL(CheckExpandedPrepItemIDsWrapper)
+POP
+
+
+#include "ExpandedPrepItemEffect.event"
+
+ALIGN 4
+CheckExpandedPrepItemIDsWrapper:
+#incbin "CheckExpandedPrepItemIDsWrapper.dmp"
+
+ALIGN 4
+PrepItemEffectTable:
+ORG currentOffset+(0xFF*4)
+
+#define SetPrepItemEffect(itemID,function) "PUSH; ORG PrepItemEffectTable+(itemID*4); POIN function; POP"
+
+SetPrepItemEffect(AdeptManual,AdeptScrollEffect)
