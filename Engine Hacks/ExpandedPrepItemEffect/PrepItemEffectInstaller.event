@@ -1,17 +1,10 @@
-PUSH
-ORG $9cd10
-POIN NewPrepScreenItemsProc
-ORG $9cb74
-BL(CheckExpandedPrepItemIDsWrapper)
-POP
 
+#include "PrepScrollUsageEffect.lyn.event"
 
-#include "ExpandedPrepItemEffect.event"
+MESSAGE PrepScrollUsageEffect
 
-ALIGN 4
-PrepItemEffectTable:
-ORG currentOffset+(0xFF*4)
-
-#define SetPrepItemEffect(itemID,function) "PUSH; ORG PrepItemEffectTable+(itemID*4); POIN function; POP"
-
-SetPrepItemEffect(AdeptManual,AdeptScrollEffect)
+AdeptIDLink:
+BYTE AdeptID
+ALIGN 2
+SkillScrollMessageReturnLink:
+SHORT PrepScreenUseSkillScroll

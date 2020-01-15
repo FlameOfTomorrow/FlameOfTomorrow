@@ -106,7 +106,7 @@ void PrepItemEffectWrapper(Proc* parent){
   Unit* unit = *tmp; //byte 0x2c of the grandparent
   u8 slot = *(u8*) ((int) tmp + 4);
   u8 itemID = unit->items[slot];
-  CallPrepUseEffect(unit, parent, itemID, slot);
+  //CallPrepUseEffect(unit, parent, itemID, slot);
     //decrease uses
   ValidateUnitItem(unit, slot);
 };
