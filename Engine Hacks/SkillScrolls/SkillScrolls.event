@@ -198,3 +198,42 @@ WrathScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD WrathID
+
+
+
+#include "PrepScrollUsageEffect.lyn.event"
+
+ALIGN 4
+AdeptIDLink:
+BYTE AdeptID
+WrathIDLink:
+BYTE WrathID
+SolIDLink:
+BYTE SolID
+RenewalIDLink:
+BYTE RenewalID
+PaviseIDLink:
+BYTE PaviseID
+PassIDLink:
+BYTE PassID
+ParagonIDLink:
+BYTE ParagonID
+NullifyIDLink:
+BYTE NullifyID
+NihilIDLink:
+BYTE NihilID
+LunaIDLink:
+BYTE LunaID
+CantoPlusIDLink:
+BYTE CantoPlusID
+BoonIDLink:
+BYTE BoonID
+AstraIDLink:
+BYTE AstraID
+AegisIDLink:
+BYTE AegisID
+
+ALIGN 2
+SkillScrollMessageReturnLink:
+SHORT PrepScreenUseSkillScroll
+

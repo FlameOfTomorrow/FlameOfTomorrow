@@ -55,19 +55,19 @@ Other Vulnerary (Custom promotion items will replace this),0x802F90C
 Another Vulnerary (can be replaced with custom item effect),0x802F90C
 Juna Fruit,0x802F90C
 Latona,0x802F90C
-Adept Manual,PrepScrollUsageEffect|IsPointer
-Aegis Manual,0x802F90C
-Astra Manual,0x802F90C
-Boon Manual,0x802F90C
-CantoPlus Manual,0x802F90C
-Luna Manual,0x802F90C
-Nihil Manual,0x802F90C
-Nullify Manual,0x802F90C
-Paragon Manual,0x802F90C
-Pass Manual,0x802F90C
-Renewal Manual,0x802F90C
-Sol Manual,0x802F90C
-Wrath Manual,0x802F90C
+Adept Manual,AdeptPrepScrollUsageEffect|IsPointer
+Aegis Manual,AegisPrepScrollUsageEffect|IsPointer
+Astra Manual,AstraPrepScrollUsageEffect|IsPointer
+Boon Manual,BoonPrepScrollUsageEffect|IsPointer
+CantoPlus Manual,CantoPlusPrepScrollUsageEffect|IsPointer
+Luna Manual,LunaPrepScrollUsageEffect|IsPointer
+Nihil Manual,NihilPrepScrollUsageEffect|IsPointer
+Nullify Manual,NullifyPrepScrollUsageEffect|IsPointer
+Paragon Manual,ParagonPrepScrollUsageEffect|IsPointer
+Pass Manual,PassPrepScrollUsageEffect|IsPointer
+Renewal Manual,RenewalPrepScrollUsageEffect|IsPointer
+Sol Manual,SolPrepScrollUsageEffect|IsPointer
+Wrath Manual,WrathPrepScrollUsageEffect|IsPointer
 Spirit Dust,0x802F90C
 Entrap,0x802F90C
 0x47,0x802F90C
