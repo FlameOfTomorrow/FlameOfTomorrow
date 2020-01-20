@@ -37,6 +37,7 @@ EventPointerTable(Ch1Event, PointerList)
 0x28 -
 */
 
+ALIGN 4
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents

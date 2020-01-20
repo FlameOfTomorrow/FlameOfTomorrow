@@ -46,7 +46,9 @@
 
 // Cavaliers
 #define SwordKnight 0x9E
+#define SwdKnight SwordKnight
 #define LanceKnight 0x9F
+#define LncKnight LanceKnight
 #define AxeKnight 0xA0
 #define CavalierAxeAnim GeneralFSwordAnim
 #define CavalierHandaxeAnim GeneralFLanceAnim
@@ -55,7 +57,7 @@
 #define AxeKnightClassCard 0xB2
 
 #define DreadFighter 0x80
-#define DreadFigher_F 0x81
+#define DreadFighter_F 0x81
 #define Spartan 0x83
 #define DarkFlier 0x84
 #define Arbalist 0x85
@@ -83,6 +85,7 @@
 #define MageArmour 0x97
 #define Baron 0x98
 #define Sorceror 0x99
+#define Sorcerer Sorceror
 #define DarkKnight 0x9A
 #define DarkKnight_F 0x9B
 #define GriffonKnight 0x9C

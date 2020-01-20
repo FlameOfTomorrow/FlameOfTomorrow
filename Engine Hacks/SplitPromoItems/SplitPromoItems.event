@@ -33,35 +33,117 @@ BYTE 0
 
 ALIGN 4
 HeroCrestPromoList:
+PromoListEntry(Mercenary,Hero)
+PromoListEntry(Myrmidon,Swordmaster)
+PromoListEntry(Myrmidon_F,Swordmaster_F)
+PromoListEntry(Fighter,Hero)
+PromoListEntry(Priest,WarMonk)
+PromoListEntry(Deserter,Spartan)
+
+
 PromoListEnd
 
 ALIGN 4
 KnightCrestPromoList:
-PromoListEntry(Knight,General)
+PromoListEntry(SwdKnight,GreatKnight)
+PromoListEntry(LncKnight,GreatKnight)
+PromoListEntry(AxeKnight,GreatKnight)
+PromoListEntry(Soldier,General)
+PromoListEntry(SwdArmor,General)
+PromoListEntry(LncArmor,General)
+PromoListEntry(AxeArmor,General)
+PromoListEntry(BowArmor,General)
+
+
 PromoListEnd
 
 ALIGN 4
 OrionsBoltPromoList:
+PromoListEntry(Mercenary,Ranger)
+PromoListEntry(Archer,Sniper)
+PromoListEntry(Archer_F,Sniper_F)
+PromoListEntry(Fighter,Warrior)
+PromoListEntry(Brigand,Warrior)
+PromoListEntry(Pirate,Warrior)
+PromoListEntry(Nomad,Ranger)
+
+
 PromoListEnd
 
 ALIGN 4
 ElysianWhipPromoList:
+PromoListEntry(WyvernRider,WyvernLord)
+PromoListEntry(Monk,Deva)
+PromoListEntry(Troubadour,Falcoknight)
+PromoListEntry(Nomad,Arbalist)
+PromoListEntry(DarkMage,DarkFlier)
+PromoListEntry(Thumaturge,Deva)
+
 PromoListEnd
 
 ALIGN 4
 GuidingRingPromoList:
+PromoListEntry(Thief,Rogue)
 PromoListEntry(Mage,Sage)
+PromoListEntry(Mage_F,Sage_F)
+PromoListEntry(Monk,Bishop)
+PromoListEntry(Priest,Bishop)
+PromoListEntry(Troubadour,Valkyrie)
+PromoListEntry(Outlaw,Adventurer)
+PromoListEntry(Nephilim,Deva)
+PromoListEntry(MageArmor,Harbringer)
+PromoListEntry(Thumaturge,MageKnight)
+
 PromoListEnd
 
 ALIGN 4
 OceanSealPromoList:
+PromoListEntry(Thief,Assassin)
+PromoListEntry(Brigand,Berserker)
+PromoListEntry(Pirate,Berserker)
+PromoListEntry(Outlaw,Assassin)
+
+
 PromoListEnd
 
 ALIGN 4
 NightshadePromoList:
+PromoListEntry(Myrmidon,DreadFighter)
+PromoListEntry(Myrmidon_F,DreadFighter_F)
+PromoListEntry(Shaman,Druid)
+PromoListEntry(Shaman_F,Druid_F)
+PromoListEntry(Revenant,Entombed)
+PromoListEntry(Bonewalker,Wight)
+PromoListEntry(Bonewalker_Bow,Wight_Bow)
+PromoListEntry(Bael,ElderBael)
+PromoListEntry(Mauthedoog,Gwyllgi)
+PromoListEntry(Tarvos,Maelduin)
+PromoListEntry(Mogall,ArchMogall)
+PromoListEntry(Gargoyle,Deathgoyle)
+PromoListEntry(DarkMage,Sorceror)
+PromoListEntry(Nephilim,Harrier)
+PromoListEntry(MageArmor,Baron)
+
 PromoListEnd
 
 ALIGN 4
 TemplarShieldPromoList:
+PromoListEntry(SwdKnight,SwdPal)
+PromoListEntry(LncKnight,LncPal)
+PromoListEntry(AxeKnight,AxePal)
+PromoListEntry(Archer,Ranger)
+PromoListEntry(Archer_F,Ranger_F)
+PromoListEntry(WyvernRider,GriffonKnight)
 PromoListEntry(Mage,MageKnight)
+PromoListEntry(Mage_F,MageKnight_F)
+PromoListEntry(Shaman,DarkKnight)
+PromoListEntry(Shaman_F,DarkKnight_F)
+PromoListEntry(Soldier,Spartan)
+PromoListEntry(Deserter,Spartan)
+PromoListEntry(SwdArmor,GreatKnight)
+PromoListEntry(LncArmor,GreatKnight)
+PromoListEntry(AxeArmor,GreatKnight)
+PromoListEntry(BowArmor,GreatKnight)
+
+
 PromoListEnd
