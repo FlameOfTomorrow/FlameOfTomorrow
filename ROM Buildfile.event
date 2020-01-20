@@ -15,7 +15,7 @@
     #include "Text/Install Text Data.event"
 	ALIGN 4
 	MESSAGE Used text data ends at currentOffset
-
+ 
     //Graphics
     #include "Graphics/MasterGraphicInstaller.event"
 	MESSAGE Used graphics data ends at currentOffset
