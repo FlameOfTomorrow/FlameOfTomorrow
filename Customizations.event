@@ -33,4 +33,4 @@
 // Note that doing so may cause minor graphical errors.
 // #define ExpandedLevelUpScreen
 
-//#define _DEBUGROOM_
+#define _DEBUGROOM_

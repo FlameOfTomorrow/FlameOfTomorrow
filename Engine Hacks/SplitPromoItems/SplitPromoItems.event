@@ -1,0 +1,67 @@
+
+PUSH
+ORG $CC5F6
+SHORT 0x46C0 //nop
+jumpToHack(SplitPromoItems)
+POP
+
+#include "SplitPromoItems.lyn.event"
+
+
+#define PromoItemEntry(itemID,promoList) "BYTE itemID 0 0 0; POIN promoList"
+#define PromoItemsEnd "WORD 0 0"
+
+ALIGN 4
+PromoItemsList:
+PromoItemEntry(HeroCrest,HeroCrestPromoList)
+PromoItemEntry(KnightCrest,KnightCrestPromoList)
+PromoItemEntry(OrionsBolt,OrionsBoltPromoList)
+PromoItemEntry(ElysianWhip,ElysianWhipPromoList)
+PromoItemEntry(GuidingRing,GuidingRingPromoList)
+PromoItemEntry(OceanSeal,OceanSealPromoList)
+PromoItemEntry(Nightshade,NightshadePromoList)
+PromoItemEntry(TemplarShield,TemplarShieldPromoList)
+PromoItemsEnd
+
+ALIGN 4
+SplitPromoItemsList:
+BYTE MasterSeal 
+BYTE 0
+
+#define PromoListEntry(baseClass,promoClass) "BYTE baseClass promoClass"
+#define PromoListEnd "SHORT 0"
+
+ALIGN 4
+HeroCrestPromoList:
+PromoListEnd
+
+ALIGN 4
+KnightCrestPromoList:
+PromoListEntry(Knight,General)
+PromoListEnd
+
+ALIGN 4
+OrionsBoltPromoList:
+PromoListEnd
+
+ALIGN 4
+ElysianWhipPromoList:
+PromoListEnd
+
+ALIGN 4
+GuidingRingPromoList:
+PromoListEntry(Mage,Sage)
+PromoListEnd
+
+ALIGN 4
+OceanSealPromoList:
+PromoListEnd
+
+ALIGN 4
+NightshadePromoList:
+PromoListEnd
+
+ALIGN 4
+TemplarShieldPromoList:
+PromoListEntry(Mage,MageKnight)
+PromoListEnd

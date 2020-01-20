@@ -94,3 +94,6 @@
   
   //Chapter Objective Change
   #include "ChangeChapterObjective/Installer.event"
+
+  //Different promos per Item
+  #include "SplitPromoItems/SplitPromoItems.event"

@@ -334,3 +334,13 @@ Solstice[X]
 
 ##MoonlightName
 Moonlight[X]
+
+##TemplarShieldName
+Templar Shield[X]
+
+##NightshadeName
+Nightshade[X]
+
+##PromoItemDesc
+Promotes a Lv 10[N]
+unpromoted unit.[X]

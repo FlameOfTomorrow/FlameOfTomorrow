@@ -174,4 +174,12 @@ ORG WeaponIconOffset(MoonlightIcon)
 ORG WeaponIconOffset(EntrapIcon)
 #incext Png2Dmp "Icons/Entrap.png"
 
+// Nightshade
+ORG WeaponIconOffset(NightshadeIcon)
+#incext Png2Dmp "Icons/Nightshade.png"
+
+// Templar Shield
+ORG WeaponIconOffset(TemplarShieldIcon)
+#incext Png2Dmp "Icons/TemplarShield.png"
+
 POP
