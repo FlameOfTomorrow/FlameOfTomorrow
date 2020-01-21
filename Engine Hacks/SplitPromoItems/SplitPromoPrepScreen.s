@@ -1,12 +1,16 @@
 .thumb
 .align
 
+
+@prep screen be like :upside_down:
+
 .macro blh to, reg=r3
     ldr \reg, =\to
     mov lr, \reg
     .short 0xF800
 .endm
 .equ ProcGoto,0x8002F24
+.equ ProcFind,0x8002E9C
 
 @just spent 6 weeks doing the wrong thing here :)
 
@@ -17,9 +21,9 @@
 
 @r0 = proc data
 
-.global SplitPromoItems
-.type SplitPromoItems, %function
-SplitPromoItems:
+.global SplitPromoItemsPrep
+.type SplitPromoItemsPrep, %function
+SplitPromoItemsPrep:
 
 push {r4-r7}
 
@@ -41,20 +45,21 @@ push {r4-r7}
 mov r6,r1
 mov r7,r2
 
-@action struct has the slot # our promo item is in
-ldr r0,=0x203A958 @action struct
-add r0,#0x12
-ldrb r0,[r0]
+@need a new way to get active item in r0
+ldr r0,=0x8A19064 @this is a proc that if still exists has item we used
+blh ProcFind
+add r0,#0x2C
+ldr r1,[r0] @r1 = unit pointer
+add r0,#4
+ldrb r0,[r0] @r0 = item slot ID
+
+@now we can do the legacy way of finding the item ID
 lsl r0,r0,#1
-
-ldr r1,[r2,#0x2C] @unit struct
 add r1,#0x1E
-
 add r1,r0
-ldrh r0,[r1] @r0 = item & uses
+ldrh r0,[r1]
 mov r1,#0xFF
-and r0,r1 @r0 = item ID
-
+and r0,r1 @r0 = used item ID
 
 @now we check this against our external list
 ldr r1,=SplitPromoItemsList
@@ -82,7 +87,16 @@ GetPromoList:
 add r1,#4
 ldr r0,[r1] @r0 = offset of promo list
 
-ldr r1,[r7,#0x2C] @unit struct
+@ldr r1,[r7,#0x2C] @unit struct
+@ldr r1,[r1,#4] @class data
+@ldrb r1,[r1,#4] @class ID
+
+push {r0,r2}
+ldr r0,=0x8A19064 @this is a proc that if still exists has item we used
+blh ProcFind
+add r0,#0x2C
+ldr r1,[r0] @r1 = unit pointer
+pop {r0,r2}
 ldr r1,[r1,#4] @class data
 ldrb r1,[r1,#4] @class ID
 
@@ -117,9 +131,8 @@ UsingSplitPromos:
 mov r1,r6
 mov r2,r7
 pop {r4-r7}
-ldr r0,=0x80CC61B
+ldr r0,=0x80CC5ED
 bx r0
 
 .ltorg
 .align
-
